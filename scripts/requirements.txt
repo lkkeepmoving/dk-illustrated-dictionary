@@ -1,0 +1,4 @@
+azure-ai-formrecognizer==3.3.2
+Pillow==10.2.0
+pdf2image==1.17.0
+python-dotenv==1.0.1

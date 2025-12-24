@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DK Illustrated Dictionary - Interactive Vocabulary Trainer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <h1>Interactive Vocabulary Trainer</h1>
+            <div class="header-controls">
+                <button id="pullBtn" class="btn btn-sync" title="Pull known words from GitHub Gist">⬇ Pull</button>
+                <button id="pushBtn" class="btn btn-sync" title="Push known words to GitHub Gist">⬆ Push</button>
+                <button id="settingsBtn" class="btn btn-secondary" title="Configure GitHub Gist sync">⚙️</button>
+                <button id="exportBtn" class="btn btn-primary">Export CSV</button>
+                <button id="statsBtn" class="btn btn-secondary">Progress</button>
+            </div>
+        </header>
+
+        <!-- Sync Status Bar -->
+        <div class="sync-status-bar">
+            <span id="syncStatus" class="sync-status-text">Not synced yet</span>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Page Navigation -->
+            <nav class="page-nav">
+                <button id="prevBtn" class="nav-btn">← Previous</button>
+                <span id="pageInfo" class="page-info">Page 1 of 2</span>
+                <button id="nextBtn" class="nav-btn">Next →</button>
+            </nav>
+
+            <!-- Image Viewer with Overlays -->
+            <div class="viewer-container">
+                <div class="image-wrapper" id="imageWrapper">
+                    <img id="pageImage" src="" alt="Dictionary page" />
+                    <svg id="overlayLayer" class="overlay-layer"></svg>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Progress Modal -->
+        <div id="statsModal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Learning Progress</h2>
+                    <button class="close-btn" id="closeStatsBtn">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="stat-card">
+                        <div class="stat-label">Total Words</div>
+                        <div class="stat-value" id="totalWords">0</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Known</div>
+                        <div class="stat-value stat-known" id="knownWords">0</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Unknown</div>
+                        <div class="stat-value stat-new" id="newWords">0</div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar">
+                            <div id="progressBar" class="progress-fill"></div>
+                        </div>
+                        <div class="progress-text" id="progressText">0%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings Modal -->
+        <div id="settingsModal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>GitHub Gist Sync Settings</h2>
+                    <button class="close-btn" id="closeSettingsBtn">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="settings-info">
+                        <p><strong>Setup Instructions:</strong></p>
+                        <ol>
+                            <li>Create a new <a href="https://gist.github.com/" target="_blank">GitHub Gist</a> with a file named <code>known-words.json</code></li>
+                            <li>Copy the Gist ID from the URL (e.g., <code>abc123def456</code>)</li>
+                            <li>Create a <a href="https://github.com/settings/tokens/new" target="_blank">Personal Access Token</a> with <code>gist</code> scope</li>
+                            <li>Enter both values below</li>
+                        </ol>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gistIdInput">Gist ID:</label>
+                        <input type="text" id="gistIdInput" class="form-input" placeholder="e.g., abc123def456" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="githubTokenInput">GitHub Personal Access Token:</label>
+                        <input type="password" id="githubTokenInput" class="form-input" placeholder="ghp_..." />
+                        <small class="form-hint">Token is stored locally in your browser only</small>
+                    </div>
+
+                    <button id="saveSettingsBtn" class="btn btn-primary btn-full-width">Save Settings</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

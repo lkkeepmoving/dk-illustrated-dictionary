@@ -1,0 +1,26 @@
+# Environment variables
+.env
+scripts/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Output files
+output/
+
+# Large source PDF files (not needed for deployment)
+source-materials/*.pdf
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
