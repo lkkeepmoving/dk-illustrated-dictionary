@@ -136,14 +136,16 @@ class VocabularyApp {
     renderPage() {
         const totalViewPages = this.getTotalViewPages();
 
-        // Update page info
-        const startPage = (this.currentViewPage - 1) * this.pagesPerView + 1;
-        const endPage = Math.min(this.currentViewPage * this.pagesPerView, this.totalPages);
-        document.getElementById('pageInfo').textContent = `Pages ${startPage}-${endPage} of ${this.totalPages}`;
+        // Update page info - show view page number, not PDF page numbers
+        document.getElementById('pageInfo').textContent = `Page ${this.currentViewPage} of ${totalViewPages}`;
 
         // Enable/disable navigation buttons
         document.getElementById('prevBtn').disabled = this.currentViewPage === 1;
         document.getElementById('nextBtn').disabled = this.currentViewPage === totalViewPages;
+
+        // Calculate which PDF pages to show
+        const startPage = (this.currentViewPage - 1) * this.pagesPerView + 1;
+        const endPage = Math.min(this.currentViewPage * this.pagesPerView, this.totalPages);
 
         // Update page jump input max
         const pageJumpInput = document.getElementById('pageJumpInput');
