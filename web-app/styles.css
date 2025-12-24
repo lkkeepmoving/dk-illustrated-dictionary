@@ -223,9 +223,10 @@ body {
 }
 
 .word-overlay.new {
-    fill: rgba(240, 240, 245, 1);
-    stroke: rgba(100, 100, 255, 0.4);
-    stroke-width: 1.5;
+    fill: rgb(230, 230, 235);
+    fill-opacity: 1;
+    stroke: rgba(100, 100, 255, 0.5);
+    stroke-width: 2;
 }
 
 /* Revealed Word */

@@ -179,13 +179,7 @@ class VocabularyApp {
         pageItem.className = 'page-item';
         pageItem.id = `page-${pageNum}`;
 
-        // Page label
-        const pageLabel = document.createElement('div');
-        pageLabel.className = 'page-label';
-        pageLabel.textContent = `Page ${pageNum}`;
-        pageItem.appendChild(pageLabel);
-
-        // Image wrapper
+        // Image wrapper (no page label needed)
         const wrapper = document.createElement('div');
         wrapper.className = 'image-wrapper';
 
