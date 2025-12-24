@@ -309,9 +309,7 @@ class VocabularyApp {
 
         btnGroup.addEventListener('click', () => {
             this.setWordState(wordId, 'known');
-            const pageKey = this.pageKeys[this.currentPage - 1];
-            const pageData = this.data[pageKey];
-            this.renderOverlays(pageKey, pageData.words);
+            this.renderPage();
         });
 
         svg.appendChild(btnGroup);
