@@ -417,7 +417,12 @@ class VocabularyApp {
     }
 
     pronounce(text) {
-        if (!this.settings.audioEnabled) return;
+        if (!this.settings.audioEnabled) {
+            console.log('Audio is disabled in settings');
+            return;
+        }
+
+        console.log('Pronouncing:', text);
 
         // Cancel any ongoing speech
         this.synth.cancel();

@@ -15,8 +15,8 @@ import re
 load_dotenv()
 
 PROJECT_ROOT = Path(__file__).parent.parent
-IMAGES_DIR = PROJECT_ROOT / "output" / "images"
-OUTPUT_DIR = PROJECT_ROOT / "output"
+IMAGES_DIR = PROJECT_ROOT / "web-app" / "images"  # Use web-app images, not output
+OUTPUT_DIR = PROJECT_ROOT / "web-app"  # Save directly to web-app
 SOURCE_DIR = PROJECT_ROOT / "source-materials"
 
 AZURE_ENDPOINT = os.getenv("AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT")
