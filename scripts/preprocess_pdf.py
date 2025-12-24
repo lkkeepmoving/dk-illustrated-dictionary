@@ -178,10 +178,15 @@ def process_pdf(pdf_path: Path, vocabulary_path: Path, output_dir: Path,
         # Match against vocabulary
         matched_words = match_vocabulary(english_words, vocabulary)
 
-        # Store page data
+        # Mark which words are learning words
+        learning_word_texts = {w['text'].lower() for w in matched_words}
+        for word in english_words:
+            word['is_learning_word'] = word['text'].lower() in learning_word_texts
+
+        # Store page data with ALL English words
         all_pages_data[f"page_{i:04d}"] = {
             'image': f"images/page_{i:04d}.png",
-            'words': matched_words,
+            'words': english_words,  # Changed from matched_words to english_words
             'total_words_extracted': len(words),
             'english_words': len(english_words),
             'matched_words': len(matched_words)

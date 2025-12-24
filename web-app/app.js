@@ -216,15 +216,23 @@ class VocabularyApp {
         // Render each word
         words.forEach((word, index) => {
             const wordId = this.getWordId(pageKey, index);
-            const state = this.getWordState(wordId);
 
-            if (state === 'known') {
-                this.renderKnownWord(svg, word, wordId, img.naturalWidth, img.naturalHeight);
-            } else if (state === 'revealed') {
-                this.renderRevealedWord(svg, word, wordId, img.naturalWidth, img.naturalHeight);
+            // Check if this is a learning word
+            if (word.is_learning_word) {
+                // Learning words: show overlays and track progress
+                const state = this.getWordState(wordId);
+
+                if (state === 'known') {
+                    this.renderKnownWord(svg, word, wordId, img.naturalWidth, img.naturalHeight);
+                } else if (state === 'revealed') {
+                    this.renderRevealedWord(svg, word, wordId, img.naturalWidth, img.naturalHeight);
+                } else {
+                    // state === 'new'
+                    this.renderMaskedWord(svg, word, wordId, 'new', img.naturalWidth, img.naturalHeight);
+                }
             } else {
-                // state === 'new'
-                this.renderMaskedWord(svg, word, wordId, 'new', img.naturalWidth, img.naturalHeight);
+                // Non-learning words: just clickable for pronunciation
+                this.renderClickableWord(svg, word, img.naturalWidth, img.naturalHeight);
             }
         });
     }
@@ -246,49 +254,9 @@ class VocabularyApp {
         rect.setAttribute('data-word-id', wordId);
         rect.setAttribute('data-word-text', word.text);
 
-        // Click to pronounce without revealing
-        rect.addEventListener('click', () => this.pronounce(word.text));
+        rect.addEventListener('click', () => this.handleWordReveal(wordId, word.text));
 
         svg.appendChild(rect);
-
-        // Add "Reveal" button to the right
-        const btnWidth = 30;
-        const btnHeight = 20;
-        const btnX = x + width + 5;
-        const btnY = y + (height - btnHeight) / 2;
-
-        // Button background
-        const btnRect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-        btnRect.setAttribute('x', btnX);
-        btnRect.setAttribute('y', btnY);
-        btnRect.setAttribute('width', btnWidth);
-        btnRect.setAttribute('height', btnHeight);
-        btnRect.setAttribute('rx', 4);
-        btnRect.setAttribute('fill', '#007AFF');
-        btnRect.style.cursor = 'pointer';
-
-        // Button text
-        const btnText = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-        btnText.setAttribute('x', btnX + btnWidth / 2);
-        btnText.setAttribute('y', btnY + btnHeight / 2);
-        btnText.setAttribute('text-anchor', 'middle');
-        btnText.setAttribute('dominant-baseline', 'central');
-        btnText.setAttribute('font-size', 12);
-        btnText.setAttribute('fill', 'white');
-        btnText.setAttribute('font-weight', 'bold');
-        btnText.textContent = '👁';
-        btnText.style.pointerEvents = 'none';
-
-        // Button group
-        const btnGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-        btnGroup.appendChild(btnRect);
-        btnGroup.appendChild(btnText);
-
-        btnGroup.addEventListener('click', () => {
-            this.handleWordReveal(wordId, word.text);
-        });
-
-        svg.appendChild(btnGroup);
     }
 
     renderRevealedWord(svg, word, wordId, imgWidth, imgHeight) {
@@ -401,6 +369,29 @@ class VocabularyApp {
         svg.appendChild(g);
     }
 
+    renderClickableWord(svg, word, imgWidth, imgHeight) {
+        // Render transparent clickable area for non-learning words (just for pronunciation)
+        const x = word.x * imgWidth;
+        const y = word.y * imgHeight;
+        const width = word.width * imgWidth;
+        const height = word.height * imgHeight;
+
+        // Create transparent clickable area
+        const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+        rect.setAttribute('x', x);
+        rect.setAttribute('y', y);
+        rect.setAttribute('width', width);
+        rect.setAttribute('height', height);
+        rect.setAttribute('fill', 'transparent');
+        rect.style.cursor = 'pointer';
+        rect.setAttribute('data-word-text', word.text);
+
+        // Click to pronounce
+        rect.addEventListener('click', () => this.pronounce(word.text));
+
+        svg.appendChild(rect);
+    }
+
     // ========================================================================
     // INTERACTION HANDLERS
     // ========================================================================
@@ -502,17 +493,20 @@ class VocabularyApp {
         let knownWords = 0;
         let newWords = 0;
 
-        // Count all words across all pages
+        // Count only learning words across all pages
         this.pageKeys.forEach(pageKey => {
             const pageWords = this.data[pageKey].words;
-            totalWords += pageWords.length;
 
             pageWords.forEach((word, index) => {
-                const wordId = this.getWordId(pageKey, index);
-                const state = this.getWordState(wordId);
+                // Only count learning words
+                if (word.is_learning_word) {
+                    totalWords++;
+                    const wordId = this.getWordId(pageKey, index);
+                    const state = this.getWordState(wordId);
 
-                if (state === 'known') knownWords++;
-                else newWords++; // state === 'new' or 'revealed'
+                    if (state === 'known') knownWords++;
+                    else newWords++; // state === 'new' or 'revealed'
+                }
             });
         });
 
@@ -640,14 +634,17 @@ class VocabularyApp {
             const data = JSON.parse(fileContent);
             const knownWords = data.knownWords || [];
 
-            // Convert array of words back to wordStates object
+            // Convert array of words back to wordStates object (only for learning words)
             const newWordStates = {};
             this.pageKeys.forEach(pageKey => {
                 const pageWords = this.data[pageKey].words;
                 pageWords.forEach((word, index) => {
-                    const wordId = this.getWordId(pageKey, index);
-                    if (knownWords.includes(word.text)) {
-                        newWordStates[wordId] = 'known';
+                    // Only process learning words
+                    if (word.is_learning_word) {
+                        const wordId = this.getWordId(pageKey, index);
+                        if (knownWords.includes(word.text)) {
+                            newWordStates[wordId] = 'known';
+                        }
                     }
                 });
             });
@@ -675,10 +672,13 @@ class VocabularyApp {
         this.pageKeys.forEach(pageKey => {
             const pageWords = this.data[pageKey].words;
             pageWords.forEach((word, index) => {
-                const wordId = this.getWordId(pageKey, index);
-                const state = this.getWordState(wordId);
-                if (state === 'known') {
-                    knownWords.push(word.text);
+                // Only process learning words
+                if (word.is_learning_word) {
+                    const wordId = this.getWordId(pageKey, index);
+                    const state = this.getWordState(wordId);
+                    if (state === 'known') {
+                        knownWords.push(word.text);
+                    }
                 }
             });
         });
