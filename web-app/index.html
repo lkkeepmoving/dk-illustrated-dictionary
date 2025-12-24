@@ -34,6 +34,7 @@
                     <button id="pageJumpBtn" class="btn btn-secondary">Go</button>
                 </div>
                 <span id="pageInfo" class="page-info">Page 1 of 2</span>
+                <button id="randomBtn" class="btn btn-secondary">🎲 Random</button>
                 <button id="nextBtn" class="nav-btn">Next →</button>
             </nav>
 
@@ -101,6 +102,12 @@
                         <label for="githubTokenInput">GitHub Personal Access Token:</label>
                         <input type="password" id="githubTokenInput" class="form-input" placeholder="ghp_..." />
                         <small class="form-hint">Token is stored locally in your browser only</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pushPasswordInput">Push Password:</label>
+                        <input type="password" id="pushPasswordInput" class="form-input" placeholder="Set a password for push protection" />
+                        <small class="form-hint">Required each time you push to prevent unauthorized uploads</small>
                     </div>
 
                     <button id="saveSettingsBtn" class="btn btn-primary btn-full-width">Save Settings</button>

@@ -88,6 +88,7 @@ class VocabularyApp {
             audioEnabled: true,
             gistId: '',
             githubToken: '',
+            pushPassword: '',
             lastSyncTime: null
         };
     }
@@ -322,6 +323,17 @@ class VocabularyApp {
         const width = word.width * imgWidth;
         const height = word.height * imgHeight;
 
+        // Create transparent clickable area for pronunciation
+        const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+        rect.setAttribute('x', x);
+        rect.setAttribute('y', y);
+        rect.setAttribute('width', width);
+        rect.setAttribute('height', height);
+        rect.setAttribute('fill', 'transparent');
+        rect.style.cursor = 'pointer';
+        rect.addEventListener('click', () => this.pronounce(word.text));
+        svg.appendChild(rect);
+
         // Create checkmark indicator group positioned to the right of the word
         const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
         g.setAttribute('class', 'known-indicator');
@@ -340,8 +352,9 @@ class VocabularyApp {
 
         g.appendChild(circle);
 
-        // Click handlers - replay pronunciation
-        g.addEventListener('click', () => {
+        // Click handler for checkmark - unmark as known
+        g.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent triggering pronunciation
             this.handleKnownWordClick(wordId, word.text);
         });
 
@@ -427,6 +440,12 @@ class VocabularyApp {
         }, 100);
     }
 
+    randomPage() {
+        // Generate random page number (1 to totalPages)
+        const randomPageNum = Math.floor(Math.random() * this.totalPages) + 1;
+        this.jumpToPage(randomPageNum);
+    }
+
     scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -485,11 +504,29 @@ class VocabularyApp {
     // ========================================================================
 
     async pushToGist() {
-        const { gistId, githubToken } = this.settings;
+        const { gistId, githubToken, pushPassword } = this.settings;
 
         if (!gistId || !githubToken) {
             alert('Please configure your Gist ID and GitHub Token in settings first.');
             this.showSettings();
+            return;
+        }
+
+        // Check password protection
+        if (!pushPassword) {
+            alert('Please set a push password in settings first for security.');
+            this.showSettings();
+            return;
+        }
+
+        // Prompt for password
+        const enteredPassword = prompt('Enter push password to continue:');
+        if (!enteredPassword) {
+            return; // User cancelled
+        }
+
+        if (enteredPassword !== pushPassword) {
+            alert('Incorrect password. Push cancelled.');
             return;
         }
 
@@ -631,6 +668,7 @@ class VocabularyApp {
     showSettings() {
         document.getElementById('gistIdInput').value = this.settings.gistId || '';
         document.getElementById('githubTokenInput').value = this.settings.githubToken || '';
+        document.getElementById('pushPasswordInput').value = this.settings.pushPassword || '';
         document.getElementById('settingsModal').classList.remove('hidden');
     }
 
@@ -641,6 +679,7 @@ class VocabularyApp {
     saveSettingsFromModal() {
         this.settings.gistId = document.getElementById('gistIdInput').value.trim();
         this.settings.githubToken = document.getElementById('githubTokenInput').value.trim();
+        this.settings.pushPassword = document.getElementById('pushPasswordInput').value.trim();
         this.saveSettings();
         this.closeSettings();
         alert('Settings saved! You can now sync your known words.');
@@ -654,6 +693,7 @@ class VocabularyApp {
         // Navigation
         document.getElementById('prevBtn').addEventListener('click', () => this.prevPage());
         document.getElementById('nextBtn').addEventListener('click', () => this.nextPage());
+        document.getElementById('randomBtn').addEventListener('click', () => this.randomPage());
 
         // Page jump
         document.getElementById('pageJumpBtn').addEventListener('click', () => {
