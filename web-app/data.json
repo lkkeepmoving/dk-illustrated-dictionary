@@ -3,1664 +3,4567 @@
     "image": "images/page_0001.png",
     "words": [
       {
-        "text": "indifferent",
-        "x": 0.09523809523809523,
-        "y": 0.9020562770562771,
+        "text": "DK",
+        "x": 0.05886243386243386,
+        "y": 0.033098209441128595,
+        "width": 0.0496031746031746,
+        "height": 0.027672273467173086,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "helmet",
+        "x": 0.28835978835978837,
+        "y": 0.032013022246337494,
+        "width": 0.03968253968253968,
+        "height": 0.009224091155724362,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "holiday",
+        "x": 0.41865079365079366,
+        "y": 0.08410200759631037,
+        "width": 0.047619047619047616,
+        "height": 0.012479652740097666,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "reading",
+        "x": 0.5363756613756614,
+        "y": 0.08355941399891481,
+        "width": 0.0496031746031746,
+        "height": 0.013022246337493217,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "tennis",
+        "x": 0.66005291005291,
+        "y": 0.08410200759631037,
+        "width": 0.03968253968253968,
+        "height": 0.009224091155724362,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "briefcase",
+        "x": 0.7685185185185185,
+        "y": 0.08355941399891481,
+        "width": 0.05886243386243386,
+        "height": 0.010851871947911014,
+        "confidence": 0.995,
+        "is_learning_word": true
+      },
+      {
+        "text": "frame",
+        "x": 0.06084656084656084,
+        "y": 0.12533912099837222,
+        "width": 0.032407407407407406,
+        "height": 0.009224091155724362,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "gears",
+        "x": 0.046957671957671955,
+        "y": 0.14921323928377644,
+        "width": 0.03042328042328042,
+        "height": 0.009224091155724362,
+        "confidence": 0.995,
+        "is_learning_word": true
+      },
+      {
+        "text": "handlebars",
+        "x": 0.3187830687830688,
+        "y": 0.1519262072707542,
+        "width": 0.06283068783068783,
+        "height": 0.009224091155724362,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "businesswoman",
+        "x": 0.3915343915343915,
+        "y": 0.17471513836136734,
+        "width": 0.09854497354497355,
+        "height": 0.010309278350515464,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "cycling",
+        "x": 0.5383597883597884,
+        "y": 0.17525773195876287,
+        "width": 0.046296296296296294,
+        "height": 0.011937059142702116,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "drinks",
+        "x": 0.66005291005291,
+        "y": 0.17471513836136734,
+        "width": 0.03968253968253968,
+        "height": 0.010309278350515464,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "eggs",
+        "x": 0.783068783068783,
+        "y": 0.176342919153554,
+        "width": 0.0291005291005291,
+        "height": 0.010309278350515464,
+        "confidence": 0.989,
+        "is_learning_word": false
+      },
+      {
+        "text": "finance",
+        "x": 0.8928571428571429,
+        "y": 0.17471513836136734,
+        "width": 0.046957671957671955,
+        "height": 0.010309278350515464,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "tyre",
+        "x": 0.3683862433862434,
+        "y": 0.2224633749321758,
+        "width": 0.023809523809523808,
+        "height": 0.009766684753119913,
+        "confidence": 0.992,
+        "is_learning_word": false
+      },
+      {
+        "text": "bicycle",
+        "x": 0.18055555555555555,
+        "y": 0.25339120998372217,
+        "width": 0.04497354497354497,
+        "height": 0.013022246337493217,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "book",
+        "x": 0.4252645502645503,
+        "y": 0.25284861638632666,
+        "width": 0.032407407407407406,
+        "height": 0.010851871947911014,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "fruit",
+        "x": 0.5462962962962963,
+        "y": 0.25284861638632666,
+        "width": 0.0291005291005291,
+        "height": 0.010309278350515464,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "car",
+        "x": 0.6706349206349206,
+        "y": 0.2555615843733044,
+        "width": 0.018518518518518517,
+        "height": 0.007596310363537711,
+        "confidence": 0.997,
+        "is_learning_word": false
+      },
+      {
+        "text": "hairdresser",
+        "x": 0.7619047619047619,
+        "y": 0.2539338035811177,
         "width": 0.07341269841269842,
-        "height": 0.012445887445887446,
+        "height": 0.010309278350515464,
         "confidence": 0.993,
         "is_learning_word": true
       },
       {
-        "text": "unimpressed",
-        "x": 0.5403439153439153,
-        "y": 0.9020562770562771,
-        "width": 0.0873015873015873,
-        "height": 0.013528138528138528,
+        "text": "parrot",
+        "x": 0.8961640211640212,
+        "y": 0.2539338035811177,
+        "width": 0.042328042328042326,
+        "height": 0.011394465545306565,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "ENGLISH",
+        "x": 0.0667989417989418,
+        "y": 0.3027672273467173,
+        "width": 0.28703703703703703,
+        "height": 0.05371676614215952,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "FOR",
+        "x": 0.39021164021164023,
+        "y": 0.30439500813890397,
+        "width": 0.12962962962962962,
+        "height": 0.05208898534997287,
+        "confidence": 0.996,
+        "is_learning_word": false
+      },
+      {
+        "text": "EVERYONE",
+        "x": 0.5562169312169312,
+        "y": 0.3049376017362995,
+        "width": 0.36574074074074076,
+        "height": 0.05154639175257732,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "DK",
+        "x": 0.07605820105820106,
+        "y": 0.400976668475312,
+        "width": 0.12367724867724868,
+        "height": 0.09766684753119913,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "ILLUSTRATED",
+        "x": 0.07605820105820106,
+        "y": 0.5561584373304395,
+        "width": 0.31613756613756616,
+        "height": 0.04340748779164406,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "ENGLISH",
+        "x": 0.40476190476190477,
+        "y": 0.5561584373304395,
+        "width": 0.2037037037037037,
+        "height": 0.04340748779164406,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "DICTIONARY",
+        "x": 0.6236772486772487,
+        "y": 0.5561584373304395,
+        "width": 0.29828042328042326,
+        "height": 0.04340748779164406,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "DK",
+        "x": 0.08465608465608465,
+        "y": 0.6375474769397721,
+        "width": 0.026455026455026454,
+        "height": 0.017905588714053174,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "antiseptic",
+        "x": 0.6468253968253969,
+        "y": 0.6695604991861096,
+        "width": 0.05291005291005291,
+        "height": 0.010851871947911014,
+        "confidence": 0.993,
+        "is_learning_word": true
+      },
+      {
+        "text": "armchair",
+        "x": 0.05423280423280423,
+        "y": 0.7259902333152469,
+        "width": 0.0582010582010582,
+        "height": 0.009766684753119913,
+        "confidence": 0.995,
+        "is_learning_word": true
+      },
+      {
+        "text": "farmer",
+        "x": 0.1931216931216931,
+        "y": 0.7265328269126424,
+        "width": 0.04365079365079365,
+        "height": 0.010309278350515464,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "ticket",
+        "x": 0.3055555555555556,
+        "y": 0.7259902333152469,
+        "width": 0.036375661375661374,
+        "height": 0.010309278350515464,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "mother",
+        "x": 0.41865079365079366,
+        "y": 0.7259902333152469,
+        "width": 0.046957671957671955,
+        "height": 0.010309278350515464,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "coffee",
+        "x": 0.5390211640211641,
+        "y": 0.7259902333152469,
+        "width": 0.04034391534391534,
+        "height": 0.010851871947911014,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "antiseptic",
+        "x": 0.6031746031746031,
+        "y": 0.7021161150298426,
+        "width": 0.05357142857142857,
+        "height": 0.010309278350515464,
+        "confidence": 0.993,
+        "is_learning_word": true
+      },
+      {
+        "text": "wipes",
+        "x": 0.6256613756613757,
+        "y": 0.7124253933803582,
+        "width": 0.031746031746031744,
+        "height": 0.009224091155724362,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "bandage",
+        "x": 0.6044973544973545,
+        "y": 0.8014107433532285,
+        "width": 0.04828042328042328,
+        "height": 0.010851871947911014,
         "confidence": 0.994,
         "is_learning_word": true
       },
       {
-        "text": "nervous",
-        "x": 0.7043650793650794,
-        "y": 0.25162337662337664,
-        "width": 0.057539682539682536,
-        "height": 0.011363636363636364,
+        "text": "paint",
+        "x": 0.06481481481481481,
+        "y": 0.8198589256646771,
+        "width": 0.03505291005291005,
+        "height": 0.011937059142702116,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "wallet",
+        "x": 0.18518518518518517,
+        "y": 0.8209441128594682,
+        "width": 0.03902116402116402,
+        "height": 0.009766684753119913,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "dessert",
+        "x": 0.3002645502645503,
+        "y": 0.8209441128594682,
+        "width": 0.046957671957671955,
+        "height": 0.009766684753119913,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "photographer",
+        "x": 0.3968253968253968,
+        "y": 0.8204015192620727,
+        "width": 0.08994708994708994,
+        "height": 0.012479652740097666,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "skiing",
+        "x": 0.5390211640211641,
+        "y": 0.8198589256646771,
+        "width": 0.037698412698412696,
+        "height": 0.012479652740097666,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "adhesive",
+        "x": 0.9021164021164021,
+        "y": 0.8377645143787303,
+        "width": 0.04828042328042328,
+        "height": 0.009224091155724362,
         "confidence": 0.994,
-        "is_learning_word": true
+        "is_learning_word": false
+      },
+      {
+        "text": "tape",
+        "x": 0.9265873015873016,
+        "y": 0.8464460119370592,
+        "width": 0.023809523809523808,
+        "height": 0.008138903960933261,
+        "confidence": 0.993,
+        "is_learning_word": false
       }
     ],
-    "total_words_extracted": 206,
-    "english_words": 41,
-    "matched_words": 3
+    "total_words_extracted": 86,
+    "english_words": 45,
+    "matched_words": 7
   },
   "page_0002": {
     "image": "images/page_0002.png",
     "words": [
       {
-        "text": "acquaintance",
-        "x": 0.39156229400131837,
-        "y": 0.252972972972973,
-        "width": 0.09294660514172709,
-        "height": 0.015135135135135135,
-        "confidence": 0.979,
-        "is_learning_word": true
+        "text": "ENGLISH",
+        "x": 0.32232496697490093,
+        "y": 0.13744588744588745,
+        "width": 0.3011889035667107,
+        "height": 0.05032467532467533,
+        "confidence": 0.995,
+        "is_learning_word": false
       },
       {
-        "text": "bride",
-        "x": 0.6203032300593276,
-        "y": 0.32594594594594595,
-        "width": 0.03625576796308504,
-        "height": 0.012432432432432432,
-        "confidence": 0.993,
-        "is_learning_word": true
+        "text": "EVERYONE",
+        "x": 0.39762219286657857,
+        "y": 0.1958874458874459,
+        "width": 0.380449141347424,
+        "height": 0.04707792207792208,
+        "confidence": 0.995,
+        "is_learning_word": false
       },
       {
-        "text": "groom",
-        "x": 0.8035596572181938,
-        "y": 0.32756756756756755,
-        "width": 0.03955174686882004,
-        "height": 0.011351351351351352,
+        "text": "FOR",
+        "x": 0.19220607661822986,
+        "y": 0.19642857142857142,
+        "width": 0.1287978863936592,
+        "height": 0.047619047619047616,
+        "confidence": 0.996,
+        "is_learning_word": false
+      },
+      {
+        "text": "DK",
+        "x": 0.21136063408190225,
+        "y": 0.25703463203463206,
+        "width": 0.08850726552179657,
+        "height": 0.06168831168831169,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "ILLUSTRATED",
+        "x": 0.23513870541611626,
+        "y": 0.3344155844155844,
+        "width": 0.18295904887714662,
+        "height": 0.02813852813852814,
         "confidence": 0.993,
-        "is_learning_word": true
+        "is_learning_word": false
+      },
+      {
+        "text": "ENGLISH",
+        "x": 0.42932628797886396,
+        "y": 0.3344155844155844,
+        "width": 0.11889035667107001,
+        "height": 0.02813852813852814,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "DICTIONARY",
+        "x": 0.5607661822985469,
+        "y": 0.3344155844155844,
+        "width": 0.178335535006605,
+        "height": 0.02813852813852814,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "DK",
+        "x": 0.4431968295904888,
+        "y": 0.5795454545454546,
+        "width": 0.02443857331571995,
+        "height": 0.017857142857142856,
+        "confidence": 0.995,
+        "is_learning_word": false
       }
     ],
-    "total_words_extracted": 186,
-    "english_words": 60,
-    "matched_words": 3
+    "total_words_extracted": 32,
+    "english_words": 8,
+    "matched_words": 0
   },
   "page_0003": {
     "image": "images/page_0003.png",
     "words": [
       {
-        "text": "Kwanzaa",
-        "x": 0.5509259259259259,
-        "y": 0.38590785907859076,
-        "width": 0.06084656084656084,
-        "height": 0.013008130081300813,
-        "confidence": 0.992,
-        "is_learning_word": true
-      },
-      {
-        "text": "Holi",
-        "x": 0.5681216931216931,
-        "y": 0.5197831978319783,
-        "width": 0.0291005291005291,
-        "height": 0.012466124661246613,
-        "confidence": 0.982,
-        "is_learning_word": true
-      },
-      {
-        "text": "Passover",
-        "x": 0.7017195767195767,
-        "y": 0.38590785907859076,
-        "width": 0.06018518518518518,
-        "height": 0.013008130081300813,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "Hanukkah",
-        "x": 0.6977513227513228,
-        "y": 0.5197831978319783,
-        "width": 0.06878306878306878,
-        "height": 0.012466124661246613,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "water",
-        "x": 0.7632275132275133,
-        "y": 0.6818428184281843,
-        "width": 0.03902116402116402,
-        "height": 0.010298102981029811,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "christening",
-        "x": 0.6904761904761905,
-        "y": 0.770189701897019,
-        "width": 0.07738095238095238,
-        "height": 0.014092140921409214,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "baptism",
-        "x": 0.6951058201058201,
-        "y": 0.7859078590785907,
-        "width": 0.05026455026455026,
-        "height": 0.013008130081300813,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "carnival",
-        "x": 0.8558201058201058,
-        "y": 0.25203252032520324,
-        "width": 0.05357142857142857,
-        "height": 0.012466124661246613,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "Diwali",
-        "x": 0.8624338624338624,
-        "y": 0.3853658536585366,
-        "width": 0.042328042328042326,
-        "height": 0.013550135501355014,
-        "confidence": 0.994,
-        "is_learning_word": true
-      },
-      {
-        "text": "Baisakhi",
-        "x": 0.8492063492063492,
-        "y": 0.5181571815718157,
-        "width": 0.056878306878306875,
-        "height": 0.015718157181571817,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "Vaisakhi",
-        "x": 0.8452380952380952,
-        "y": 0.5355013550135501,
-        "width": 0.056216931216931214,
-        "height": 0.011924119241192412,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "bar",
-        "x": 0.8379629629629629,
-        "y": 0.770189701897019,
-        "width": 0.023809523809523808,
-        "height": 0.012466124661246613,
-        "confidence": 0.995,
-        "is_learning_word": true
+        "text": "DK",
+        "x": 0.38026315789473686,
+        "y": 0.20270270270270271,
+        "width": 0.02763157894736842,
+        "height": 0.02,
+        "confidence": 0.991,
+        "is_learning_word": false
       }
     ],
-    "total_words_extracted": 218,
-    "english_words": 56,
-    "matched_words": 12
+    "total_words_extracted": 68,
+    "english_words": 1,
+    "matched_words": 0
   },
   "page_0004": {
     "image": "images/page_0004.png",
     "words": [
       {
-        "text": "embryo",
-        "x": 0.8048780487804879,
-        "y": 0.1562162162162162,
-        "width": 0.05471324983520105,
-        "height": 0.016216216216216217,
+        "text": "ENGLISH",
+        "x": 0.334865397242285,
+        "y": 0.17215326497571506,
+        "width": 0.30072225869993435,
+        "height": 0.0528872099298435,
         "confidence": 0.994,
-        "is_learning_word": true
+        "is_learning_word": false
       },
       {
-        "text": "uterus",
-        "x": 0.34673698088332233,
-        "y": 0.28540540540540543,
-        "width": 0.04284772577455504,
-        "height": 0.013513513513513514,
+        "text": "EVERYONE",
+        "x": 0.40840446487196325,
+        "y": 0.2325957906098219,
+        "width": 0.38017071569271177,
+        "height": 0.045871559633027525,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "DK",
+        "x": 0.2206172028890348,
+        "y": 0.2898003237992445,
+        "width": 0.08535784635587657,
+        "height": 0.05936319481921209,
         "confidence": 0.994,
-        "is_learning_word": true
+        "is_learning_word": false
       },
       {
-        "text": "womb",
-        "x": 0.4014502307185234,
-        "y": 0.28540540540540543,
-        "width": 0.04284772577455504,
-        "height": 0.012972972972972972,
+        "text": "FOR",
+        "x": 0.20748522652659226,
+        "y": 0.23475445223961144,
+        "width": 0.12541037426132634,
+        "height": 0.04263356718834323,
+        "confidence": 0.984,
+        "is_learning_word": false
+      },
+      {
+        "text": "ILLUSTRATED",
+        "x": 0.24885095206828628,
+        "y": 0.36859147328656233,
+        "width": 0.18122127380170716,
+        "height": 0.02914193200215866,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "ENGLISH",
+        "x": 0.4412344057780696,
+        "y": 0.36859147328656233,
+        "width": 0.11950098489822718,
+        "height": 0.02914193200215866,
         "confidence": 0.993,
-        "is_learning_word": true
+        "is_learning_word": false
       },
       {
-        "text": "fetus",
-        "x": 0.11601845748187212,
-        "y": 0.538918918918919,
-        "width": 0.034278180619644036,
-        "height": 0.012972972972972972,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "placenta",
-        "x": 0.3085036255767963,
-        "y": 0.5427027027027027,
-        "width": 0.05998681608437706,
-        "height": 0.016216216216216217,
+        "text": "DICTIONARY",
+        "x": 0.571897570584373,
+        "y": 0.36859147328656233,
+        "width": 0.17793827971109652,
+        "height": 0.02914193200215866,
         "confidence": 0.991,
-        "is_learning_word": true
+        "is_learning_word": false
       },
       {
-        "text": "game",
-        "x": 0.5919578114700066,
-        "y": 0.7697297297297298,
-        "width": 0.037574159525379035,
-        "height": 0.014054054054054054,
-        "confidence": 0.983,
-        "is_learning_word": true
+        "text": "HesH",
+        "x": 0.7196323046618516,
+        "y": 0.6724230976794388,
+        "width": 0.04530531845042679,
+        "height": 0.014031300593631947,
+        "confidence": 0.209,
+        "is_learning_word": false
       },
       {
-        "text": "trampoline",
-        "x": 0.5510876730388925,
-        "y": 0.9037837837837838,
-        "width": 0.07646671061305207,
-        "height": 0.013513513513513514,
-        "confidence": 0.985,
-        "is_learning_word": true
+        "text": "X",
+        "x": 0.8135259356533159,
+        "y": 0.7393416082029142,
+        "width": 0.028890347997373604,
+        "height": 0.03993524015110631,
+        "confidence": 0.366,
+        "is_learning_word": false
       },
       {
-        "text": "midwife",
-        "x": 0.7106130520764667,
-        "y": 0.3864864864864865,
-        "width": 0.05669083717864205,
-        "height": 0.013513513513513514,
+        "text": "DK",
+        "x": 0.4563361785948785,
+        "y": 0.8650836481381543,
+        "width": 0.05909389363099146,
+        "height": 0.033998920669185105,
         "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "jigsaw",
-        "x": 0.6928147659854977,
-        "y": 0.9032432432432432,
-        "width": 0.04218852999340804,
-        "height": 0.014594594594594595,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "obstetrician",
-        "x": 0.8490441661173368,
-        "y": 0.38756756756756755,
-        "width": 0.07976268951878708,
-        "height": 0.012432432432432432,
-        "confidence": 0.992,
-        "is_learning_word": true
+        "is_learning_word": false
       }
     ],
-    "total_words_extracted": 194,
-    "english_words": 49,
-    "matched_words": 10
+    "total_words_extracted": 19,
+    "english_words": 10,
+    "matched_words": 0
   },
   "page_0005": {
     "image": "images/page_0005.png",
     "words": [
       {
-        "text": "stroller",
-        "x": 0.08928571428571429,
-        "y": 0.25216450216450215,
-        "width": 0.047619047619047616,
-        "height": 0.01461038961038961,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "carriage",
-        "x": 0.25,
-        "y": 0.25216450216450215,
-        "width": 0.05423280423280423,
-        "height": 0.015151515151515152,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "rash",
-        "x": 0.1388888888888889,
-        "y": 0.5194805194805194,
-        "width": 0.027777777777777776,
-        "height": 0.01406926406926407,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "rash",
-        "x": 0.06613756613756613,
-        "y": 0.5508658008658008,
-        "width": 0.027777777777777776,
-        "height": 0.012987012987012988,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "pacifier",
-        "x": 0.5390211640211641,
-        "y": 0.2527056277056277,
-        "width": 0.051587301587301584,
-        "height": 0.01461038961038961,
-        "confidence": 0.946,
-        "is_learning_word": true
-      },
-      {
-        "text": "potty",
-        "x": 0.5621693121693122,
-        "y": 0.387987012987013,
-        "width": 0.037698412698412696,
-        "height": 0.012445887445887446,
-        "confidence": 0.989,
-        "is_learning_word": true
-      },
-      {
-        "text": "playpen",
-        "x": 0.5529100529100529,
-        "y": 0.5211038961038961,
-        "width": 0.05555555555555555,
-        "height": 0.013528138528138528,
-        "confidence": 0.994,
-        "is_learning_word": true
-      },
-      {
-        "text": "rattle",
-        "x": 0.7129629629629629,
-        "y": 0.2537878787878788,
-        "width": 0.037037037037037035,
-        "height": 0.012445887445887446,
+        "text": "DK",
+        "x": 0.4129581151832461,
+        "y": 0.06573275862068965,
+        "width": 0.04450261780104712,
+        "height": 0.02478448275862069,
         "confidence": 0.995,
-        "is_learning_word": true
+        "is_learning_word": false
       },
       {
-        "text": "toddler",
-        "x": 0.8571428571428571,
-        "y": 0.38582251082251084,
-        "width": 0.05092592592592592,
-        "height": 0.015692640692640692,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "puppet",
-        "x": 0.8359788359788359,
-        "y": 0.862012987012987,
-        "width": 0.05092592592592592,
-        "height": 0.012445887445887446,
+        "text": "Penguin",
+        "x": 0.5071989528795812,
+        "y": 0.05334051724137931,
+        "width": 0.09293193717277487,
+        "height": 0.02101293103448276,
         "confidence": 0.994,
-        "is_learning_word": true
+        "is_learning_word": false
+      },
+      {
+        "text": "Random",
+        "x": 0.5085078534031413,
+        "y": 0.07273706896551724,
+        "width": 0.08376963350785341,
+        "height": 0.018318965517241378,
+        "confidence": 0.992,
+        "is_learning_word": false
+      },
+      {
+        "text": "House",
+        "x": 0.5078534031413613,
+        "y": 0.09159482758620689,
+        "width": 0.0693717277486911,
+        "height": 0.017241379310344827,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "English",
+        "x": 0.34293193717277487,
+        "y": 0.11637931034482758,
+        "width": 0.046465968586387435,
+        "height": 0.015086206896551725,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "for",
+        "x": 0.3933246073298429,
+        "y": 0.11637931034482758,
+        "width": 0.01767015706806283,
+        "height": 0.015086206896551725,
+        "confidence": 0.996,
+        "is_learning_word": false
+      },
+      {
+        "text": "Everyone",
+        "x": 0.41492146596858637,
+        "y": 0.11637931034482758,
+        "width": 0.05693717277486911,
+        "height": 0.015086206896551725,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "Illustrated",
+        "x": 0.4757853403141361,
+        "y": 0.11637931034482758,
+        "width": 0.06348167539267016,
+        "height": 0.015086206896551725,
+        "confidence": 0.983,
+        "is_learning_word": false
+      },
+      {
+        "text": "English",
+        "x": 0.5425392670157068,
+        "y": 0.11637931034482758,
+        "width": 0.046465968586387435,
+        "height": 0.015625,
+        "confidence": 0.98,
+        "is_learning_word": false
+      },
+      {
+        "text": "Dictionary",
+        "x": 0.5929319371727748,
+        "y": 0.11637931034482758,
+        "width": 0.06740837696335078,
+        "height": 0.015625,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "Copyright",
+        "x": 0.3566753926701571,
+        "y": 0.1341594827586207,
+        "width": 0.06282722513089005,
+        "height": 0.014547413793103448,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "Dorling",
+        "x": 0.43651832460732987,
+        "y": 0.1341594827586207,
+        "width": 0.047774869109947646,
+        "height": 0.014547413793103448,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "Kindersley",
+        "x": 0.487565445026178,
+        "y": 0.1341594827586207,
+        "width": 0.06675392670157068,
+        "height": 0.014547413793103448,
+        "confidence": 0.991,
+        "is_learning_word": false
+      },
+      {
+        "text": "A",
+        "x": 0.3887434554973822,
+        "y": 0.15193965517241378,
+        "width": 0.008507853403141362,
+        "height": 0.013469827586206896,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "Penguin",
+        "x": 0.4018324607329843,
+        "y": 0.15140086206896552,
+        "width": 0.051047120418848166,
+        "height": 0.014547413793103448,
+        "confidence": 0.992,
+        "is_learning_word": false
+      },
+      {
+        "text": "Random",
+        "x": 0.456151832460733,
+        "y": 0.15140086206896552,
+        "width": 0.04908376963350786,
+        "height": 0.014547413793103448,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "House",
+        "x": 0.5117801047120419,
+        "y": 0.15140086206896552,
+        "width": 0.03992146596858639,
+        "height": 0.015086206896551725,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "Company",
+        "x": 0.5549738219895288,
+        "y": 0.15193965517241378,
+        "width": 0.060209424083769635,
+        "height": 0.014547413793103448,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "DK",
+        "x": 0.3239528795811518,
+        "y": 0.2408405172413793,
+        "width": 0.017015706806282723,
+        "height": 0.015086206896551725,
+        "confidence": 0.98,
+        "is_learning_word": false
+      },
+      {
+        "text": "DK",
+        "x": 0.46335078534031415,
+        "y": 0.24030172413793102,
+        "width": 0.01832460732984293,
+        "height": 0.016163793103448277,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "English",
+        "x": 0.39856020942408377,
+        "y": 0.27262931034482757,
+        "width": 0.061518324607329845,
+        "height": 0.016163793103448277,
+        "confidence": 0.99,
+        "is_learning_word": false
+      },
+      {
+        "text": "for",
+        "x": 0.4666230366492147,
+        "y": 0.27316810344827586,
+        "width": 0.024214659685863876,
+        "height": 0.015625,
+        "confidence": 0.992,
+        "is_learning_word": false
+      },
+      {
+        "text": "Everyone",
+        "x": 0.4967277486910995,
+        "y": 0.27316810344827586,
+        "width": 0.0693717277486911,
+        "height": 0.015625,
+        "confidence": 0.992,
+        "is_learning_word": false
+      },
+      {
+        "text": "Illustrated",
+        "x": 0.569371727748691,
+        "y": 0.27316810344827586,
+        "width": 0.09031413612565445,
+        "height": 0.015625,
+        "confidence": 0.928,
+        "is_learning_word": false
+      },
+      {
+        "text": "English",
+        "x": 0.2912303664921466,
+        "y": 0.28933189655172414,
+        "width": 0.055628272251308904,
+        "height": 0.014547413793103448,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "Dictionary",
+        "x": 0.35471204188481675,
+        "y": 0.28987068965517243,
+        "width": 0.08115183246073299,
+        "height": 0.014008620689655173,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "ISBN",
+        "x": 0.32460732984293195,
+        "y": 0.30549568965517243,
+        "width": 0.029450261780104712,
+        "height": 0.01293103448275862,
+        "confidence": 0.983,
+        "is_learning_word": false
+      },
+      {
+        "text": "CIP",
+        "x": 0.4319371727748691,
+        "y": 0.3771551724137931,
+        "width": 0.0274869109947644,
+        "height": 0.016163793103448277,
+        "confidence": 0.987,
+        "is_learning_word": false
+      },
+      {
+        "text": "DK",
+        "x": 0.2912303664921466,
+        "y": 0.4105603448275862,
+        "width": 0.018979057591623036,
+        "height": 0.015625,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "DK",
+        "x": 0.2912303664921466,
+        "y": 0.42887931034482757,
+        "width": 0.020287958115183247,
+        "height": 0.015086206896551725,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "YINGYU",
+        "x": 0.3193717277486911,
+        "y": 0.42941810344827586,
+        "width": 0.05955497382198953,
+        "height": 0.014008620689655173,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "CI",
+        "x": 0.43782722513089006,
+        "y": 0.42941810344827586,
+        "width": 0.015706806282722512,
+        "height": 0.014547413793103448,
+        "confidence": 0.745,
+        "is_learning_word": false
+      },
+      {
+        "text": "ISBN",
+        "x": 0.2912303664921466,
+        "y": 0.8168103448275862,
+        "width": 0.03206806282722513,
+        "height": 0.014547413793103448,
+        "confidence": 0.983,
+        "is_learning_word": false
+      },
+      {
+        "text": "FSC",
+        "x": 0.45157068062827227,
+        "y": 0.9245689655172413,
+        "width": 0.02617801047120419,
+        "height": 0.009698275862068966,
+        "confidence": 0.996,
+        "is_learning_word": false
       }
     ],
-    "total_words_extracted": 230,
-    "english_words": 58,
-    "matched_words": 10
+    "total_words_extracted": 351,
+    "english_words": 34,
+    "matched_words": 0
   },
   "page_0006": {
     "image": "images/page_0006.png",
-    "words": [
-      {
-        "text": "shower",
-        "x": 0.5596572181938035,
-        "y": 0.2718918918918919,
-        "width": 0.049439683586025046,
-        "height": 0.010810810810810811,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "dressed",
-        "x": 0.7330257086354647,
-        "y": 0.3881081081081081,
-        "width": 0.053394858272907054,
-        "height": 0.014594594594594595,
-        "confidence": 0.995,
-        "is_learning_word": true
-      }
-    ],
-    "total_words_extracted": 266,
-    "english_words": 120,
-    "matched_words": 2
+    "words": [],
+    "total_words_extracted": 237,
+    "english_words": 0,
+    "matched_words": 0
   },
   "page_0007": {
     "image": "images/page_0007.png",
-    "words": [
-      {
-        "text": "overtime",
-        "x": 0.23712021136063408,
-        "y": 0.4043360433604336,
-        "width": 0.0607661822985469,
-        "height": 0.012466124661246613,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "lawn",
-        "x": 0.7173051519154557,
-        "y": 0.5376693766937669,
-        "width": 0.031043593130779392,
-        "height": 0.01084010840108401,
-        "confidence": 0.992,
-        "is_learning_word": true
-      },
-      {
-        "text": "water",
-        "x": 0.7199471598414795,
-        "y": 0.9062330623306233,
-        "width": 0.03896961690885073,
-        "height": 0.012466124661246613,
-        "confidence": 0.995,
-        "is_learning_word": true
-      }
-    ],
-    "total_words_extracted": 355,
-    "english_words": 146,
-    "matched_words": 3
+    "words": [],
+    "total_words_extracted": 221,
+    "english_words": 0,
+    "matched_words": 0
   },
   "page_0008": {
     "image": "images/page_0008.png",
-    "words": [
-      {
-        "text": "secretive",
-        "x": 0.4093915343915344,
-        "y": 0.5241192411924119,
-        "width": 0.06018518518518518,
-        "height": 0.011924119241192412,
-        "confidence": 0.994,
-        "is_learning_word": true
-      },
-      {
-        "text": "nervous",
-        "x": 0.4126984126984127,
-        "y": 0.9100271002710028,
-        "width": 0.05555555555555555,
-        "height": 0.00975609756097561,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "assertive",
-        "x": 0.8624338624338624,
-        "y": 0.25691056910569104,
-        "width": 0.05886243386243386,
-        "height": 0.011382113821138212,
-        "confidence": 0.994,
-        "is_learning_word": true
-      }
-    ],
-    "total_words_extracted": 206,
-    "english_words": 37,
-    "matched_words": 3
+    "words": [],
+    "total_words_extracted": 226,
+    "english_words": 0,
+    "matched_words": 0
   },
   "page_0009": {
     "image": "images/page_0009.png",
-    "words": [
-      {
-        "text": "eccentric",
-        "x": 0.24519549370444002,
-        "y": 0.656910569105691,
-        "width": 0.061630218687872766,
-        "height": 0.011924119241192412,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "approachable",
-        "x": 0.07886017229953611,
-        "y": 0.9056910569105691,
-        "width": 0.09542743538767395,
-        "height": 0.013550135501355014,
-        "confidence": 0.99,
-        "is_learning_word": true
-      },
-      {
-        "text": "decisive",
-        "x": 0.40092776673293573,
-        "y": 0.9067750677506775,
-        "width": 0.05500331345261763,
-        "height": 0.012466124661246613,
-        "confidence": 0.979,
-        "is_learning_word": true
-      },
-      {
-        "text": "arrogant",
-        "x": 0.5506958250497018,
-        "y": 0.7897018970189702,
-        "width": 0.058979456593770706,
-        "height": 0.013008130081300813,
-        "confidence": 0.994,
-        "is_learning_word": true
-      },
-      {
-        "text": "meticulous",
-        "x": 0.5414181577203446,
-        "y": 0.9067750677506775,
-        "width": 0.07687210072895957,
-        "height": 0.013008130081300813,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "considerate",
-        "x": 0.6911862160371107,
-        "y": 0.7897018970189702,
-        "width": 0.07952286282306163,
-        "height": 0.012466124661246613,
-        "confidence": 0.994,
-        "is_learning_word": true
-      },
-      {
-        "text": "clumsy",
-        "x": 0.707090788601723,
-        "y": 0.9073170731707317,
-        "width": 0.04903909874088801,
-        "height": 0.014092140921409214,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "impulsive",
-        "x": 0.8475811795891319,
-        "y": 0.6558265582655827,
-        "width": 0.06759443339960239,
-        "height": 0.014092140921409214,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "adventurous",
-        "x": 0.8383035122597747,
-        "y": 0.7897018970189702,
-        "width": 0.08681245858184228,
-        "height": 0.012466124661246613,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "thoughtless",
-        "x": 0.8402915838303512,
-        "y": 0.9067750677506775,
-        "width": 0.08349900596421471,
-        "height": 0.014092140921409214,
-        "confidence": 0.993,
-        "is_learning_word": true
-      }
-    ],
-    "total_words_extracted": 156,
-    "english_words": 27,
-    "matched_words": 10
+    "words": [],
+    "total_words_extracted": 231,
+    "english_words": 0,
+    "matched_words": 0
   },
   "page_0010": {
     "image": "images/page_0010.png",
     "words": [
       {
-        "text": "throw",
-        "x": 0.5805168986083499,
-        "y": 0.3897018970189702,
-        "width": 0.03644797879390325,
-        "height": 0.011924119241192412,
-        "confidence": 0.995,
-        "is_learning_word": true
+        "text": "A",
+        "x": 0.9146421536441235,
+        "y": 0.11675675675675676,
+        "width": 0.03939592908732764,
+        "height": 0.04810810810810811,
+        "confidence": 0.868,
+        "is_learning_word": false
       },
       {
-        "text": "hop",
-        "x": 0.43538767395626243,
-        "y": 0.5235772357723577,
-        "width": 0.027170311464546057,
-        "height": 0.013008130081300813,
-        "confidence": 0.989,
-        "is_learning_word": true
-      },
-      {
-        "text": "creep",
-        "x": 0.7322730284956925,
-        "y": 0.5246612466124662,
-        "width": 0.03644797879390325,
-        "height": 0.011924119241192412,
+        "text": "learn",
+        "x": 0.5922521339461589,
+        "y": 0.3681081081081081,
+        "width": 0.034143138542350626,
+        "height": 0.013513513513513514,
         "confidence": 0.994,
-        "is_learning_word": true
+        "is_learning_word": false
       },
       {
-        "text": "stand",
-        "x": 0.873426110006627,
-        "y": 0.7897018970189702,
-        "width": 0.038436050364479786,
-        "height": 0.014092140921409214,
+        "text": "some",
+        "x": 0.6296782665791202,
+        "y": 0.36864864864864866,
+        "width": 0.038739330269205514,
+        "height": 0.013513513513513514,
+        "confidence": 0.963,
+        "is_learning_word": false
+      },
+      {
+        "text": "words",
+        "x": 0.5607353906762967,
+        "y": 0.3837837837837838,
+        "width": 0.04136572554169402,
+        "height": 0.014594594594594595,
         "confidence": 0.995,
-        "is_learning_word": true
+        "is_learning_word": false
+      },
+      {
+        "text": "for",
+        "x": 0.6053841103086014,
+        "y": 0.3837837837837838,
+        "width": 0.018384766907419567,
+        "height": 0.014594594594594595,
+        "confidence": 0.996,
+        "is_learning_word": false
+      },
+      {
+        "text": "I",
+        "x": 0.7209455022980958,
+        "y": 0.6470270270270271,
+        "width": 0.003282994090610637,
+        "height": 0.015135135135135135,
+        "confidence": 0.88,
+        "is_learning_word": false
+      },
+      {
+        "text": "have",
+        "x": 0.7275114904793172,
+        "y": 0.6470270270270271,
+        "width": 0.03217334208798424,
+        "height": 0.015135135135135135,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "read",
+        "x": 0.762967826657912,
+        "y": 0.6470270270270271,
+        "width": 0.030860144451739988,
+        "height": 0.015675675675675675,
+        "confidence": 0.992,
+        "is_learning_word": false
+      },
+      {
+        "text": "more",
+        "x": 0.7971109652002626,
+        "y": 0.6470270270270271,
+        "width": 0.03545633617859488,
+        "height": 0.015675675675675675,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "than",
+        "x": 0.8365068942875903,
+        "y": 0.6470270270270271,
+        "width": 0.03151674326986211,
+        "height": 0.015675675675675675,
+        "confidence": 0.993,
+        "is_learning_word": false
       }
     ],
-    "total_words_extracted": 185,
-    "english_words": 72,
-    "matched_words": 4
+    "total_words_extracted": 147,
+    "english_words": 10,
+    "matched_words": 0
   },
   "page_0011": {
     "image": "images/page_0011.png",
     "words": [
       {
-        "text": "juggle",
-        "x": 0.10868124585818423,
-        "y": 0.9046070460704607,
-        "width": 0.04572564612326044,
-        "height": 0.014092140921409214,
+        "text": "DK",
+        "x": 0.08092105263157895,
+        "y": 0.10876623376623376,
+        "width": 0.025657894736842105,
+        "height": 0.017857142857142856,
+        "confidence": 0.987,
+        "is_learning_word": false
+      },
+      {
+        "text": "awning",
+        "x": 0.35657894736842105,
+        "y": 0.36038961038961037,
+        "width": 0.03223684210526316,
+        "height": 0.0091991341991342,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "to",
+        "x": 0.5177631578947368,
+        "y": 0.36038961038961037,
+        "width": 0.008552631578947369,
+        "height": 0.007575757575757576,
+        "confidence": 0.996,
+        "is_learning_word": false
+      },
+      {
+        "text": "serve",
+        "x": 0.5282894736842105,
+        "y": 0.36038961038961037,
+        "width": 0.023026315789473683,
+        "height": 0.007575757575757576,
+        "confidence": 0.991,
+        "is_learning_word": false
+      },
+      {
+        "text": "server",
+        "x": 0.6006578947368421,
+        "y": 0.3398268398268398,
+        "width": 0.025657894736842105,
+        "height": 0.008658008658008658,
+        "confidence": 0.993,
+        "is_learning_word": true
+      },
+      {
+        "text": "waitress",
+        "x": 0.5881578947368421,
+        "y": 0.3495670995670996,
+        "width": 0.034868421052631576,
+        "height": 0.008658008658008658,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "espresso",
+        "x": 0.7006578947368421,
+        "y": 0.3409090909090909,
+        "width": 0.03684210526315789,
+        "height": 0.008116883116883116,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "double",
+        "x": 0.6697368421052632,
+        "y": 0.3685064935064935,
+        "width": 0.030263157894736843,
+        "height": 0.008116883116883116,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "espresso",
+        "x": 0.6631578947368421,
+        "y": 0.3787878787878788,
+        "width": 0.03684210526315789,
+        "height": 0.007575757575757576,
         "confidence": 0.995,
         "is_learning_word": true
+      },
+      {
+        "text": "cortado",
+        "x": 0.7013157894736842,
+        "y": 0.43777056277056275,
+        "width": 0.03355263157894737,
+        "height": 0.008658008658008658,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "white",
+        "x": 0.8375,
+        "y": 0.34415584415584416,
+        "width": 0.024342105263157894,
+        "height": 0.008658008658008658,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "coffee",
+        "x": 0.825,
+        "y": 0.35443722943722944,
+        "width": 0.02631578947368421,
+        "height": 0.007575757575757576,
+        "confidence": 0.992,
+        "is_learning_word": false
+      },
+      {
+        "text": "menu",
+        "x": 0.9638157894736842,
+        "y": 0.3403679653679654,
+        "width": 0.025,
+        "height": 0.008116883116883116,
+        "confidence": 0.982,
+        "is_learning_word": false
+      },
+      {
+        "text": "ba",
+        "x": 0.9796052631578948,
+        "y": 0.36038961038961037,
+        "width": 0.010526315789473684,
+        "height": 0.007575757575757576,
+        "confidence": 0.768,
+        "is_learning_word": false
+      },
+      {
+        "text": "iced",
+        "x": 0.7894736842105263,
+        "y": 0.36688311688311687,
+        "width": 0.018421052631578946,
+        "height": 0.0091991341991342,
+        "confidence": 0.983,
+        "is_learning_word": false
+      },
+      {
+        "text": "coffee",
+        "x": 0.7776315789473685,
+        "y": 0.37716450216450215,
+        "width": 0.02631578947368421,
+        "height": 0.008658008658008658,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "Could",
+        "x": 0.44802631578947366,
+        "y": 0.4231601731601732,
+        "width": 0.025,
+        "height": 0.0091991341991342,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "I",
+        "x": 0.475,
+        "y": 0.4231601731601732,
+        "width": 0.002631578947368421,
+        "height": 0.0091991341991342,
+        "confidence": 0.754,
+        "is_learning_word": false
+      },
+      {
+        "text": "have",
+        "x": 0.47960526315789476,
+        "y": 0.4237012987012987,
+        "width": 0.021710526315789475,
+        "height": 0.008658008658008658,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "extra",
+        "x": 0.43223684210526314,
+        "y": 0.43398268398268397,
+        "width": 0.021710526315789475,
+        "height": 0.007575757575757576,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "flat",
+        "x": 0.8157894736842105,
+        "y": 0.45292207792207795,
+        "width": 0.015131578947368421,
+        "height": 0.008116883116883116,
+        "confidence": 0.992,
+        "is_learning_word": false
+      },
+      {
+        "text": "white",
+        "x": 0.8039473684210526,
+        "y": 0.46320346320346323,
+        "width": 0.02368421052631579,
+        "height": 0.007575757575757576,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "table",
+        "x": 0.32302631578947366,
+        "y": 0.5054112554112554,
+        "width": 0.02236842105263158,
+        "height": 0.008116883116883116,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "stool",
+        "x": 0.3605263157894737,
+        "y": 0.6201298701298701,
+        "width": 0.021710526315789475,
+        "height": 0.007575757575757576,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "sidewalk",
+        "x": 0.4697368421052632,
+        "y": 0.6195887445887446,
+        "width": 0.03684210526315789,
+        "height": 0.008658008658008658,
+        "confidence": 0.989,
+        "is_learning_word": true
+      },
+      {
+        "text": "pavement",
+        "x": 0.4631578947368421,
+        "y": 0.6293290043290043,
+        "width": 0.04342105263157895,
+        "height": 0.008658008658008658,
+        "confidence": 0.989,
+        "is_learning_word": false
+      },
+      {
+        "text": "filter",
+        "x": 0.7052631578947368,
+        "y": 0.5032467532467533,
+        "width": 0.021710526315789475,
+        "height": 0.008658008658008658,
+        "confidence": 0.983,
+        "is_learning_word": false
+      },
+      {
+        "text": "coffee",
+        "x": 0.7006578947368421,
+        "y": 0.5124458874458875,
+        "width": 0.025,
+        "height": 0.008658008658008658,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "milk",
+        "x": 0.7289473684210527,
+        "y": 0.5741341991341992,
+        "width": 0.018421052631578946,
+        "height": 0.008658008658008658,
+        "confidence": 0.991,
+        "is_learning_word": true
+      },
+      {
+        "text": "cappuccino",
+        "x": 0.7203947368421053,
+        "y": 0.6206709956709957,
+        "width": 0.049342105263157895,
+        "height": 0.008116883116883116,
+        "confidence": 0.992,
+        "is_learning_word": false
+      },
+      {
+        "text": "froth",
+        "x": 0.8296052631578947,
+        "y": 0.5562770562770563,
+        "width": 0.021052631578947368,
+        "height": 0.008658008658008658,
+        "confidence": 0.545,
+        "is_learning_word": true
+      },
+      {
+        "text": "coffee",
+        "x": 0.8355263157894737,
+        "y": 0.6195887445887446,
+        "width": 0.026973684210526316,
+        "height": 0.008116883116883116,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "AL",
+        "x": 0.9243421052631579,
+        "y": 0.4301948051948052,
+        "width": 0.008552631578947369,
+        "height": 0.00487012987012987,
+        "confidence": 0.732,
+        "is_learning_word": false
+      },
+      {
+        "text": "col",
+        "x": 0.9769736842105263,
+        "y": 0.5551948051948052,
+        "width": 0.0125,
+        "height": 0.008658008658008658,
+        "confidence": 0.749,
+        "is_learning_word": false
+      },
+      {
+        "text": "mach",
+        "x": 0.9664473684210526,
+        "y": 0.566017316017316,
+        "width": 0.021710526315789475,
+        "height": 0.007575757575757576,
+        "confidence": 0.545,
+        "is_learning_word": false
+      },
+      {
+        "text": "blender",
+        "x": 0.3414473684210526,
+        "y": 0.7462121212121212,
+        "width": 0.0375,
+        "height": 0.0091991341991342,
+        "confidence": 0.992,
+        "is_learning_word": true
+      },
+      {
+        "text": "coconut",
+        "x": 0.4230263157894737,
+        "y": 0.7472943722943723,
+        "width": 0.035526315789473684,
+        "height": 0.007034632034632035,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "water",
+        "x": 0.4605263157894737,
+        "y": 0.7472943722943723,
+        "width": 0.024342105263157894,
+        "height": 0.007034632034632035,
+        "confidence": 0.993,
+        "is_learning_word": true
+      },
+      {
+        "text": "orange",
+        "x": 0.5269736842105263,
+        "y": 0.7472943722943723,
+        "width": 0.029605263157894735,
+        "height": 0.008116883116883116,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "juice",
+        "x": 0.5585526315789474,
+        "y": 0.7467532467532467,
+        "width": 0.021052631578947368,
+        "height": 0.008658008658008658,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "with",
+        "x": 0.5263157894736842,
+        "y": 0.7564935064935064,
+        "width": 0.018421052631578946,
+        "height": 0.008116883116883116,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "pulp",
+        "x": 0.5473684210526316,
+        "y": 0.7564935064935064,
+        "width": 0.019736842105263157,
+        "height": 0.0091991341991342,
+        "confidence": 0.991,
+        "is_learning_word": true
+      },
+      {
+        "text": "smooth",
+        "x": 0.6322368421052632,
+        "y": 0.7467532467532467,
+        "width": 0.031578947368421054,
+        "height": 0.007575757575757576,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "orange",
+        "x": 0.6157894736842106,
+        "y": 0.7564935064935064,
+        "width": 0.029605263157894735,
+        "height": 0.008658008658008658,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "juice",
+        "x": 0.6473684210526316,
+        "y": 0.7564935064935064,
+        "width": 0.02236842105263158,
+        "height": 0.008658008658008658,
+        "confidence": 0.987,
+        "is_learning_word": false
+      },
+      {
+        "text": "apple",
+        "x": 0.7138157894736842,
+        "y": 0.7462121212121212,
+        "width": 0.02368421052631579,
+        "height": 0.0091991341991342,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "juice",
+        "x": 0.7394736842105263,
+        "y": 0.7462121212121212,
+        "width": 0.021052631578947368,
+        "height": 0.0091991341991342,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "pineapple",
+        "x": 0.7967105263157894,
+        "y": 0.7462121212121212,
+        "width": 0.04276315789473684,
+        "height": 0.008658008658008658,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "juice",
+        "x": 0.8407894736842105,
+        "y": 0.7456709956709957,
+        "width": 0.021710526315789475,
+        "height": 0.0091991341991342,
+        "confidence": 0.992,
+        "is_learning_word": false
+      },
+      {
+        "text": "tomato",
+        "x": 0.34078947368421053,
+        "y": 0.8198051948051948,
+        "width": 0.030921052631578946,
+        "height": 0.008658008658008658,
+        "confidence": 0.964,
+        "is_learning_word": false
+      },
+      {
+        "text": "juice",
+        "x": 0.3736842105263158,
+        "y": 0.8198051948051948,
+        "width": 0.021052631578947368,
+        "height": 0.008116883116883116,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "mango",
+        "x": 0.4328947368421053,
+        "y": 0.8198051948051948,
+        "width": 0.030263157894736843,
+        "height": 0.008116883116883116,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "juice",
+        "x": 0.4651315789473684,
+        "y": 0.8198051948051948,
+        "width": 0.020394736842105264,
+        "height": 0.008116883116883116,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "cranberry",
+        "x": 0.5223684210526316,
+        "y": 0.8192640692640693,
+        "width": 0.04078947368421053,
+        "height": 0.008658008658008658,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "juice",
+        "x": 0.5651315789473684,
+        "y": 0.8192640692640693,
+        "width": 0.021052631578947368,
+        "height": 0.008658008658008658,
+        "confidence": 0.961,
+        "is_learning_word": false
+      },
+      {
+        "text": "strawberry",
+        "x": 0.625,
+        "y": 0.8198051948051948,
+        "width": 0.04671052631578947,
+        "height": 0.008116883116883116,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "smoothie",
+        "x": 0.6223684210526316,
+        "y": 0.8295454545454546,
+        "width": 0.039473684210526314,
+        "height": 0.007575757575757576,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "chocolate",
+        "x": 0.7157894736842105,
+        "y": 0.8192640692640693,
+        "width": 0.042105263157894736,
+        "height": 0.008116883116883116,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "milkshake",
+        "x": 0.7085526315789473,
+        "y": 0.829004329004329,
+        "width": 0.04342105263157895,
+        "height": 0.008116883116883116,
+        "confidence": 0.993,
+        "is_learning_word": true
+      },
+      {
+        "text": "san",
+        "x": 0.9763157894736842,
+        "y": 0.7462121212121212,
+        "width": 0.01381578947368421,
+        "height": 0.008116883116883116,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "strawberry",
+        "x": 0.8078947368421052,
+        "y": 0.8187229437229437,
+        "width": 0.04802631578947368,
+        "height": 0.0091991341991342,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "milkshake",
+        "x": 0.8032894736842106,
+        "y": 0.829004329004329,
+        "width": 0.04342105263157895,
+        "height": 0.008116883116883116,
+        "confidence": 0.995,
+        "is_learning_word": true
+      },
+      {
+        "text": "S",
+        "x": 0.9855263157894737,
+        "y": 0.8192640692640693,
+        "width": 0.004605263157894736,
+        "height": 0.007575757575757576,
+        "confidence": 0.756,
+        "is_learning_word": false
+      },
+      {
+        "text": "App",
+        "x": 0.5888157894736842,
+        "y": 0.9036796536796536,
+        "width": 0.02368421052631579,
+        "height": 0.012987012987012988,
+        "confidence": 0.986,
+        "is_learning_word": false
       }
     ],
-    "total_words_extracted": 180,
-    "english_words": 68,
-    "matched_words": 1
+    "total_words_extracted": 540,
+    "english_words": 64,
+    "matched_words": 15
   },
   "page_0012": {
     "image": "images/page_0012.png",
     "words": [
       {
-        "text": "style",
-        "x": 0.43691899070385126,
-        "y": 0.2552845528455285,
-        "width": 0.033200531208499334,
-        "height": 0.015718157181571817,
+        "text": "cocoa",
+        "x": 0.10394736842105264,
+        "y": 0.3497297297297297,
+        "width": 0.025657894736842105,
+        "height": 0.008108108108108109,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "powder",
+        "x": 0.09539473684210527,
+        "y": 0.36,
+        "width": 0.034210526315789476,
+        "height": 0.0075675675675675675,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "Irish",
+        "x": 0.1875,
+        "y": 0.34864864864864864,
+        "width": 0.017105263157894738,
+        "height": 0.008108108108108109,
+        "confidence": 0.918,
+        "is_learning_word": false
+      },
+      {
+        "text": "coffee",
+        "x": 0.20789473684210527,
+        "y": 0.34864864864864864,
+        "width": 0.02631578947368421,
+        "height": 0.008648648648648649,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "n",
+        "x": 0.009868421052631578,
+        "y": 0.39135135135135135,
+        "width": 0.005263157894736842,
+        "height": 0.008648648648648649,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "espresso",
+        "x": 0.017105263157894738,
+        "y": 0.39135135135135135,
+        "width": 0.0375,
+        "height": 0.008648648648648649,
         "confidence": 0.995,
         "is_learning_word": true
       },
       {
-        "text": "pores",
-        "x": 0.27224435590969454,
-        "y": 0.6579945799457995,
-        "width": 0.0398406374501992,
-        "height": 0.012466124661246613,
+        "text": "to",
+        "x": 0.056578947368421055,
+        "y": 0.39135135135135135,
+        "width": 0.009210526315789473,
+        "height": 0.008648648648648649,
+        "confidence": 0.997,
+        "is_learning_word": false
+      },
+      {
+        "text": "customer",
+        "x": 0.034868421052631576,
+        "y": 0.6210810810810811,
+        "width": 0.04013157894736842,
+        "height": 0.0075675675675675675,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "black",
+        "x": 0.15394736842105264,
+        "y": 0.6205405405405405,
+        "width": 0.023026315789473683,
+        "height": 0.008648648648648649,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "coffee",
+        "x": 0.17894736842105263,
+        "y": 0.62,
+        "width": 0.026973684210526316,
+        "height": 0.009189189189189189,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "parasol",
+        "x": 0.3111842105263158,
+        "y": 0.35027027027027025,
+        "width": 0.03223684210526316,
+        "height": 0.007027027027027027,
         "confidence": 0.993,
         "is_learning_word": true
       },
       {
-        "text": "mustache",
-        "x": 0.4163346613545817,
-        "y": 0.6439024390243903,
-        "width": 0.06772908366533864,
-        "height": 0.014092140921409214,
+        "text": "terrace",
+        "x": 0.3203947368421053,
+        "y": 0.6210810810810811,
+        "width": 0.030263157894736843,
+        "height": 0.008648648648648649,
         "confidence": 0.994,
         "is_learning_word": true
       },
       {
-        "text": "center",
-        "x": 0.8452855245683931,
-        "y": 0.5224932249322494,
-        "width": 0.041168658698539175,
-        "height": 0.016260162601626018,
-        "confidence": 0.993,
+        "text": "railing",
+        "x": 0.4019736842105263,
+        "y": 0.6210810810810811,
+        "width": 0.026973684210526316,
+        "height": 0.008648648648648649,
+        "confidence": 0.986,
         "is_learning_word": true
       },
       {
-        "text": "goatee",
-        "x": 0.8147410358565738,
-        "y": 0.6753387533875339,
-        "width": 0.04780876494023904,
-        "height": 0.011924119241192412,
+        "text": "run",
+        "x": 0.2894736842105263,
+        "y": 0.6718918918918919,
+        "width": 0.014473684210526316,
+        "height": 0.008648648648648649,
+        "confidence": 0.989,
+        "is_learning_word": false
+      },
+      {
+        "text": "out",
+        "x": 0.30723684210526314,
+        "y": 0.6718918918918919,
+        "width": 0.014473684210526316,
+        "height": 0.008648648648648649,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "of",
+        "x": 0.3236842105263158,
+        "y": 0.6718918918918919,
+        "width": 0.008552631578947369,
+        "height": 0.008648648648648649,
+        "confidence": 0.996,
+        "is_learning_word": false
+      },
+      {
+        "text": "pancake",
+        "x": 0.05460526315789474,
+        "y": 0.745945945945946,
+        "width": 0.03618421052631579,
+        "height": 0.008648648648648649,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "waffle",
+        "x": 0.15328947368421053,
+        "y": 0.745945945945946,
+        "width": 0.02631578947368421,
+        "height": 0.008108108108108109,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "beverages",
+        "x": 0.22631578947368422,
+        "y": 0.7389189189189189,
+        "width": 0.045394736842105265,
+        "height": 0.008108108108108109,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "snacks",
+        "x": 0.24210526315789474,
+        "y": 0.7751351351351351,
+        "width": 0.029605263157894735,
+        "height": 0.008108108108108109,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "ice",
+        "x": 0.04078947368421053,
+        "y": 0.8194594594594594,
+        "width": 0.0125,
+        "height": 0.008108108108108109,
+        "confidence": 0.961,
+        "is_learning_word": false
+      },
+      {
+        "text": "cream",
+        "x": 0.05526315789473684,
+        "y": 0.8194594594594594,
+        "width": 0.02236842105263158,
+        "height": 0.0075675675675675675,
+        "confidence": 0.992,
+        "is_learning_word": false
+      },
+      {
+        "text": "cone",
+        "x": 0.08421052631578947,
+        "y": 0.8194594594594594,
+        "width": 0.019736842105263157,
+        "height": 0.0075675675675675675,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "ice",
+        "x": 0.12894736842105264,
+        "y": 0.82,
+        "width": 0.0125,
+        "height": 0.007027027027027027,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "cream",
+        "x": 0.14342105263157895,
+        "y": 0.82,
+        "width": 0.02236842105263158,
+        "height": 0.007027027027027027,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "scoop",
+        "x": 0.1723684210526316,
+        "y": 0.82,
+        "width": 0.024342105263157894,
+        "height": 0.0075675675675675675,
         "confidence": 0.995,
         "is_learning_word": true
       },
       {
-        "text": "freckles",
-        "x": 0.1148738379814077,
-        "y": 0.791869918699187,
-        "width": 0.053784860557768925,
-        "height": 0.011924119241192412,
-        "confidence": 0.994,
-        "is_learning_word": true
+        "text": "snack",
+        "x": 0.35328947368421054,
+        "y": 0.8194594594594594,
+        "width": 0.024342105263157894,
+        "height": 0.008108108108108109,
+        "confidence": 0.993,
+        "is_learning_word": false
       },
       {
-        "text": "dimples",
-        "x": 0.11354581673306773,
-        "y": 0.9089430894308943,
-        "width": 0.05444887118193891,
-        "height": 0.014092140921409214,
-        "confidence": 0.948,
-        "is_learning_word": true
-      },
-      {
-        "text": "wrinkles",
-        "x": 0.2642762284196547,
-        "y": 0.791869918699187,
-        "width": 0.057104913678618856,
-        "height": 0.011924119241192412,
+        "text": "bar",
+        "x": 0.3796052631578947,
+        "y": 0.8194594594594594,
+        "width": 0.01381578947368421,
+        "height": 0.008108108108108109,
         "confidence": 0.993,
         "is_learning_word": true
       },
       {
-        "text": "mole",
-        "x": 0.2729083665338645,
-        "y": 0.9094850948509485,
-        "width": 0.035856573705179286,
-        "height": 0.011924119241192412,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "stubble",
-        "x": 0.5411686586985391,
-        "y": 0.8455284552845529,
-        "width": 0.05179282868525897,
-        "height": 0.012466124661246613,
+        "text": "A",
+        "x": 0.5769736842105263,
+        "y": 0.23297297297297298,
+        "width": 0.021052631578947368,
+        "height": 0.02918918918918919,
         "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "a",
+        "x": 0.5756578947368421,
+        "y": 0.2654054054054054,
+        "width": 0.005263157894736842,
+        "height": 0.011351351351351352,
+        "confidence": 0.979,
+        "is_learning_word": false
+      },
+      {
+        "text": "la",
+        "x": 0.5815789473684211,
+        "y": 0.2654054054054054,
+        "width": 0.011842105263157895,
+        "height": 0.011351351351351352,
+        "confidence": 0.988,
+        "is_learning_word": false
+      },
+      {
+        "text": "carte",
+        "x": 0.594078947368421,
+        "y": 0.2654054054054054,
+        "width": 0.028289473684210528,
+        "height": 0.011351351351351352,
+        "confidence": 0.988,
+        "is_learning_word": false
+      },
+      {
+        "text": "menu",
+        "x": 0.6230263157894737,
+        "y": 0.2654054054054054,
+        "width": 0.031578947368421054,
+        "height": 0.011351351351351352,
+        "confidence": 0.987,
+        "is_learning_word": false
+      },
+      {
+        "text": "n",
+        "x": 0.6552631578947369,
+        "y": 0.2654054054054054,
+        "width": 0.008552631578947369,
+        "height": 0.011351351351351352,
+        "confidence": 0.989,
+        "is_learning_word": false
+      },
+      {
+        "text": "n",
+        "x": 0.6328947368421053,
+        "y": 0.27837837837837837,
+        "width": 0.008552631578947369,
+        "height": 0.010810810810810811,
+        "confidence": 0.99,
+        "is_learning_word": false
+      },
+      {
+        "text": "aardvark",
+        "x": 0.575,
+        "y": 0.2913513513513514,
+        "width": 0.04671052631578947,
+        "height": 0.010810810810810811,
+        "confidence": 0.991,
+        "is_learning_word": false
+      },
+      {
+        "text": "n",
+        "x": 0.6223684210526316,
+        "y": 0.2913513513513514,
+        "width": 0.007894736842105263,
+        "height": 0.01027027027027027,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "ab",
+        "x": 0.5756578947368421,
+        "y": 0.3037837837837838,
+        "width": 0.0125,
+        "height": 0.011351351351351352,
+        "confidence": 0.945,
+        "is_learning_word": false
+      },
+      {
+        "text": "wheel",
+        "x": 0.5888157894736842,
+        "y": 0.30324324324324325,
+        "width": 0.03289473684210526,
+        "height": 0.011891891891891892,
+        "confidence": 0.987,
+        "is_learning_word": false
+      },
+      {
+        "text": "n",
+        "x": 0.65,
+        "y": 0.30324324324324325,
+        "width": 0.008552631578947369,
+        "height": 0.011351351351351352,
+        "confidence": 0.987,
+        "is_learning_word": false
+      },
+      {
+        "text": "abandoned",
+        "x": 0.5756578947368421,
+        "y": 0.31675675675675674,
+        "width": 0.05592105263157895,
+        "height": 0.011351351351351352,
+        "confidence": 0.988,
+        "is_learning_word": false
+      },
+      {
+        "text": "building",
+        "x": 0.6342105263157894,
+        "y": 0.3162162162162162,
+        "width": 0.04407894736842105,
+        "height": 0.011891891891891892,
+        "confidence": 0.99,
+        "is_learning_word": false
+      },
+      {
+        "text": "n",
+        "x": 0.7085526315789473,
+        "y": 0.31567567567567567,
+        "width": 0.007236842105263158,
+        "height": 0.012432432432432432,
+        "confidence": 0.926,
+        "is_learning_word": false
+      },
+      {
+        "text": "Ix",
+        "x": 0.718421052631579,
+        "y": 0.31567567567567567,
+        "width": 0.013157894736842105,
+        "height": 0.012432432432432432,
+        "confidence": 0.505,
+        "is_learning_word": false
+      },
+      {
+        "text": "abdomen",
+        "x": 0.575,
+        "y": 0.34216216216216216,
+        "width": 0.04671052631578947,
+        "height": 0.010810810810810811,
+        "confidence": 0.988,
         "is_learning_word": true
       },
       {
-        "text": "sideburns",
-        "x": 0.8771580345285525,
-        "y": 0.7501355013550135,
-        "width": 0.06772908366533864,
-        "height": 0.012466124661246613,
+        "text": "n",
+        "x": 0.6243421052631579,
+        "y": 0.34216216216216216,
+        "width": 0.007894736842105263,
+        "height": 0.010810810810810811,
         "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "abdominals",
+        "x": 0.5763157894736842,
+        "y": 0.3545945945945946,
+        "width": 0.060526315789473685,
+        "height": 0.010810810810810811,
+        "confidence": 0.983,
         "is_learning_word": true
+      },
+      {
+        "text": "n",
+        "x": 0.6375,
+        "y": 0.3545945945945946,
+        "width": 0.007894736842105263,
+        "height": 0.010810810810810811,
+        "confidence": 0.99,
+        "is_learning_word": false
+      },
+      {
+        "text": "abilities",
+        "x": 0.5756578947368421,
+        "y": 0.36702702702702705,
+        "width": 0.042105263157894736,
+        "height": 0.011351351351351352,
+        "confidence": 0.987,
+        "is_learning_word": false
+      },
+      {
+        "text": "n",
+        "x": 0.6177631578947368,
+        "y": 0.36702702702702705,
+        "width": 0.007894736842105263,
+        "height": 0.011351351351351352,
+        "confidence": 0.988,
+        "is_learning_word": false
+      },
+      {
+        "text": "ability",
+        "x": 0.5756578947368421,
+        "y": 0.38,
+        "width": 0.03355263157894737,
+        "height": 0.011891891891891892,
+        "confidence": 0.99,
+        "is_learning_word": false
+      },
+      {
+        "text": "to",
+        "x": 0.6098684210526316,
+        "y": 0.38054054054054054,
+        "width": 0.0125,
+        "height": 0.011351351351351352,
+        "confidence": 0.979,
+        "is_learning_word": false
+      },
+      {
+        "text": "drive",
+        "x": 0.6230263157894737,
+        "y": 0.38,
+        "width": 0.029605263157894735,
+        "height": 0.011351351351351352,
+        "confidence": 0.987,
+        "is_learning_word": false
+      },
+      {
+        "text": "n",
+        "x": 0.6532894736842105,
+        "y": 0.38,
+        "width": 0.008552631578947369,
+        "height": 0.011351351351351352,
+        "confidence": 0.989,
+        "is_learning_word": false
+      },
+      {
+        "text": "abseiling",
+        "x": 0.5756578947368421,
+        "y": 0.39297297297297296,
+        "width": 0.04802631578947368,
+        "height": 0.012432432432432432,
+        "confidence": 0.987,
+        "is_learning_word": false
+      },
+      {
+        "text": "n",
+        "x": 0.6230263157894737,
+        "y": 0.39297297297297296,
+        "width": 0.009210526315789473,
+        "height": 0.011891891891891892,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "Abyssinian",
+        "x": 0.5756578947368421,
+        "y": 0.40594594594594596,
+        "width": 0.05921052631578947,
+        "height": 0.011351351351351352,
+        "confidence": 0.974,
+        "is_learning_word": false
+      },
+      {
+        "text": "n",
+        "x": 0.6355263157894737,
+        "y": 0.40594594594594596,
+        "width": 0.007894736842105263,
+        "height": 0.011351351351351352,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "acacia",
+        "x": 0.5756578947368421,
+        "y": 0.4189189189189189,
+        "width": 0.03355263157894737,
+        "height": 0.010810810810810811,
+        "confidence": 0.99,
+        "is_learning_word": true
+      },
+      {
+        "text": "n",
+        "x": 0.6092105263157894,
+        "y": 0.4189189189189189,
+        "width": 0.008552631578947369,
+        "height": 0.010810810810810811,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "accelerator",
+        "x": 0.5763157894736842,
+        "y": 0.43189189189189187,
+        "width": 0.05789473684210526,
+        "height": 0.010810810810810811,
+        "confidence": 0.988,
+        "is_learning_word": false
+      },
+      {
+        "text": "n",
+        "x": 0.6657894736842105,
+        "y": 0.43135135135135133,
+        "width": 0.007894736842105263,
+        "height": 0.011351351351351352,
+        "confidence": 0.991,
+        "is_learning_word": false
+      },
+      {
+        "text": "access",
+        "x": 0.5756578947368421,
+        "y": 0.44432432432432434,
+        "width": 0.03355263157894737,
+        "height": 0.010810810810810811,
+        "confidence": 0.978,
+        "is_learning_word": false
+      },
+      {
+        "text": "road",
+        "x": 0.6092105263157894,
+        "y": 0.44432432432432434,
+        "width": 0.025657894736842105,
+        "height": 0.010810810810810811,
+        "confidence": 0.981,
+        "is_learning_word": false
+      },
+      {
+        "text": "n",
+        "x": 0.6355263157894737,
+        "y": 0.44432432432432434,
+        "width": 0.007894736842105263,
+        "height": 0.010810810810810811,
+        "confidence": 0.99,
+        "is_learning_word": false
+      },
+      {
+        "text": "accessories",
+        "x": 0.5763157894736842,
+        "y": 0.45675675675675675,
+        "width": 0.05986842105263158,
+        "height": 0.010810810810810811,
+        "confidence": 0.973,
+        "is_learning_word": false
+      },
+      {
+        "text": "n",
+        "x": 0.6368421052631579,
+        "y": 0.45675675675675675,
+        "width": 0.007894736842105263,
+        "height": 0.010810810810810811,
+        "confidence": 0.988,
+        "is_learning_word": false
+      },
+      {
+        "text": "accident",
+        "x": 0.5763157894736842,
+        "y": 0.4697297297297297,
+        "width": 0.04407894736842105,
+        "height": 0.010810810810810811,
+        "confidence": 0.987,
+        "is_learning_word": false
+      },
+      {
+        "text": "n",
+        "x": 0.6203947368421052,
+        "y": 0.4697297297297297,
+        "width": 0.007894736842105263,
+        "height": 0.010810810810810811,
+        "confidence": 0.987,
+        "is_learning_word": false
+      },
+      {
+        "text": "accident",
+        "x": 0.5769736842105263,
+        "y": 0.4827027027027027,
+        "width": 0.04276315789473684,
+        "height": 0.011351351351351352,
+        "confidence": 0.984,
+        "is_learning_word": false
+      },
+      {
+        "text": "and",
+        "x": 0.6223684210526316,
+        "y": 0.4827027027027027,
+        "width": 0.019078947368421053,
+        "height": 0.011891891891891892,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "emergency",
+        "x": 0.6440789473684211,
+        "y": 0.4821621621621622,
+        "width": 0.056578947368421055,
+        "height": 0.012432432432432432,
+        "confidence": 0.983,
+        "is_learning_word": false
+      },
+      {
+        "text": "n",
+        "x": 0.7032894736842106,
+        "y": 0.48162162162162164,
+        "width": 0.007894736842105263,
+        "height": 0.012972972972972972,
+        "confidence": 0.871,
+        "is_learning_word": false
+      },
+      {
+        "text": "Thik",
+        "x": 0.7138157894736842,
+        "y": 0.48162162162162164,
+        "width": 0.025657894736842105,
+        "height": 0.012972972972972972,
+        "confidence": 0.512,
+        "is_learning_word": false
+      },
+      {
+        "text": "DK",
+        "x": 0.5921052631578947,
+        "y": 0.6113513513513513,
+        "width": 0.024342105263157894,
+        "height": 0.015135135135135135,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "APP",
+        "x": 0.7585526315789474,
+        "y": 0.8313513513513513,
+        "width": 0.024342105263157894,
+        "height": 0.014054054054054054,
+        "confidence": 0.989,
+        "is_learning_word": false
+      },
+      {
+        "text": "STORE",
+        "x": 0.7842105263157895,
+        "y": 0.8313513513513513,
+        "width": 0.04276315789473684,
+        "height": 0.014594594594594595,
+        "confidence": 0.988,
+        "is_learning_word": false
+      },
+      {
+        "text": "App",
+        "x": 0.8572368421052632,
+        "y": 0.8318918918918919,
+        "width": 0.02236842105263158,
+        "height": 0.014054054054054054,
+        "confidence": 0.99,
+        "is_learning_word": false
       }
     ],
-    "total_words_extracted": 189,
-    "english_words": 62,
-    "matched_words": 11
+    "total_words_extracted": 569,
+    "english_words": 78,
+    "matched_words": 9
   },
   "page_0013": {
     "image": "images/page_0013.png",
     "words": [
       {
-        "text": "ponytail",
-        "x": 0.10283454185893211,
-        "y": 0.3886178861788618,
-        "width": 0.05800922874093606,
-        "height": 0.014092140921409214,
+        "text": "head",
+        "x": 0.19342105263157894,
+        "y": 0.19027027027027027,
+        "width": 0.03618421052631579,
+        "height": 0.015675675675675675,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "shoulder",
+        "x": 0.16907894736842105,
+        "y": 0.29027027027027025,
+        "width": 0.06118421052631579,
+        "height": 0.015135135135135135,
         "confidence": 0.994,
-        "is_learning_word": true
+        "is_learning_word": false
       },
       {
-        "text": "braid",
-        "x": 0.12261041529334213,
-        "y": 0.5214092140921409,
-        "width": 0.03361898483849703,
-        "height": 0.015176151761517615,
+        "text": "chest",
+        "x": 0.1368421052631579,
+        "y": 0.33837837837837836,
+        "width": 0.038157894736842106,
+        "height": 0.016756756756756756,
         "confidence": 0.995,
-        "is_learning_word": true
+        "is_learning_word": false
       },
       {
-        "text": "braid",
-        "x": 0.24785761371127224,
-        "y": 0.3886178861788618,
-        "width": 0.035596572181938034,
-        "height": 0.013008130081300813,
+        "text": "arm",
+        "x": 0.14671052631578949,
+        "y": 0.3978378378378378,
+        "width": 0.021052631578947368,
+        "height": 0.012972972972972972,
         "confidence": 0.995,
-        "is_learning_word": true
+        "is_learning_word": false
       },
       {
-        "text": "bun",
-        "x": 0.2682926829268293,
-        "y": 0.5230352303523035,
-        "width": 0.025708635464733027,
-        "height": 0.011924119241192412,
+        "text": "abdomen",
+        "x": 0.10657894736842105,
+        "y": 0.4756756756756757,
+        "width": 0.06578947368421052,
+        "height": 0.012432432432432432,
         "confidence": 0.993,
         "is_learning_word": true
       },
       {
-        "text": "pigtails",
-        "x": 0.4067237969676994,
-        "y": 0.3886178861788618,
-        "width": 0.05075807514831905,
-        "height": 0.013550135501355014,
-        "confidence": 0.994,
+        "text": "hand",
+        "x": 0.11381578947368422,
+        "y": 0.5583783783783783,
+        "width": 0.034868421052631576,
+        "height": 0.013513513513513514,
+        "confidence": 0.991,
+        "is_learning_word": false
+      },
+      {
+        "text": "thigh",
+        "x": 0.19342105263157894,
+        "y": 0.6545945945945946,
+        "width": 0.03684210526315789,
+        "height": 0.015675675675675675,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "breast",
+        "x": 0.5546052631578947,
+        "y": 0.16702702702702701,
+        "width": 0.045394736842105265,
+        "height": 0.012972972972972972,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "groin",
+        "x": 0.5026315789473684,
+        "y": 0.6313513513513513,
+        "width": 0.034868421052631576,
+        "height": 0.012432432432432432,
+        "confidence": 0.977,
         "is_learning_word": true
       },
       {
-        "text": "highlights",
-        "x": 0.3974950560316414,
-        "y": 0.5224932249322494,
-        "width": 0.06987475280158208,
-        "height": 0.014092140921409214,
-        "confidence": 0.994,
-        "is_learning_word": true
-      },
-      {
-        "text": "bob",
-        "x": 0.5682267633487146,
-        "y": 0.389159891598916,
-        "width": 0.025708635464733027,
-        "height": 0.011382113821138212,
-        "confidence": 0.996,
-        "is_learning_word": true
-      },
-      {
-        "text": "Afro",
-        "x": 0.5688859591298616,
-        "y": 0.5230352303523035,
-        "width": 0.02702702702702703,
-        "height": 0.011382113821138212,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "dandruff",
-        "x": 0.5530652603823335,
-        "y": 0.6558265582655827,
-        "width": 0.05998681608437706,
-        "height": 0.013008130081300813,
-        "confidence": 0.994,
-        "is_learning_word": true
-      },
-      {
-        "text": "comb",
-        "x": 0.5642715886618326,
-        "y": 0.907859078590786,
-        "width": 0.03691496374423204,
-        "height": 0.011382113821138212,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "crop",
-        "x": 0.7172050098879367,
-        "y": 0.3902439024390244,
-        "width": 0.02966381015161503,
-        "height": 0.011382113821138212,
-        "confidence": 0.985,
-        "is_learning_word": true
-      },
-      {
-        "text": "braids",
-        "x": 0.7106130520764667,
-        "y": 0.5230352303523035,
-        "width": 0.04284772577455504,
-        "height": 0.011924119241192412,
+        "text": "genitals",
+        "x": 0.5190789473684211,
+        "y": 0.6983783783783784,
+        "width": 0.05394736842105263,
+        "height": 0.013513513513513514,
         "confidence": 0.995,
         "is_learning_word": true
       },
       {
-        "text": "shears",
-        "x": 0.7099538562953197,
-        "y": 0.9067750677506775,
-        "width": 0.043506921555702044,
-        "height": 0.013550135501355014,
-        "confidence": 0.994,
+        "text": "leg",
+        "x": 0.20855263157894738,
+        "y": 0.7735135135135135,
+        "width": 0.021710526315789475,
+        "height": 0.012972972972972972,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "foot",
+        "x": 0.20328947368421052,
+        "y": 0.9108108108108108,
+        "width": 0.030263157894736843,
+        "height": 0.012432432432432432,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "calf",
+        "x": 0.5046052631578948,
+        "y": 0.7670270270270271,
+        "width": 0.025,
+        "height": 0.013513513513513514,
+        "confidence": 0.993,
         "is_learning_word": true
       },
       {
-        "text": "wig",
-        "x": 0.8707976268951879,
-        "y": 0.3886178861788618,
-        "width": 0.024390243902439025,
-        "height": 0.012466124661246613,
+        "text": "heel",
+        "x": 0.4934210526315789,
+        "y": 0.8816216216216216,
+        "width": 0.030263157894736843,
+        "height": 0.012972972972972972,
+        "confidence": 0.98,
+        "is_learning_word": false
+      },
+      {
+        "text": "nipple",
+        "x": 0.6361842105263158,
+        "y": 0.16648648648648648,
+        "width": 0.046052631578947366,
+        "height": 0.014054054054054054,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "neck",
+        "x": 0.805921052631579,
+        "y": 0.2843243243243243,
+        "width": 0.03223684210526316,
+        "height": 0.012972972972972972,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "armpit",
+        "x": 0.8578947368421053,
+        "y": 0.34864864864864864,
+        "width": 0.04736842105263158,
+        "height": 0.012972972972972972,
         "confidence": 0.995,
         "is_learning_word": true
       },
       {
-        "text": "cornrows",
-        "x": 0.8516809492419248,
-        "y": 0.5246612466124662,
-        "width": 0.06196440342781806,
-        "height": 0.00975609756097561,
+        "text": "elbow",
+        "x": 0.8585526315789473,
+        "y": 0.4227027027027027,
+        "width": 0.0375,
+        "height": 0.011351351351351352,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "waist",
+        "x": 0.8585526315789473,
+        "y": 0.4643243243243243,
+        "width": 0.03684210526315789,
+        "height": 0.010810810810810811,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "forearm",
+        "x": 0.8585526315789473,
+        "y": 0.5027027027027027,
+        "width": 0.04736842105263158,
+        "height": 0.011891891891891892,
+        "confidence": 0.995,
+        "is_learning_word": true
+      },
+      {
+        "text": "wrist",
+        "x": 0.8585526315789473,
+        "y": 0.5908108108108108,
+        "width": 0.035526315789473684,
+        "height": 0.014594594594594595,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "hip",
+        "x": 0.8019736842105263,
+        "y": 0.6297297297297297,
+        "width": 0.021710526315789475,
+        "height": 0.013513513513513514,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "navel",
+        "x": 0.8019736842105263,
+        "y": 0.6772972972972973,
+        "width": 0.0375,
+        "height": 0.011891891891891892,
         "confidence": 0.993,
         "is_learning_word": true
+      },
+      {
+        "text": "knee",
+        "x": 0.8019736842105263,
+        "y": 0.7281081081081081,
+        "width": 0.03355263157894737,
+        "height": 0.011891891891891892,
+        "confidence": 0.99,
+        "is_learning_word": false
+      },
+      {
+        "text": "shin",
+        "x": 0.8032894736842106,
+        "y": 0.8064864864864865,
+        "width": 0.02631578947368421,
+        "height": 0.011891891891891892,
+        "confidence": 0.993,
+        "is_learning_word": true
+      },
+      {
+        "text": "ankle",
+        "x": 0.8039473684210526,
+        "y": 0.8735135135135135,
+        "width": 0.035526315789473684,
+        "height": 0.012432432432432432,
+        "confidence": 0.995,
+        "is_learning_word": false
       }
     ],
-    "total_words_extracted": 231,
-    "english_words": 69,
-    "matched_words": 15
+    "total_words_extracted": 112,
+    "english_words": 26,
+    "matched_words": 8
   },
   "page_0014": {
     "image": "images/page_0014.png",
     "words": [
       {
-        "text": "leather",
-        "x": 0.1125,
-        "y": 0.2554112554112554,
-        "width": 0.05131578947368421,
-        "height": 0.012987012987012988,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "striped",
-        "x": 0.2631578947368421,
-        "y": 0.387987012987013,
-        "width": 0.04868421052631579,
-        "height": 0.015151515151515152,
+        "text": "temple",
+        "x": 0.10636900853578464,
+        "y": 0.3286486486486486,
+        "width": 0.04924491135915955,
+        "height": 0.015675675675675675,
         "confidence": 0.994,
         "is_learning_word": true
       },
       {
-        "text": "baggy",
-        "x": 0.1401315789473684,
-        "y": 0.5227272727272727,
-        "width": 0.04407894736842105,
-        "height": 0.015151515151515152,
+        "text": "cheek",
+        "x": 0.11556139198949442,
+        "y": 0.4097297297297297,
+        "width": 0.040709126723571895,
+        "height": 0.012972972972972972,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "lips",
+        "x": 0.13263296126066973,
+        "y": 0.4616216216216216,
+        "width": 0.02298095863427446,
+        "height": 0.015135135135135135,
+        "confidence": 0.989,
+        "is_learning_word": false
+      },
+      {
+        "text": "jaw",
+        "x": 0.1313197636244255,
+        "y": 0.5054054054054054,
+        "width": 0.02232435981615233,
+        "height": 0.015135135135135135,
         "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "tear",
+        "x": 0.08141825344714379,
+        "y": 0.8054054054054054,
+        "width": 0.026263952724885097,
+        "height": 0.015675675675675675,
+        "confidence": 0.945,
+        "is_learning_word": false
+      },
+      {
+        "text": "duct",
+        "x": 0.11096520026263952,
+        "y": 0.8054054054054054,
+        "width": 0.03282994090610637,
+        "height": 0.015675675675675675,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "eyelid",
+        "x": 0.23768877216021012,
+        "y": 0.1772972972972973,
+        "width": 0.04267892317793828,
+        "height": 0.016216216216216217,
+        "confidence": 0.993,
         "is_learning_word": true
       },
       {
-        "text": "fitted",
-        "x": 0.26907894736842103,
-        "y": 0.5227272727272727,
-        "width": 0.03618421052631579,
-        "height": 0.012445887445887446,
+        "text": "iris",
+        "x": 0.25673013788575183,
+        "y": 0.9010810810810811,
+        "width": 0.02232435981615233,
+        "height": 0.015675675675675675,
+        "confidence": 0.969,
+        "is_learning_word": true
+      },
+      {
+        "text": "chin",
+        "x": 0.31582403151674326,
+        "y": 0.5983783783783784,
+        "width": 0.02757715036112935,
+        "height": 0.011891891891891892,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "pupil",
+        "x": 0.3427445830597505,
+        "y": 0.9016216216216216,
+        "width": 0.036769533814839134,
+        "height": 0.015675675675675675,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "hair",
+        "x": 0.4130006565988181,
+        "y": 0.18,
+        "width": 0.026920551543007223,
+        "height": 0.012972972972972972,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "forehead",
+        "x": 0.5554826001313198,
+        "y": 0.2918918918918919,
+        "width": 0.061720288903479976,
+        "height": 0.012972972972972972,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "eyebrow",
+        "x": 0.5554826001313198,
+        "y": 0.3410810810810811,
+        "width": 0.05712409717662508,
+        "height": 0.015675675675675675,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "skin",
+        "x": 0.556795797767564,
+        "y": 0.4345945945945946,
+        "width": 0.025607353906762966,
+        "height": 0.012432432432432432,
+        "confidence": 0.991,
+        "is_learning_word": false
+      },
+      {
+        "text": "eyelashes",
+        "x": 0.48063033486539725,
+        "y": 0.745945945945946,
+        "width": 0.06565988181221274,
+        "height": 0.014054054054054054,
+        "confidence": 0.993,
+        "is_learning_word": true
+      },
+      {
+        "text": "green",
+        "x": 0.5594221930400525,
+        "y": 0.907027027027027,
+        "width": 0.03939592908732764,
+        "height": 0.012972972972972972,
         "confidence": 0.961,
-        "is_learning_word": true
+        "is_learning_word": false
       },
       {
-        "text": "woolen",
-        "x": 0.3960526315789474,
-        "y": 0.25487012987012986,
-        "width": 0.0506578947368421,
-        "height": 0.01461038961038961,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "checkered",
-        "x": 0.3888157894736842,
-        "y": 0.38852813852813856,
-        "width": 0.06842105263157895,
-        "height": 0.01406926406926407,
-        "confidence": 0.994,
-        "is_learning_word": true
-      },
-      {
-        "text": "apron",
-        "x": 0.41776315789473684,
-        "y": 0.9069264069264069,
-        "width": 0.03881578947368421,
-        "height": 0.012445887445887446,
+        "text": "eye",
+        "x": 0.7156927117531189,
+        "y": 0.2572972972972973,
+        "width": 0.02298095863427446,
+        "height": 0.012432432432432432,
         "confidence": 0.995,
-        "is_learning_word": true
+        "is_learning_word": false
       },
       {
-        "text": "silk",
-        "x": 0.5769736842105263,
-        "y": 0.2554112554112554,
-        "width": 0.021052631578947368,
-        "height": 0.012445887445887446,
-        "confidence": 0.983,
-        "is_learning_word": true
-      },
-      {
-        "text": "crumpled",
-        "x": 0.5552631578947368,
-        "y": 0.5227272727272727,
-        "width": 0.06447368421052632,
-        "height": 0.012987012987012988,
-        "confidence": 0.994,
-        "is_learning_word": true
-      },
-      {
-        "text": "synthetic",
-        "x": 0.7065789473684211,
-        "y": 0.25487012987012986,
-        "width": 0.0625,
-        "height": 0.015151515151515152,
+        "text": "nose",
+        "x": 0.711096520026264,
+        "y": 0.39135135135135135,
+        "width": 0.03151674326986211,
+        "height": 0.010810810810810811,
         "confidence": 0.993,
         "is_learning_word": true
       },
       {
-        "text": "paisley",
-        "x": 0.7125,
-        "y": 0.38906926406926406,
-        "width": 0.04868421052631579,
-        "height": 0.01406926406926407,
-        "confidence": 0.993,
-        "is_learning_word": true
+        "text": "mouth",
+        "x": 0.7045305318450427,
+        "y": 0.5237837837837838,
+        "width": 0.04464871963230466,
+        "height": 0.012972972972972972,
+        "confidence": 0.988,
+        "is_learning_word": false
       },
       {
-        "text": "cropped",
-        "x": 0.7078947368421052,
-        "y": 0.5221861471861472,
-        "width": 0.05855263157894737,
-        "height": 0.01461038961038961,
+        "text": "blue",
+        "x": 0.7117531188443861,
+        "y": 0.7881081081081082,
+        "width": 0.03151674326986211,
+        "height": 0.015675675675675675,
+        "confidence": 0.991,
+        "is_learning_word": false
+      },
+      {
+        "text": "hazel",
+        "x": 0.7104399212081418,
+        "y": 0.9064864864864864,
+        "width": 0.036769533814839134,
+        "height": 0.012972972972972972,
         "confidence": 0.994,
         "is_learning_word": true
       },
       {
-        "text": "denim",
-        "x": 0.8651315789473685,
-        "y": 0.25432900432900435,
-        "width": 0.03881578947368421,
-        "height": 0.01461038961038961,
-        "confidence": 0.917,
+        "text": "ear",
+        "x": 0.8667104399212081,
+        "y": 0.2572972972972973,
+        "width": 0.021667760998030205,
+        "height": 0.012432432432432432,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "nostrils",
+        "x": 0.8522652659225214,
+        "y": 0.38972972972972975,
+        "width": 0.04924491135915955,
+        "height": 0.012972972972972972,
+        "confidence": 0.979,
         "is_learning_word": true
       },
       {
-        "text": "plaid",
-        "x": 0.8690789473684211,
-        "y": 0.38852813852813856,
-        "width": 0.03355263157894737,
-        "height": 0.013528138528138528,
+        "text": "teeth",
+        "x": 0.8594878529218647,
+        "y": 0.5243243243243243,
+        "width": 0.03479973736047275,
+        "height": 0.011891891891891892,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "brown",
+        "x": 0.855548260013132,
+        "y": 0.7881081081081082,
+        "width": 0.04530531845042679,
+        "height": 0.014594594594594595,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "gray",
+        "x": 0.8476690741956664,
+        "y": 0.9059459459459459,
+        "width": 0.030203545633617858,
+        "height": 0.015675675675675675,
+        "confidence": 0.982,
+        "is_learning_word": false
+      },
+      {
+        "text": "grey",
+        "x": 0.8371634931057124,
+        "y": 0.9232432432432433,
+        "width": 0.030203545633617858,
+        "height": 0.015675675675675675,
         "confidence": 0.992,
-        "is_learning_word": true
-      },
-      {
-        "text": "vintage",
-        "x": 0.8618421052631579,
-        "y": 0.5227272727272727,
-        "width": 0.0506578947368421,
-        "height": 0.012987012987012988,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "overalls",
-        "x": 0.8625,
-        "y": 0.9053030303030303,
-        "width": 0.05131578947368421,
-        "height": 0.013528138528138528,
-        "confidence": 0.993,
-        "is_learning_word": true
+        "is_learning_word": false
       }
     ],
-    "total_words_extracted": 170,
-    "english_words": 33,
-    "matched_words": 16
+    "total_words_extracted": 145,
+    "english_words": 27,
+    "matched_words": 9
   },
   "page_0015": {
     "image": "images/page_0015.png",
     "words": [
       {
-        "text": "hood",
-        "x": 0.10855263157894737,
-        "y": 0.24458874458874458,
-        "width": 0.03684210526315789,
-        "height": 0.01406926406926407,
-        "confidence": 0.966,
-        "is_learning_word": true
+        "text": "middle",
+        "x": 0.18157894736842106,
+        "y": 0.17857142857142858,
+        "width": 0.04671052631578947,
+        "height": 0.015692640692640692,
+        "confidence": 0.993,
+        "is_learning_word": false
       },
       {
-        "text": "mittens",
-        "x": 0.09407894736842105,
-        "y": 0.4134199134199134,
-        "width": 0.05394736842105263,
-        "height": 0.012445887445887446,
-        "confidence": 0.994,
-        "is_learning_word": true
+        "text": "finger",
+        "x": 0.23223684210526316,
+        "y": 0.17857142857142858,
+        "width": 0.04276315789473684,
+        "height": 0.015692640692640692,
+        "confidence": 0.984,
+        "is_learning_word": false
       },
       {
-        "text": "snowsuit",
-        "x": 0.24868421052631579,
-        "y": 0.5221861471861472,
-        "width": 0.06118421052631579,
-        "height": 0.012445887445887446,
-        "confidence": 0.994,
-        "is_learning_word": true
-      },
-      {
-        "text": "scrubs",
-        "x": 0.2618421052631579,
-        "y": 0.9053030303030303,
-        "width": 0.04407894736842105,
-        "height": 0.011363636363636364,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "cargo",
-        "x": 0.38421052631578945,
-        "y": 0.9047619047619048,
+        "text": "index",
+        "x": 0.09539473684210527,
+        "y": 0.2602813852813853,
         "width": 0.038157894736842106,
-        "height": 0.01406926406926407,
+        "height": 0.01461038961038961,
         "confidence": 0.995,
-        "is_learning_word": true
+        "is_learning_word": false
       },
       {
-        "text": "cargo",
-        "x": 0.3651315789473684,
-        "y": 0.922077922077922,
-        "width": 0.038157894736842106,
+        "text": "finger",
+        "x": 0.1368421052631579,
+        "y": 0.26082251082251084,
+        "width": 0.04276315789473684,
+        "height": 0.01406926406926407,
+        "confidence": 0.991,
+        "is_learning_word": false
+      },
+      {
+        "text": "thumb",
+        "x": 0.10460526315789474,
+        "y": 0.3371212121212121,
+        "width": 0.04671052631578947,
+        "height": 0.015692640692640692,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "palm",
+        "x": 0.14078947368421052,
+        "y": 0.43993506493506496,
+        "width": 0.029605263157894735,
+        "height": 0.01406926406926407,
+        "confidence": 0.992,
+        "is_learning_word": false
+      },
+      {
+        "text": "to",
+        "x": 0.11381578947368422,
+        "y": 0.7922077922077922,
+        "width": 0.014473684210526316,
         "height": 0.012987012987012988,
         "confidence": 0.995,
-        "is_learning_word": true
+        "is_learning_word": false
       },
       {
-        "text": "bib",
-        "x": 0.5703947368421053,
-        "y": 0.25216450216450215,
-        "width": 0.023026315789473683,
-        "height": 0.015151515151515152,
-        "confidence": 0.916,
-        "is_learning_word": true
+        "text": "smile",
+        "x": 0.13223684210526315,
+        "y": 0.7916666666666666,
+        "width": 0.03618421052631579,
+        "height": 0.012987012987012988,
+        "confidence": 0.995,
+        "is_learning_word": false
       },
       {
-        "text": "sleepsuit",
-        "x": 0.5506578947368421,
-        "y": 0.3874458874458874,
-        "width": 0.0625,
-        "height": 0.01406926406926407,
+        "text": "to",
+        "x": 0.26842105263157895,
+        "y": 0.7922077922077922,
+        "width": 0.014473684210526316,
+        "height": 0.012987012987012988,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "grin",
+        "x": 0.2868421052631579,
+        "y": 0.7922077922077922,
+        "width": 0.02631578947368421,
+        "height": 0.012987012987012988,
         "confidence": 0.993,
         "is_learning_word": true
       },
       {
-        "text": "onesie",
-        "x": 0.5611842105263158,
-        "y": 0.5216450216450217,
-        "width": 0.04473684210526316,
+        "text": "z",
+        "x": 0.31776315789473686,
+        "y": 0.827922077922078,
+        "width": 0.008552631578947369,
         "height": 0.011904761904761904,
+        "confidence": 0.593,
+        "is_learning_word": false
+      },
+      {
+        "text": "to",
+        "x": 0.11381578947368422,
+        "y": 0.9096320346320347,
+        "width": 0.015131578947368421,
+        "height": 0.013528138528138528,
+        "confidence": 0.996,
+        "is_learning_word": false
+      },
+      {
+        "text": "yawn",
+        "x": 0.13157894736842105,
+        "y": 0.9096320346320347,
+        "width": 0.03684210526315789,
+        "height": 0.013528138528138528,
+        "confidence": 0.992,
+        "is_learning_word": false
+      },
+      {
+        "text": "to",
+        "x": 0.2638157894736842,
+        "y": 0.9101731601731602,
+        "width": 0.013157894736842105,
+        "height": 0.011904761904761904,
+        "confidence": 0.997,
+        "is_learning_word": false
+      },
+      {
+        "text": "snore",
+        "x": 0.28157894736842104,
+        "y": 0.9096320346320347,
+        "width": 0.03684210526315789,
+        "height": 0.012445887445887446,
         "confidence": 0.995,
         "is_learning_word": true
       },
       {
-        "text": "tabard",
-        "x": 0.5605263157894737,
-        "y": 0.9042207792207793,
-        "width": 0.04473684210526316,
-        "height": 0.013528138528138528,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "overalls",
-        "x": 0.6921052631578948,
-        "y": 0.2537878787878788,
-        "width": 0.05131578947368421,
-        "height": 0.013528138528138528,
-        "confidence": 0.98,
-        "is_learning_word": true
-      },
-      {
-        "text": "bodysuit",
-        "x": 0.8348684210526316,
-        "y": 0.2532467532467532,
-        "width": 0.05986842105263158,
+        "text": "ring",
+        "x": 0.3539473684210526,
+        "y": 0.17965367965367965,
+        "width": 0.02763157894736842,
         "height": 0.01406926406926407,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "finger",
+        "x": 0.3848684210526316,
+        "y": 0.1791125541125541,
+        "width": 0.04144736842105263,
+        "height": 0.01461038961038961,
+        "confidence": 0.992,
+        "is_learning_word": false
+      },
+      {
+        "text": "little",
+        "x": 0.39473684210526316,
+        "y": 0.2435064935064935,
+        "width": 0.031578947368421054,
+        "height": 0.015151515151515152,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "finger",
+        "x": 0.4296052631578947,
+        "y": 0.2435064935064935,
+        "width": 0.04276315789473684,
+        "height": 0.015151515151515152,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "wrist",
+        "x": 0.46842105263157896,
+        "y": 0.4724025974025974,
+        "width": 0.035526315789473684,
+        "height": 0.012445887445887446,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "to",
+        "x": 0.41118421052631576,
+        "y": 0.7911255411255411,
+        "width": 0.014473684210526316,
+        "height": 0.015151515151515152,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "frown",
+        "x": 0.4296052631578947,
+        "y": 0.7905844155844156,
+        "width": 0.04144736842105263,
+        "height": 0.015692640692640692,
+        "confidence": 0.995,
+        "is_learning_word": true
+      },
+      {
+        "text": "to",
+        "x": 0.42039473684210527,
+        "y": 0.9085497835497836,
+        "width": 0.01381578947368421,
+        "height": 0.01461038961038961,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "lick",
+        "x": 0.4375,
+        "y": 0.908008658008658,
+        "width": 0.025,
+        "height": 0.015151515151515152,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "fingernail",
+        "x": 0.5342105263157895,
+        "y": 0.17857142857142858,
+        "width": 0.06513157894736842,
+        "height": 0.016233766233766232,
         "confidence": 0.988,
         "is_learning_word": true
       },
       {
-        "text": "booties",
-        "x": 0.8565789473684211,
-        "y": 0.5216450216450217,
-        "width": 0.0506578947368421,
-        "height": 0.012445887445887446,
+        "text": "to",
+        "x": 0.5657894736842105,
+        "y": 0.7916666666666666,
+        "width": 0.014473684210526316,
+        "height": 0.012987012987012988,
         "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "wink",
+        "x": 0.5835526315789473,
+        "y": 0.7916666666666666,
+        "width": 0.03289473684210526,
+        "height": 0.012445887445887446,
+        "confidence": 0.962,
+        "is_learning_word": false
+      },
+      {
+        "text": "to",
+        "x": 0.5671052631578948,
+        "y": 0.9096320346320347,
+        "width": 0.01381578947368421,
+        "height": 0.011904761904761904,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "suck",
+        "x": 0.5855263157894737,
+        "y": 0.9090909090909091,
+        "width": 0.02894736842105263,
+        "height": 0.011904761904761904,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "cuticle",
+        "x": 0.7263157894736842,
+        "y": 0.24621212121212122,
+        "width": 0.04473684210526316,
+        "height": 0.012445887445887446,
+        "confidence": 0.994,
         "is_learning_word": true
+      },
+      {
+        "text": "knuckle",
+        "x": 0.7644736842105263,
+        "y": 0.31926406926406925,
+        "width": 0.05263157894736842,
+        "height": 0.011904761904761904,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "to",
+        "x": 0.7151315789473685,
+        "y": 0.7916666666666666,
+        "width": 0.01381578947368421,
+        "height": 0.012987012987012988,
+        "confidence": 0.997,
+        "is_learning_word": false
+      },
+      {
+        "text": "blink",
+        "x": 0.7328947368421053,
+        "y": 0.7911255411255411,
+        "width": 0.03355263157894737,
+        "height": 0.012987012987012988,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "to",
+        "x": 0.7052631578947368,
+        "y": 0.9090909090909091,
+        "width": 0.014473684210526316,
+        "height": 0.012987012987012988,
+        "confidence": 0.996,
+        "is_learning_word": false
+      },
+      {
+        "text": "breathe",
+        "x": 0.7223684210526315,
+        "y": 0.9085497835497836,
+        "width": 0.05460526315789474,
+        "height": 0.012987012987012988,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "fist",
+        "x": 0.8894736842105263,
+        "y": 0.31872294372294374,
+        "width": 0.021710526315789475,
+        "height": 0.012445887445887446,
+        "confidence": 0.946,
+        "is_learning_word": false
+      },
+      {
+        "text": "to",
+        "x": 0.8638157894736842,
+        "y": 0.7911255411255411,
+        "width": 0.01381578947368421,
+        "height": 0.012987012987012988,
+        "confidence": 0.997,
+        "is_learning_word": false
+      },
+      {
+        "text": "blush",
+        "x": 0.881578947368421,
+        "y": 0.7911255411255411,
+        "width": 0.035526315789473684,
+        "height": 0.012987012987012988,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "to",
+        "x": 0.8671052631578947,
+        "y": 0.9090909090909091,
+        "width": 0.013157894736842105,
+        "height": 0.012445887445887446,
+        "confidence": 0.996,
+        "is_learning_word": false
+      },
+      {
+        "text": "hold",
+        "x": 0.8842105263157894,
+        "y": 0.9085497835497836,
+        "width": 0.030921052631578946,
+        "height": 0.012987012987012988,
+        "confidence": 0.991,
+        "is_learning_word": false
+      },
+      {
+        "text": "your",
+        "x": 0.8414473684210526,
+        "y": 0.9247835497835498,
+        "width": 0.03223684210526316,
+        "height": 0.012987012987012988,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "breath",
+        "x": 0.8763157894736842,
+        "y": 0.9237012987012987,
+        "width": 0.04342105263157895,
+        "height": 0.013528138528138528,
+        "confidence": 0.995,
+        "is_learning_word": false
       }
     ],
-    "total_words_extracted": 157,
-    "english_words": 33,
-    "matched_words": 13
+    "total_words_extracted": 137,
+    "english_words": 42,
+    "matched_words": 7
   },
   "page_0016": {
     "image": "images/page_0016.png",
     "words": [
       {
-        "text": "blouse",
-        "x": 0.23112278397898883,
-        "y": 0.27435064935064934,
-        "width": 0.04596191726854892,
-        "height": 0.012987012987012988,
+        "text": "sole",
+        "x": 0.09722222222222222,
+        "y": 0.3842818428184282,
+        "width": 0.0291005291005291,
+        "height": 0.014634146341463415,
+        "confidence": 0.992,
+        "is_learning_word": true
+      },
+      {
+        "text": "little",
+        "x": 0.10449735449735449,
+        "y": 0.608130081300813,
+        "width": 0.031746031746031744,
+        "height": 0.013008130081300813,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "toe",
+        "x": 0.13955026455026456,
+        "y": 0.608130081300813,
+        "width": 0.023148148148148147,
+        "height": 0.013008130081300813,
         "confidence": 0.995,
-        "is_learning_word": true
+        "is_learning_word": false
       },
       {
-        "text": "sweater",
-        "x": 0.17859487852921865,
-        "y": 0.3273809523809524,
-        "width": 0.05384110308601445,
-        "height": 0.012987012987012988,
-        "confidence": 0.994,
-        "is_learning_word": true
+        "text": "Ha",
+        "x": 0.12632275132275134,
+        "y": 0.6672086720867209,
+        "width": 0.017857142857142856,
+        "height": 0.015176151761517615,
+        "confidence": 0.995,
+        "is_learning_word": false
       },
       {
-        "text": "pleat",
-        "x": 0.22718319107025609,
-        "y": 0.5021645021645021,
-        "width": 0.03479973736047275,
-        "height": 0.016233766233766232,
-        "confidence": 0.983,
-        "is_learning_word": true
-      },
-      {
-        "text": "hem",
-        "x": 0.25541694024950756,
-        "y": 0.5654761904761905,
-        "width": 0.025607353906762966,
-        "height": 0.012445887445887446,
+        "text": "to",
+        "x": 0.09656084656084656,
+        "y": 0.7902439024390244,
+        "width": 0.013227513227513227,
+        "height": 0.013550135501355014,
         "confidence": 0.997,
-        "is_learning_word": true
+        "is_learning_word": false
       },
       {
-        "text": "sweatshirt",
-        "x": 0.10242941562705186,
-        "y": 0.7884199134199135,
-        "width": 0.07091267235718976,
-        "height": 0.013528138528138528,
-        "confidence": 0.994,
-        "is_learning_word": true
+        "text": "laugh",
+        "x": 0.1130952380952381,
+        "y": 0.7897018970189702,
+        "width": 0.03968253968253968,
+        "height": 0.014092140921409214,
+        "confidence": 0.995,
+        "is_learning_word": false
       },
       {
-        "text": "leggings",
-        "x": 0.10636900853578464,
-        "y": 0.9058441558441559,
-        "width": 0.06106369008535785,
-        "height": 0.01461038961038961,
+        "text": "to",
+        "x": 0.10185185185185185,
+        "y": 0.9073170731707317,
+        "width": 0.01521164021164021,
+        "height": 0.013550135501355014,
+        "confidence": 0.996,
+        "is_learning_word": false
+      },
+      {
+        "text": "clap",
+        "x": 0.12037037037037036,
+        "y": 0.9073170731707317,
+        "width": 0.028439153439153438,
+        "height": 0.014092140921409214,
         "confidence": 0.993,
         "is_learning_word": true
       },
       {
-        "text": "cardigan",
-        "x": 0.556795797767564,
-        "y": 0.7878787878787878,
-        "width": 0.05909389363099146,
-        "height": 0.015151515151515152,
+        "text": "big",
+        "x": 0.2552910052910053,
+        "y": 0.608130081300813,
+        "width": 0.023148148148148147,
+        "height": 0.013550135501355014,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "toe",
+        "x": 0.28174603174603174,
+        "y": 0.608130081300813,
+        "width": 0.023148148148148147,
+        "height": 0.013550135501355014,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "to",
+        "x": 0.25595238095238093,
+        "y": 0.7907859078590785,
+        "width": 0.013888888888888888,
+        "height": 0.013008130081300813,
+        "confidence": 0.996,
+        "is_learning_word": false
+      },
+      {
+        "text": "cry",
+        "x": 0.27380952380952384,
+        "y": 0.7907859078590785,
+        "width": 0.021164021164021163,
+        "height": 0.013550135501355014,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "to",
+        "x": 0.24272486772486773,
+        "y": 0.907859078590786,
+        "width": 0.013227513227513227,
+        "height": 0.011924119241192412,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "sweat",
+        "x": 0.2605820105820106,
+        "y": 0.9073170731707317,
+        "width": 0.04034391534391534,
+        "height": 0.012466124661246613,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "to",
+        "x": 0.23082010582010581,
+        "y": 0.9235772357723577,
+        "width": 0.01455026455026455,
+        "height": 0.013008130081300813,
+        "confidence": 0.996,
+        "is_learning_word": false
+      },
+      {
+        "text": "perspire",
+        "x": 0.24867724867724866,
+        "y": 0.9230352303523035,
+        "width": 0.056216931216931214,
+        "height": 0.013550135501355014,
+        "confidence": 0.981,
+        "is_learning_word": true
+      },
+      {
+        "text": "ankle",
+        "x": 0.37433862433862436,
+        "y": 0.435230352303523,
+        "width": 0.037698412698412696,
+        "height": 0.015176151761517615,
+        "confidence": 0.946,
+        "is_learning_word": false
+      },
+      {
+        "text": "heel",
+        "x": 0.39880952380952384,
+        "y": 0.6070460704607046,
+        "width": 0.031746031746031744,
+        "height": 0.014092140921409214,
+        "confidence": 0.992,
+        "is_learning_word": false
+      },
+      {
+        "text": "to",
+        "x": 0.4027777777777778,
+        "y": 0.7902439024390244,
+        "width": 0.01455026455026455,
+        "height": 0.013550135501355014,
+        "confidence": 0.997,
+        "is_learning_word": false
+      },
+      {
+        "text": "sigh",
+        "x": 0.42063492063492064,
+        "y": 0.7897018970189702,
+        "width": 0.028439153439153438,
+        "height": 0.014092140921409214,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "to",
+        "x": 0.3974867724867725,
+        "y": 0.9073170731707317,
+        "width": 0.013888888888888888,
+        "height": 0.012466124661246613,
+        "confidence": 0.997,
+        "is_learning_word": false
+      },
+      {
+        "text": "shiver",
+        "x": 0.4146825396825397,
+        "y": 0.9073170731707317,
+        "width": 0.04298941798941799,
+        "height": 0.012466124661246613,
+        "confidence": 0.993,
+        "is_learning_word": true
+      },
+      {
+        "text": "bridge",
+        "x": 0.6124338624338624,
+        "y": 0.405420054200542,
+        "width": 0.046296296296296294,
+        "height": 0.014092140921409214,
+        "confidence": 0.995,
+        "is_learning_word": true
+      },
+      {
+        "text": "arch",
+        "x": 0.6084656084656085,
+        "y": 0.6070460704607046,
+        "width": 0.027777777777777776,
+        "height": 0.013008130081300813,
+        "confidence": 0.991,
+        "is_learning_word": true
+      },
+      {
+        "text": "to",
+        "x": 0.5502645502645502,
+        "y": 0.7913279132791328,
+        "width": 0.013888888888888888,
+        "height": 0.011382113821138212,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "wave",
+        "x": 0.5687830687830688,
+        "y": 0.7913279132791328,
+        "width": 0.03439153439153439,
+        "height": 0.011382113821138212,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "to",
+        "x": 0.544973544973545,
+        "y": 0.9084010840108401,
+        "width": 0.013888888888888888,
+        "height": 0.011382113821138212,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "sneeze",
+        "x": 0.5641534391534392,
+        "y": 0.9084010840108401,
+        "width": 0.046296296296296294,
+        "height": 0.011924119241192412,
+        "confidence": 0.995,
+        "is_learning_word": true
+      },
+      {
+        "text": "instep",
+        "x": 0.7017195767195767,
+        "y": 0.4059620596205962,
+        "width": 0.041666666666666664,
+        "height": 0.013550135501355014,
         "confidence": 0.994,
         "is_learning_word": true
+      },
+      {
+        "text": "ball",
+        "x": 0.7156084656084656,
+        "y": 0.6070460704607046,
+        "width": 0.025793650793650792,
+        "height": 0.013008130081300813,
+        "confidence": 0.991,
+        "is_learning_word": false
+      },
+      {
+        "text": "to",
+        "x": 0.6984126984126984,
+        "y": 0.7902439024390244,
+        "width": 0.01455026455026455,
+        "height": 0.014092140921409214,
+        "confidence": 0.996,
+        "is_learning_word": false
+      },
+      {
+        "text": "shrug",
+        "x": 0.7162698412698413,
+        "y": 0.7902439024390244,
+        "width": 0.04034391534391534,
+        "height": 0.014092140921409214,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "to",
+        "x": 0.7003968253968254,
+        "y": 0.907859078590786,
+        "width": 0.013227513227513227,
+        "height": 0.012466124661246613,
+        "confidence": 0.997,
+        "is_learning_word": false
+      },
+      {
+        "text": "shake",
+        "x": 0.7182539682539683,
+        "y": 0.9067750677506775,
+        "width": 0.03835978835978836,
+        "height": 0.013550135501355014,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "your",
+        "x": 0.6838624338624338,
+        "y": 0.9235772357723577,
+        "width": 0.031746031746031744,
+        "height": 0.014092140921409214,
+        "confidence": 0.981,
+        "is_learning_word": false
+      },
+      {
+        "text": "head",
+        "x": 0.7175925925925926,
+        "y": 0.9230352303523035,
+        "width": 0.03505291005291005,
+        "height": 0.013550135501355014,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "toenail",
+        "x": 0.8452380952380952,
+        "y": 0.4075880758807588,
+        "width": 0.04828042328042328,
+        "height": 0.013550135501355014,
+        "confidence": 0.993,
+        "is_learning_word": true
+      },
+      {
+        "text": "toe",
+        "x": 0.8525132275132276,
+        "y": 0.5582655826558266,
+        "width": 0.023148148148148147,
+        "height": 0.011382113821138212,
+        "confidence": 0.996,
+        "is_learning_word": false
+      },
+      {
+        "text": "to",
+        "x": 0.8544973544973545,
+        "y": 0.7907859078590785,
+        "width": 0.01455026455026455,
+        "height": 0.012466124661246613,
+        "confidence": 0.996,
+        "is_learning_word": false
+      },
+      {
+        "text": "bow",
+        "x": 0.8723544973544973,
+        "y": 0.7902439024390244,
+        "width": 0.027116402116402115,
+        "height": 0.013008130081300813,
+        "confidence": 0.997,
+        "is_learning_word": true
+      },
+      {
+        "text": "to",
+        "x": 0.8564814814814815,
+        "y": 0.907859078590786,
+        "width": 0.01455026455026455,
+        "height": 0.013008130081300813,
+        "confidence": 0.998,
+        "is_learning_word": false
+      },
+      {
+        "text": "nod",
+        "x": 0.8743386243386243,
+        "y": 0.9073170731707317,
+        "width": 0.027777777777777776,
+        "height": 0.013550135501355014,
+        "confidence": 0.996,
+        "is_learning_word": false
       }
     ],
-    "total_words_extracted": 140,
-    "english_words": 44,
-    "matched_words": 7
+    "total_words_extracted": 151,
+    "english_words": 42,
+    "matched_words": 10
   },
   "page_0017": {
     "image": "images/page_0017.png",
     "words": [
       {
-        "text": "camisole",
-        "x": 0.103086014445174,
-        "y": 0.2481081081081081,
-        "width": 0.060407091267235716,
-        "height": 0.016756756756756756,
+        "text": "frontal",
+        "x": 0.14814814814814814,
+        "y": 0.19155844155844157,
+        "width": 0.04563492063492063,
+        "height": 0.013528138528138528,
         "confidence": 0.994,
         "is_learning_word": true
       },
       {
-        "text": "panties",
-        "x": 0.09455022980958634,
-        "y": 0.4491891891891892,
-        "width": 0.050558108995403805,
-        "height": 0.014594594594594595,
+        "text": "intercostal",
+        "x": 0.12169312169312169,
+        "y": 0.2537878787878788,
+        "width": 0.07473544973544974,
+        "height": 0.015151515151515152,
         "confidence": 0.993,
         "is_learning_word": true
       },
       {
-        "text": "undershirt",
-        "x": 0.09061063690085358,
-        "y": 0.5827027027027027,
-        "width": 0.0695994747209455,
-        "height": 0.014054054054054054,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "slippers",
-        "x": 0.25673013788575183,
-        "y": 0.2491891891891892,
-        "width": 0.05318450426789232,
-        "height": 0.015675675675675675,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "jockey",
-        "x": 0.23900196979645436,
-        "y": 0.44972972972972974,
-        "width": 0.04530531845042679,
-        "height": 0.014594594594594595,
+        "text": "biceps",
+        "x": 0.15013227513227514,
+        "y": 0.29383116883116883,
+        "width": 0.04497354497354497,
+        "height": 0.012987012987012988,
         "confidence": 0.995,
         "is_learning_word": true
       },
       {
-        "text": "pantyhose",
-        "x": 0.23374917925147734,
-        "y": 0.5832432432432433,
-        "width": 0.07156927117531188,
-        "height": 0.014054054054054054,
-        "confidence": 0.991,
+        "text": "obliques",
+        "x": 0.13624338624338625,
+        "y": 0.336038961038961,
+        "width": 0.05952380952380952,
+        "height": 0.015692640692640692,
+        "confidence": 0.979,
         "is_learning_word": true
       },
       {
-        "text": "stockings",
-        "x": 0.4024950755088641,
-        "y": 0.5843243243243244,
-        "width": 0.06500328299409061,
-        "height": 0.013513513513513514,
+        "text": "abdominals",
+        "x": 0.1164021164021164,
+        "y": 0.3739177489177489,
+        "width": 0.07936507936507936,
+        "height": 0.012445887445887446,
+        "confidence": 0.989,
+        "is_learning_word": true
+      },
+      {
+        "text": "quadriceps",
+        "x": 0.11970899470899471,
+        "y": 0.45616883116883117,
+        "width": 0.07804232804232804,
+        "height": 0.015692640692640692,
+        "confidence": 0.989,
+        "is_learning_word": true
+      },
+      {
+        "text": "incisors",
+        "x": 0.14682539682539683,
+        "y": 0.7640692640692641,
+        "width": 0.05291005291005291,
+        "height": 0.013528138528138528,
         "confidence": 0.993,
         "is_learning_word": true
       },
       {
-        "text": "pajamas",
-        "x": 0.5384110308601444,
-        "y": 0.24972972972972973,
-        "width": 0.05712409717662508,
-        "height": 0.014594594594594595,
-        "confidence": 0.961,
-        "is_learning_word": true
-      },
-      {
-        "text": "corset",
-        "x": 0.5482600131319764,
-        "y": 0.5827027027027027,
-        "width": 0.04136572554169402,
-        "height": 0.015675675675675675,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "nightie",
-        "x": 0.7045305318450427,
-        "y": 0.25027027027027027,
-        "width": 0.04990151017728168,
-        "height": 0.014054054054054054,
-        "confidence": 0.994,
-        "is_learning_word": true
-      },
-      {
-        "text": "nightdress",
-        "x": 0.6894287590282338,
-        "y": 0.2664864864864865,
-        "width": 0.07156927117531188,
-        "height": 0.012972972972972972,
-        "confidence": 0.994,
-        "is_learning_word": true
-      },
-      {
-        "text": "garter",
-        "x": 0.7137229152987524,
-        "y": 0.5848648648648649,
-        "width": 0.04136572554169402,
-        "height": 0.013513513513513514,
+        "text": "front",
+        "x": 0.3492063492063492,
+        "y": 0.689935064935065,
+        "width": 0.03505291005291005,
+        "height": 0.012987012987012988,
         "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "pectoral",
+        "x": 0.4193121693121693,
+        "y": 0.15205627705627706,
+        "width": 0.057539682539682536,
+        "height": 0.013528138528138528,
+        "confidence": 0.993,
         "is_learning_word": true
       },
       {
-        "text": "bathrobe",
-        "x": 0.8338804990151018,
-        "y": 0.24972972972972973,
-        "width": 0.06369008535784636,
-        "height": 0.014054054054054054,
-        "confidence": 0.987,
-        "is_learning_word": true
-      },
-      {
-        "text": "dressing",
-        "x": 0.8063033486539725,
-        "y": 0.2654054054054054,
-        "width": 0.05778069599474721,
-        "height": 0.014594594594594595,
+        "text": "canines",
+        "x": 0.3776455026455027,
+        "y": 0.7716450216450217,
+        "width": 0.051587301587301584,
+        "height": 0.012987012987012988,
         "confidence": 0.994,
         "is_learning_word": true
       },
       {
-        "text": "suspenders",
-        "x": 0.845042678923178,
-        "y": 0.5848648648648649,
-        "width": 0.07813525935653316,
-        "height": 0.012972972972972972,
-        "confidence": 0.982,
+        "text": "molars",
+        "x": 0.1527777777777778,
+        "y": 0.8582251082251082,
+        "width": 0.04894179894179894,
+        "height": 0.015692640692640692,
+        "confidence": 0.994,
         "is_learning_word": true
+      },
+      {
+        "text": "bicuspids",
+        "x": 0.38293650793650796,
+        "y": 0.8766233766233766,
+        "width": 0.06349206349206349,
+        "height": 0.015151515151515152,
+        "confidence": 0.981,
+        "is_learning_word": true
+      },
+      {
+        "text": "premolars",
+        "x": 0.3637566137566138,
+        "y": 0.8923160173160173,
+        "width": 0.06812169312169312,
+        "height": 0.01406926406926407,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "deltoid",
+        "x": 0.5423280423280423,
+        "y": 0.15151515151515152,
+        "width": 0.047619047619047616,
+        "height": 0.012987012987012988,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "gum",
+        "x": 0.5998677248677249,
+        "y": 0.8068181818181818,
+        "width": 0.02513227513227513,
+        "height": 0.012445887445887446,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "pulp",
+        "x": 0.5992063492063492,
+        "y": 0.8446969696969697,
+        "width": 0.031746031746031744,
+        "height": 0.015692640692640692,
+        "confidence": 0.986,
+        "is_learning_word": true
+      },
+      {
+        "text": "nerve",
+        "x": 0.5925925925925926,
+        "y": 0.8961038961038961,
+        "width": 0.03902116402116402,
+        "height": 0.011904761904761904,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "back",
+        "x": 0.6554232804232805,
+        "y": 0.6883116883116883,
+        "width": 0.031746031746031744,
+        "height": 0.012445887445887446,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "trapezius",
+        "x": 0.7268518518518519,
+        "y": 0.15205627705627706,
+        "width": 0.06283068783068783,
+        "height": 0.012987012987012988,
+        "confidence": 0.993,
+        "is_learning_word": true
+      },
+      {
+        "text": "tooth",
+        "x": 0.7261904761904762,
+        "y": 0.922077922077922,
+        "width": 0.037037037037037035,
+        "height": 0.012445887445887446,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "triceps",
+        "x": 0.8458994708994709,
+        "y": 0.2803030303030303,
+        "width": 0.046957671957671955,
+        "height": 0.012445887445887446,
+        "confidence": 0.993,
+        "is_learning_word": true
+      },
+      {
+        "text": "latissimus",
+        "x": 0.8458994708994709,
+        "y": 0.3333333333333333,
+        "width": 0.06746031746031746,
+        "height": 0.013528138528138528,
+        "confidence": 0.992,
+        "is_learning_word": false
+      },
+      {
+        "text": "dorsi",
+        "x": 0.9166666666666666,
+        "y": 0.3333333333333333,
+        "width": 0.03439153439153439,
+        "height": 0.013528138528138528,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "buttock",
+        "x": 0.8472222222222222,
+        "y": 0.39880952380952384,
+        "width": 0.05357142857142857,
+        "height": 0.012445887445887446,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "gluteus",
+        "x": 0.828042328042328,
+        "y": 0.4145021645021645,
+        "width": 0.0496031746031746,
+        "height": 0.013528138528138528,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "maximus",
+        "x": 0.8802910052910053,
+        "y": 0.4145021645021645,
+        "width": 0.06283068783068783,
+        "height": 0.012445887445887446,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "hamstring",
+        "x": 0.8472222222222222,
+        "y": 0.4675324675324675,
+        "width": 0.0701058201058201,
+        "height": 0.013528138528138528,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "calf",
+        "x": 0.8485449735449735,
+        "y": 0.560064935064935,
+        "width": 0.025793650793650792,
+        "height": 0.012987012987012988,
+        "confidence": 0.993,
+        "is_learning_word": true
+      },
+      {
+        "text": "Achilles",
+        "x": 0.8492063492063492,
+        "y": 0.6471861471861472,
+        "width": 0.05291005291005291,
+        "height": 0.012987012987012988,
+        "confidence": 0.968,
+        "is_learning_word": false
+      },
+      {
+        "text": "tendon",
+        "x": 0.8293650793650794,
+        "y": 0.6634199134199135,
+        "width": 0.047619047619047616,
+        "height": 0.011363636363636364,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "enamel",
+        "x": 0.8611111111111112,
+        "y": 0.7835497835497836,
+        "width": 0.05092592592592592,
+        "height": 0.012987012987012988,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "bone",
+        "x": 0.8644179894179894,
+        "y": 0.8317099567099567,
+        "width": 0.03571428571428571,
+        "height": 0.011363636363636364,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "root",
+        "x": 0.8617724867724867,
+        "y": 0.8701298701298701,
+        "width": 0.02976190476190476,
+        "height": 0.011363636363636364,
+        "confidence": 0.993,
+        "is_learning_word": false
       }
     ],
-    "total_words_extracted": 224,
-    "english_words": 64,
-    "matched_words": 15
+    "total_words_extracted": 151,
+    "english_words": 33,
+    "matched_words": 19
   },
   "page_0018": {
     "image": "images/page_0018.png",
     "words": [
       {
-        "text": "cap",
-        "x": 0.19369665134602757,
-        "y": 0.24864864864864866,
-        "width": 0.024294156270518712,
-        "height": 0.014054054054054054,
-        "confidence": 0.996,
-        "is_learning_word": true
+        "text": "skull",
+        "x": 0.15674603174603174,
+        "y": 0.17940379403794038,
+        "width": 0.031746031746031744,
+        "height": 0.015718157181571817,
+        "confidence": 0.993,
+        "is_learning_word": false
       },
       {
-        "text": "bouquet",
-        "x": 0.2593565331582403,
-        "y": 0.6616216216216216,
-        "width": 0.06106369008535785,
-        "height": 0.012432432432432432,
+        "text": "jaw",
+        "x": 0.164021164021164,
+        "y": 0.24065040650406505,
+        "width": 0.022486772486772486,
+        "height": 0.015176151761517615,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "shoulder",
+        "x": 0.0787037037037037,
+        "y": 0.3056910569105691,
+        "width": 0.05952380952380952,
+        "height": 0.013550135501355014,
         "confidence": 0.994,
-        "is_learning_word": true
+        "is_learning_word": false
       },
       {
-        "text": "sleeveless",
-        "x": 0.09192383453709783,
-        "y": 0.6913513513513514,
-        "width": 0.06828627708470125,
-        "height": 0.012432432432432432,
+        "text": "blade",
+        "x": 0.14087301587301587,
+        "y": 0.3051490514905149,
+        "width": 0.03968253968253968,
+        "height": 0.013550135501355014,
         "confidence": 0.993,
         "is_learning_word": true
       },
       {
-        "text": "collar",
-        "x": 0.5213394615889692,
-        "y": 0.20432432432432432,
-        "width": 0.03742613263296126,
-        "height": 0.015135135135135135,
-        "confidence": 0.994,
-        "is_learning_word": true
-      },
-      {
-        "text": "cuff",
-        "x": 0.4963887065003283,
-        "y": 0.3491891891891892,
-        "width": 0.026920551543007223,
-        "height": 0.012432432432432432,
-        "confidence": 0.99,
-        "is_learning_word": true
-      },
-      {
-        "text": "strapless",
-        "x": 0.48785292186474066,
-        "y": 0.68,
-        "width": 0.05975049244911359,
-        "height": 0.012972972972972972,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "halter",
-        "x": 0.8476690741956664,
-        "y": 0.7848648648648648,
-        "width": 0.03939592908732764,
-        "height": 0.012432432432432432,
+        "text": "scapula",
+        "x": 0.13822751322751323,
+        "y": 0.3224932249322493,
+        "width": 0.052248677248677246,
+        "height": 0.011924119241192412,
         "confidence": 0.995,
         "is_learning_word": true
       },
       {
-        "text": "waistband",
-        "x": 0.6999343401181878,
-        "y": 0.9021621621621622,
-        "width": 0.06894287590282337,
-        "height": 0.011891891891891892,
+        "text": "humerus",
+        "x": 0.12896825396825398,
+        "y": 0.359349593495935,
+        "width": 0.062169312169312166,
+        "height": 0.013008130081300813,
         "confidence": 0.993,
         "is_learning_word": true
+      },
+      {
+        "text": "rib",
+        "x": 0.1335978835978836,
+        "y": 0.405420054200542,
+        "width": 0.01984126984126984,
+        "height": 0.015176151761517615,
+        "confidence": 0.992,
+        "is_learning_word": false
+      },
+      {
+        "text": "cage",
+        "x": 0.15674603174603174,
+        "y": 0.405420054200542,
+        "width": 0.03373015873015873,
+        "height": 0.015176151761517615,
+        "confidence": 0.989,
+        "is_learning_word": false
+      },
+      {
+        "text": "pelvis",
+        "x": 0.12169312169312169,
+        "y": 0.4883468834688347,
+        "width": 0.041666666666666664,
+        "height": 0.015176151761517615,
+        "confidence": 0.993,
+        "is_learning_word": true
+      },
+      {
+        "text": "kneecap",
+        "x": 0.12433862433862433,
+        "y": 0.715989159891599,
+        "width": 0.0582010582010582,
+        "height": 0.014634146341463415,
+        "confidence": 0.99,
+        "is_learning_word": true
+      },
+      {
+        "text": "patella",
+        "x": 0.1455026455026455,
+        "y": 0.7322493224932249,
+        "width": 0.046296296296296294,
+        "height": 0.013550135501355014,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "fibula",
+        "x": 0.1527777777777778,
+        "y": 0.786449864498645,
+        "width": 0.03902116402116402,
+        "height": 0.015718157181571817,
+        "confidence": 0.922,
+        "is_learning_word": true
+      },
+      {
+        "text": "tarsals",
+        "x": 0.1488095238095238,
+        "y": 0.867750677506775,
+        "width": 0.04365079365079365,
+        "height": 0.012466124661246613,
+        "confidence": 0.993,
+        "is_learning_word": true
+      },
+      {
+        "text": "metatarsals",
+        "x": 0.11375661375661375,
+        "y": 0.9197831978319784,
+        "width": 0.0787037037037037,
+        "height": 0.013008130081300813,
+        "confidence": 0.993,
+        "is_learning_word": true
+      },
+      {
+        "text": "collarbone",
+        "x": 0.44113756613756616,
+        "y": 0.1842818428184282,
+        "width": 0.07275132275132275,
+        "height": 0.014634146341463415,
+        "confidence": 0.982,
+        "is_learning_word": true
+      },
+      {
+        "text": "clavicle",
+        "x": 0.421957671957672,
+        "y": 0.2010840108401084,
+        "width": 0.0496031746031746,
+        "height": 0.011924119241192412,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "breastbone",
+        "x": 0.5502645502645502,
+        "y": 0.3111111111111111,
+        "width": 0.0787037037037037,
+        "height": 0.013550135501355014,
+        "confidence": 0.993,
+        "is_learning_word": true
+      },
+      {
+        "text": "sternum",
+        "x": 0.531084656084656,
+        "y": 0.32791327913279134,
+        "width": 0.05026455026455026,
+        "height": 0.01084010840108401,
+        "confidence": 0.995,
+        "is_learning_word": true
+      },
+      {
+        "text": "rib",
+        "x": 0.5502645502645502,
+        "y": 0.3815718157181572,
+        "width": 0.017857142857142856,
+        "height": 0.011924119241192412,
+        "confidence": 0.99,
+        "is_learning_word": false
+      },
+      {
+        "text": "ulna",
+        "x": 0.5992063492063492,
+        "y": 0.44878048780487806,
+        "width": 0.02976190476190476,
+        "height": 0.011924119241192412,
+        "confidence": 0.992,
+        "is_learning_word": true
+      },
+      {
+        "text": "radius",
+        "x": 0.5978835978835979,
+        "y": 0.49701897018970187,
+        "width": 0.04365079365079365,
+        "height": 0.016260162601626018,
+        "confidence": 0.989,
+        "is_learning_word": true
+      },
+      {
+        "text": "carpals",
+        "x": 0.5998677248677249,
+        "y": 0.5365853658536586,
+        "width": 0.04828042328042328,
+        "height": 0.013008130081300813,
+        "confidence": 0.992,
+        "is_learning_word": true
+      },
+      {
+        "text": "metacarpals",
+        "x": 0.5998677248677249,
+        "y": 0.5750677506775068,
+        "width": 0.08465608465608465,
+        "height": 0.013550135501355014,
+        "confidence": 0.995,
+        "is_learning_word": true
+      },
+      {
+        "text": "phalanges",
+        "x": 0.6005291005291006,
+        "y": 0.6292682926829268,
+        "width": 0.07142857142857142,
+        "height": 0.013550135501355014,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "femur",
+        "x": 0.5026455026455027,
+        "y": 0.6764227642276422,
+        "width": 0.041666666666666664,
+        "height": 0.012466124661246613,
+        "confidence": 0.995,
+        "is_learning_word": true
+      },
+      {
+        "text": "tibia",
+        "x": 0.5026455026455027,
+        "y": 0.8178861788617886,
+        "width": 0.031746031746031744,
+        "height": 0.013008130081300813,
+        "confidence": 0.984,
+        "is_learning_word": true
+      },
+      {
+        "text": "phalanges",
+        "x": 0.501984126984127,
+        "y": 0.9192411924119241,
+        "width": 0.07275132275132275,
+        "height": 0.014634146341463415,
+        "confidence": 0.995,
+        "is_learning_word": true
+      },
+      {
+        "text": "spine",
+        "x": 0.7473544973544973,
+        "y": 0.5875338753387533,
+        "width": 0.037698412698412696,
+        "height": 0.013008130081300813,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "cartilage",
+        "x": 0.7407407407407407,
+        "y": 0.6482384823848238,
+        "width": 0.06018518518518518,
+        "height": 0.013008130081300813,
+        "confidence": 0.995,
+        "is_learning_word": true
+      },
+      {
+        "text": "ligament",
+        "x": 0.6587301587301587,
+        "y": 0.7745257452574525,
+        "width": 0.06349206349206349,
+        "height": 0.013550135501355014,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "bone",
+        "x": 0.7414021164021164,
+        "y": 0.8498644986449865,
+        "width": 0.036375661375661374,
+        "height": 0.014092140921409214,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "cervical",
+        "x": 0.843915343915344,
+        "y": 0.26991869918699185,
+        "width": 0.05357142857142857,
+        "height": 0.014092140921409214,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "vertebrae",
+        "x": 0.8234126984126984,
+        "y": 0.2861788617886179,
+        "width": 0.06613756613756613,
+        "height": 0.011924119241192412,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "thoracic",
+        "x": 0.843915343915344,
+        "y": 0.37398373983739835,
+        "width": 0.056216931216931214,
+        "height": 0.012466124661246613,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "vertebrae",
+        "x": 0.8247354497354498,
+        "y": 0.3897018970189702,
+        "width": 0.06547619047619048,
+        "height": 0.011924119241192412,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "lumbar",
+        "x": 0.8432539682539683,
+        "y": 0.44932249322493223,
+        "width": 0.051587301587301584,
+        "height": 0.015718157181571817,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "vertebrae",
+        "x": 0.8253968253968254,
+        "y": 0.46775067750677507,
+        "width": 0.06547619047619048,
+        "height": 0.01084010840108401,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "tailbone",
+        "x": 0.8445767195767195,
+        "y": 0.5029810298102981,
+        "width": 0.056878306878306875,
+        "height": 0.013008130081300813,
+        "confidence": 0.992,
+        "is_learning_word": true
+      },
+      {
+        "text": "sacrum",
+        "x": 0.826058201058201,
+        "y": 0.5203252032520326,
+        "width": 0.042328042328042326,
+        "height": 0.010298102981029811,
+        "confidence": 0.995,
+        "is_learning_word": true
+      },
+      {
+        "text": "coccyx",
+        "x": 0.8458994708994709,
+        "y": 0.5544715447154471,
+        "width": 0.046957671957671955,
+        "height": 0.012466124661246613,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "tendon",
+        "x": 0.8558201058201058,
+        "y": 0.8509485094850948,
+        "width": 0.04894179894179894,
+        "height": 0.012466124661246613,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "joint",
+        "x": 0.791005291005291,
+        "y": 0.9035230352303523,
+        "width": 0.03306878306878307,
+        "height": 0.015176151761517615,
+        "confidence": 0.992,
+        "is_learning_word": false
       }
     ],
-    "total_words_extracted": 155,
-    "english_words": 40,
-    "matched_words": 8
+    "total_words_extracted": 178,
+    "english_words": 42,
+    "matched_words": 26
   },
   "page_0019": {
     "image": "images/page_0019.png",
     "words": [
       {
-        "text": "raincoat",
-        "x": 0.10394736842105264,
-        "y": 0.2708108108108108,
-        "width": 0.056578947368421055,
-        "height": 0.013513513513513514,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "hood",
-        "x": 0.17828947368421053,
-        "y": 0.1745945945945946,
-        "width": 0.03618421052631579,
-        "height": 0.012972972972972972,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "anorak",
-        "x": 0.25855263157894737,
-        "y": 0.2702702702702703,
-        "width": 0.046052631578947366,
-        "height": 0.012972972972972972,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "denim",
-        "x": 0.0875,
-        "y": 0.42,
-        "width": 0.039473684210526314,
-        "height": 0.014054054054054054,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "bomber",
-        "x": 0.38421052631578945,
-        "y": 0.41945945945945945,
-        "width": 0.053289473684210525,
-        "height": 0.015135135135135135,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "poncho",
-        "x": 0.5539473684210526,
-        "y": 0.2702702702702703,
-        "width": 0.05263157894736842,
-        "height": 0.013513513513513514,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "cloak",
-        "x": 0.5657894736842105,
-        "y": 0.41945945945945945,
-        "width": 0.03618421052631579,
-        "height": 0.014054054054054054,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "tracksuit",
-        "x": 0.10328947368421053,
-        "y": 0.6367567567567568,
-        "width": 0.06118421052631579,
-        "height": 0.013513513513513514,
-        "confidence": 0.974,
-        "is_learning_word": true
-      },
-      {
-        "text": "sweatpants",
-        "x": 0.39342105263157895,
-        "y": 0.6378378378378379,
-        "width": 0.07828947368421052,
-        "height": 0.012972972972972972,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "lining",
-        "x": 0.7467105263157895,
-        "y": 0.15945945945945947,
-        "width": 0.04078947368421053,
-        "height": 0.014054054054054054,
+        "text": "trachea",
+        "x": 0.2043506921555702,
+        "y": 0.20453318942255802,
+        "width": 0.051417270929466054,
+        "height": 0.013491635186184566,
         "confidence": 0.994,
         "is_learning_word": true
       },
       {
-        "text": "snorkel",
-        "x": 0.19276315789473683,
-        "y": 0.6978378378378378,
-        "width": 0.04868421052631579,
-        "height": 0.014594594594594595,
+        "text": "lung",
+        "x": 0.2228081740276862,
+        "y": 0.2800863464651916,
+        "width": 0.032300593276203035,
+        "height": 0.01457096600107933,
+        "confidence": 0.984,
+        "is_learning_word": false
+      },
+      {
+        "text": "liver",
+        "x": 0.18391562294001318,
+        "y": 0.3486238532110092,
+        "width": 0.03032300593276203,
+        "height": 0.012951969778737183,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "gall",
+        "x": 0.13249835201054713,
+        "y": 0.38855909336211547,
+        "width": 0.023731048121292023,
+        "height": 0.015110631408526714,
+        "confidence": 0.983,
+        "is_learning_word": false
+      },
+      {
+        "text": "bladder",
+        "x": 0.15952537903757416,
+        "y": 0.3874797625472207,
+        "width": 0.05603164139749506,
+        "height": 0.016189962223421478,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "adrenal",
+        "x": 0.11865524060646011,
+        "y": 0.44846195358877494,
+        "width": 0.05207646671061305,
+        "height": 0.015650296815974095,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "gland",
+        "x": 0.17402768622280818,
+        "y": 0.44846195358877494,
+        "width": 0.03955174686882004,
+        "height": 0.015110631408526714,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "kidney",
+        "x": 0.16743572841133816,
+        "y": 0.5072854830005397,
+        "width": 0.04680290046143705,
+        "height": 0.014031300593631947,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "appendix",
+        "x": 0.14897824653922215,
+        "y": 0.5779816513761468,
+        "width": 0.06460118655240607,
+        "height": 0.015650296815974095,
         "confidence": 0.993,
         "is_learning_word": true
       },
       {
-        "text": "leotard",
-        "x": 0.10789473684210527,
-        "y": 0.7697297297297298,
-        "width": 0.04868421052631579,
-        "height": 0.011891891891891892,
-        "confidence": 0.993,
+        "text": "respiratory",
+        "x": 0.10283454185893211,
+        "y": 0.7889908256880734,
+        "width": 0.07382992748846408,
+        "height": 0.015110631408526714,
+        "confidence": 0.963,
         "is_learning_word": true
       },
       {
-        "text": "fins",
-        "x": 0.33289473684210524,
-        "y": 0.798918918918919,
-        "width": 0.02368421052631579,
-        "height": 0.014594594594594595,
-        "confidence": 0.962,
-        "is_learning_word": true
-      },
-      {
-        "text": "flippers",
-        "x": 0.3125,
-        "y": 0.8156756756756757,
-        "width": 0.05263157894736842,
-        "height": 0.012972972972972972,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "swimsuit",
-        "x": 0.2519736842105263,
-        "y": 0.8848648648648648,
-        "width": 0.0625,
-        "height": 0.015675675675675675,
-        "confidence": 0.993,
-        "is_learning_word": true
-      },
-      {
-        "text": "kimono",
-        "x": 0.5717105263157894,
-        "y": 0.7702702702702703,
-        "width": 0.05131578947368421,
-        "height": 0.012432432432432432,
+        "text": "digestive",
+        "x": 0.2603823335530653,
+        "y": 0.788451160280626,
+        "width": 0.06262359920896507,
+        "height": 0.015110631408526714,
         "confidence": 0.994,
         "is_learning_word": true
       },
       {
-        "text": "kilt",
-        "x": 0.5881578947368421,
-        "y": 0.8864864864864865,
-        "width": 0.021052631578947368,
-        "height": 0.012432432432432432,
+        "text": "urinary",
+        "x": 0.11799604482531312,
+        "y": 0.9066378845116028,
+        "width": 0.049439683586025046,
+        "height": 0.012951969778737183,
+        "confidence": 0.99,
+        "is_learning_word": true
+      },
+      {
+        "text": "endocrine",
+        "x": 0.25708635464733026,
+        "y": 0.9060982191041554,
+        "width": 0.06921555702043507,
+        "height": 0.012951969778737183,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "nervous",
+        "x": 0.4139749505603164,
+        "y": 0.7900701565029682,
+        "width": 0.05603164139749506,
+        "height": 0.011332973556395036,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "lymphatic",
+        "x": 0.4060646011865524,
+        "y": 0.9050188882892607,
+        "width": 0.06987475280158208,
+        "height": 0.01457096600107933,
+        "confidence": 0.993,
+        "is_learning_word": true
+      },
+      {
+        "text": "reproductive",
+        "x": 0.5477916941331575,
+        "y": 0.905558553696708,
+        "width": 0.08767303889255108,
+        "height": 0.013491635186184566,
         "confidence": 0.992,
         "is_learning_word": true
       },
       {
-        "text": "thawb",
-        "x": 0.7157894736842105,
-        "y": 0.7697297297297298,
-        "width": 0.042105263157894736,
-        "height": 0.012972972972972972,
-        "confidence": 0.995,
-        "is_learning_word": true
-      },
-      {
-        "text": "lapel",
-        "x": 0.8276315789473684,
-        "y": 0.21621621621621623,
-        "width": 0.034868421052631576,
-        "height": 0.015135135135135135,
+        "text": "vein",
+        "x": 0.6618325642715887,
+        "y": 0.7798165137614679,
+        "width": 0.02702702702702703,
+        "height": 0.0124123043712898,
         "confidence": 0.993,
-        "is_learning_word": true
+        "is_learning_word": false
       },
       {
-        "text": "buttonhole",
-        "x": 0.8427631578947369,
-        "y": 0.2648648648648649,
-        "width": 0.07763157894736843,
-        "height": 0.012432432432432432,
+        "text": "thyroid",
+        "x": 0.8029004614370469,
+        "y": 0.18564490016189963,
+        "width": 0.05009887936717205,
+        "height": 0.01457096600107933,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "gland",
+        "x": 0.8562953197099539,
+        "y": 0.18510523475445223,
+        "width": 0.03955174686882004,
+        "height": 0.015110631408526714,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "heart",
+        "x": 0.8035596572181938,
+        "y": 0.2951969778737183,
+        "width": 0.03889255108767304,
+        "height": 0.014031300593631947,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "stomach",
+        "x": 0.8042188529993408,
+        "y": 0.3675121424716676,
+        "width": 0.057350032959789056,
+        "height": 0.0124123043712898,
+        "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "spleen",
+        "x": 0.8042188529993408,
+        "y": 0.4069077172153265,
+        "width": 0.043506921555702044,
+        "height": 0.012951969778737183,
         "confidence": 0.994,
         "is_learning_word": true
       },
       {
-        "text": "sari",
-        "x": 0.8710526315789474,
-        "y": 0.7708108108108108,
-        "width": 0.025657894736842105,
-        "height": 0.011351351351351352,
-        "confidence": 0.992,
+        "text": "pancreas",
+        "x": 0.8042188529993408,
+        "y": 0.4473826227738802,
+        "width": 0.061305207646671064,
+        "height": 0.0124123043712898,
+        "confidence": 0.983,
         "is_learning_word": true
       },
       {
-        "text": "blouse",
-        "x": 0.8736842105263158,
-        "y": 0.8870270270270271,
-        "width": 0.046052631578947366,
-        "height": 0.012432432432432432,
+        "text": "small",
+        "x": 0.8035596572181938,
+        "y": 0.4991905018888289,
+        "width": 0.03493737640079104,
+        "height": 0.012951969778737183,
         "confidence": 0.995,
+        "is_learning_word": false
+      },
+      {
+        "text": "intestine",
+        "x": 0.8411338167435728,
+        "y": 0.49865083648138153,
+        "width": 0.061305207646671064,
+        "height": 0.014031300593631947,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "large",
+        "x": 0.8015820698747528,
+        "y": 0.5369670804101457,
+        "width": 0.03361898483849703,
+        "height": 0.015110631408526714,
+        "confidence": 0.994,
+        "is_learning_word": false
+      },
+      {
+        "text": "intestine",
+        "x": 0.8391562294001318,
+        "y": 0.5369670804101457,
+        "width": 0.06196440342781806,
+        "height": 0.015110631408526714,
+        "confidence": 0.993,
+        "is_learning_word": false
+      },
+      {
+        "text": "artery",
+        "x": 0.8760711931443639,
+        "y": 0.7997841338370211,
+        "width": 0.04087013843111404,
+        "height": 0.014031300593631947,
+        "confidence": 0.994,
+        "is_learning_word": true
+      },
+      {
+        "text": "cardiovascular",
+        "x": 0.7343441001977588,
+        "y": 0.905558553696708,
+        "width": 0.0975609756097561,
+        "height": 0.014031300593631947,
+        "confidence": 0.992,
         "is_learning_word": true
       }
     ],
-    "total_words_extracted": 228,
-    "english_words": 51,
-    "matched_words": 22
+    "total_words_extracted": 129,
+    "english_words": 29,
+    "matched_words": 13
   }
 }
