@@ -111,6 +111,28 @@ body {
     align-items: center;
     gap: 20px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.page-jump {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.page-jump-input {
+    width: 100px;
+    padding: 8px 12px;
+    border: 1px solid #d2d2d7;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    text-align: center;
+}
+
+.page-jump-input:focus {
+    outline: none;
+    border-color: #007AFF;
 }
 
 .nav-btn {
@@ -144,21 +166,42 @@ body {
 /* Image Viewer */
 .viewer-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
     margin-bottom: 30px;
+}
+
+.page-item {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.page-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    z-index: 10;
 }
 
 .image-wrapper {
     position: relative;
-    max-width: 100%;
-    display: inline-block;
+    width: 100%;
+    display: block;
 }
 
-#pageImage {
+.page-image {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 8px;
 }
 
 .overlay-layer {
@@ -180,7 +223,9 @@ body {
 }
 
 .word-overlay.new {
-    fill: rgba(40, 40, 40, 1);
+    fill: rgba(255, 255, 255, 0.85);
+    stroke: rgba(100, 100, 255, 0.3);
+    stroke-width: 1;
 }
 
 /* Revealed Word */

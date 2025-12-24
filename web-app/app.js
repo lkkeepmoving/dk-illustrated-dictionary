@@ -15,8 +15,9 @@
 class VocabularyApp {
     constructor() {
         this.data = null;
-        this.currentPage = 1;
-        this.totalPages = 0;
+        this.currentViewPage = 1; // Current view page (group of 5 pages)
+        this.totalPages = 0; // Total number of dictionary pages
+        this.pagesPerView = 5; // Number of pages to show at once
         this.pageKeys = [];
         this.wordStates = this.loadWordStates();
         this.settings = this.loadSettings();
@@ -96,7 +97,12 @@ class VocabularyApp {
     }
 
     restoreLastPage() {
-        this.currentPage = Math.min(this.settings.lastPage, this.totalPages);
+        const lastPage = Math.min(this.settings.lastPage, this.totalPages);
+        this.currentViewPage = Math.ceil(lastPage / this.pagesPerView);
+    }
+
+    getTotalViewPages() {
+        return Math.ceil(this.totalPages / this.pagesPerView);
     }
 
     // ========================================================================
@@ -128,39 +134,86 @@ class VocabularyApp {
     // ========================================================================
 
     renderPage() {
-        const pageKey = this.pageKeys[this.currentPage - 1];
-        const pageData = this.data[pageKey];
+        const totalViewPages = this.getTotalViewPages();
 
         // Update page info
-        document.getElementById('pageInfo').textContent = `Page ${this.currentPage} of ${this.totalPages}`;
+        const startPage = (this.currentViewPage - 1) * this.pagesPerView + 1;
+        const endPage = Math.min(this.currentViewPage * this.pagesPerView, this.totalPages);
+        document.getElementById('pageInfo').textContent = `Pages ${startPage}-${endPage} of ${this.totalPages}`;
 
         // Enable/disable navigation buttons
-        document.getElementById('prevBtn').disabled = this.currentPage === 1;
-        document.getElementById('nextBtn').disabled = this.currentPage === this.totalPages;
+        document.getElementById('prevBtn').disabled = this.currentViewPage === 1;
+        document.getElementById('nextBtn').disabled = this.currentViewPage === totalViewPages;
 
-        // Load image
-        const img = document.getElementById('pageImage');
-        img.src = pageData.image;
+        // Update page jump input max
+        const pageJumpInput = document.getElementById('pageJumpInput');
+        pageJumpInput.max = this.totalPages;
 
-        // Wait for image to load before rendering overlays
-        img.onload = () => {
-            this.renderOverlays(pageKey, pageData.words);
-        };
+        // Clear container
+        const container = document.getElementById('viewerContainer');
+        container.innerHTML = '';
+
+        // Render pages for current view
+        const pagesToRender = [];
+        for (let i = startPage; i <= endPage; i++) {
+            pagesToRender.push(i);
+        }
+
+        // Render each page
+        pagesToRender.forEach(pageNum => {
+            const pageKey = this.pageKeys[pageNum - 1];
+            const pageData = this.data[pageKey];
+            this.renderSinglePage(container, pageKey, pageData, pageNum);
+        });
 
         // Save current page
-        this.settings.lastPage = this.currentPage;
+        this.settings.lastPage = startPage;
         this.saveSettings();
     }
 
-    renderOverlays(pageKey, words) {
-        const svg = document.getElementById('overlayLayer');
-        const img = document.getElementById('pageImage');
+    renderSinglePage(container, pageKey, pageData, pageNum) {
+        // Create page item
+        const pageItem = document.createElement('div');
+        pageItem.className = 'page-item';
+        pageItem.id = `page-${pageNum}`;
 
+        // Page label
+        const pageLabel = document.createElement('div');
+        pageLabel.className = 'page-label';
+        pageLabel.textContent = `Page ${pageNum}`;
+        pageItem.appendChild(pageLabel);
+
+        // Image wrapper
+        const wrapper = document.createElement('div');
+        wrapper.className = 'image-wrapper';
+
+        // Image
+        const img = document.createElement('img');
+        img.className = 'page-image';
+        img.src = pageData.image;
+        img.alt = `Dictionary page ${pageNum}`;
+
+        // SVG overlay
+        const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.classList.add('overlay-layer');
+        svg.id = `overlay-${pageNum}`;
+
+        // Wait for image to load before rendering overlays
+        img.onload = () => {
+            this.renderOverlays(svg, pageKey, pageData.words, img);
+        };
+
+        wrapper.appendChild(img);
+        wrapper.appendChild(svg);
+        pageItem.appendChild(wrapper);
+        container.appendChild(pageItem);
+    }
+
+    renderOverlays(svg, pageKey, words, img) {
         // Clear existing overlays
         svg.innerHTML = '';
 
         // Set SVG dimensions to match image
-        const imgRect = img.getBoundingClientRect();
         svg.setAttribute('viewBox', `0 0 ${img.naturalWidth} ${img.naturalHeight}`);
 
         // Render each word
@@ -310,24 +363,18 @@ class VocabularyApp {
         this.pronounce(wordText);
 
         // Mark as revealed temporarily (only in memory, not saved to localStorage)
-        // This allows the word to show the "Mark as Known" button during this session
-        // but will reset to "new" on page refresh
         this.wordStates[wordId] = 'revealed';
 
-        // Re-render to show revealed state with "Mark as Known" button
-        const pageKey = this.pageKeys[this.currentPage - 1];
-        const pageData = this.data[pageKey];
-        this.renderOverlays(pageKey, pageData.words);
+        // Re-render current view
+        this.renderPage();
     }
 
-    handleKnownWordClick(wordId, wordText) {
+    handleKnownWordClick(wordId) {
         // Clicking the green circle marks the word back as "new" (unknown)
         this.setWordState(wordId, 'new');
 
-        // Re-render to show gray overlay
-        const pageKey = this.pageKeys[this.currentPage - 1];
-        const pageData = this.data[pageKey];
-        this.renderOverlays(pageKey, pageData.words);
+        // Re-render current view
+        this.renderPage();
     }
 
     pronounce(text) {
@@ -351,17 +398,43 @@ class VocabularyApp {
     // ========================================================================
 
     nextPage() {
-        if (this.currentPage < this.totalPages) {
-            this.currentPage++;
+        const totalViewPages = this.getTotalViewPages();
+        if (this.currentViewPage < totalViewPages) {
+            this.currentViewPage++;
             this.renderPage();
+            this.scrollToTop();
         }
     }
 
     prevPage() {
-        if (this.currentPage > 1) {
-            this.currentPage--;
+        if (this.currentViewPage > 1) {
+            this.currentViewPage--;
             this.renderPage();
+            this.scrollToTop();
         }
+    }
+
+    jumpToPage(pageNum) {
+        if (pageNum < 1 || pageNum > this.totalPages) {
+            alert(`Please enter a page number between 1 and ${this.totalPages}`);
+            return;
+        }
+
+        // Calculate which view page contains this page number
+        this.currentViewPage = Math.ceil(pageNum / this.pagesPerView);
+        this.renderPage();
+
+        // Scroll to specific page
+        setTimeout(() => {
+            const pageElement = document.getElementById(`page-${pageNum}`);
+            if (pageElement) {
+                pageElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }, 100);
+    }
+
+    scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     // ========================================================================
@@ -580,54 +653,6 @@ class VocabularyApp {
     }
 
     // ========================================================================
-    // EXPORT
-    // ========================================================================
-
-    exportKnownWords() {
-        const knownWords = [];
-
-        // Collect all known words
-        this.pageKeys.forEach(pageKey => {
-            const pageWords = this.data[pageKey].words;
-
-            pageWords.forEach((word, index) => {
-                const wordId = this.getWordId(pageKey, index);
-                const state = this.getWordState(wordId);
-
-                if (state === 'known') {
-                    knownWords.push(word.text);
-                }
-            });
-        });
-
-        // Sort alphabetically
-        knownWords.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
-
-        // Generate CSV content
-        const csvContent = knownWords.join('\n');
-
-        // Create download
-        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-        const url = URL.createObjectURL(blob);
-
-        // Generate filename with today's date
-        const today = new Date().toISOString().split('T')[0];
-        const filename = `known-words-${today}.csv`;
-
-        // Trigger download
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = filename;
-        link.style.display = 'none';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-
-        // Show confirmation
-        alert(`Exported ${knownWords.length} known words to ${filename}`);
-    }
-
-    // ========================================================================
     // EVENT LISTENERS
     // ========================================================================
 
@@ -636,14 +661,34 @@ class VocabularyApp {
         document.getElementById('prevBtn').addEventListener('click', () => this.prevPage());
         document.getElementById('nextBtn').addEventListener('click', () => this.nextPage());
 
-        // Keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') this.prevPage();
-            if (e.key === 'ArrowRight') this.nextPage();
+        // Page jump
+        document.getElementById('pageJumpBtn').addEventListener('click', () => {
+            const pageNum = parseInt(document.getElementById('pageJumpInput').value);
+            if (pageNum) {
+                this.jumpToPage(pageNum);
+                document.getElementById('pageJumpInput').value = '';
+            }
         });
 
-        // Export
-        document.getElementById('exportBtn').addEventListener('click', () => this.exportKnownWords());
+        // Page jump on Enter key
+        document.getElementById('pageJumpInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                const pageNum = parseInt(e.target.value);
+                if (pageNum) {
+                    this.jumpToPage(pageNum);
+                    e.target.value = '';
+                }
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            // Only navigate if not typing in input field
+            if (e.target.tagName !== 'INPUT') {
+                if (e.key === 'ArrowLeft') this.prevPage();
+                if (e.key === 'ArrowRight') this.nextPage();
+            }
+        });
 
         // Statistics
         document.getElementById('statsBtn').addEventListener('click', () => this.showStatistics());

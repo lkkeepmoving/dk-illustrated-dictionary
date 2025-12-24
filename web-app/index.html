@@ -15,7 +15,6 @@
                 <button id="pullBtn" class="btn btn-sync" title="Pull known words from GitHub Gist">⬇ Pull</button>
                 <button id="pushBtn" class="btn btn-sync" title="Push known words to GitHub Gist">⬆ Push</button>
                 <button id="settingsBtn" class="btn btn-secondary" title="Configure GitHub Gist sync">⚙️</button>
-                <button id="exportBtn" class="btn btn-primary">Export CSV</button>
                 <button id="statsBtn" class="btn btn-secondary">Progress</button>
             </div>
         </header>
@@ -30,16 +29,17 @@
             <!-- Page Navigation -->
             <nav class="page-nav">
                 <button id="prevBtn" class="nav-btn">← Previous</button>
+                <div class="page-jump">
+                    <input type="number" id="pageJumpInput" class="page-jump-input" min="1" placeholder="Go to page" />
+                    <button id="pageJumpBtn" class="btn btn-secondary">Go</button>
+                </div>
                 <span id="pageInfo" class="page-info">Page 1 of 2</span>
                 <button id="nextBtn" class="nav-btn">Next →</button>
             </nav>
 
-            <!-- Image Viewer with Overlays -->
-            <div class="viewer-container">
-                <div class="image-wrapper" id="imageWrapper">
-                    <img id="pageImage" src="" alt="Dictionary page" />
-                    <svg id="overlayLayer" class="overlay-layer"></svg>
-                </div>
+            <!-- Multi-Page Viewer with Overlays -->
+            <div class="viewer-container" id="viewerContainer">
+                <!-- Pages will be dynamically inserted here -->
             </div>
 
         </main>
