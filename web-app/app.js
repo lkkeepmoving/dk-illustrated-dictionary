@@ -27,11 +27,15 @@ class VocabularyApp {
         this.synth = window.speechSynthesis;
         this.voice = null;
 
+        // Search index
+        this.wordIndex = null; // Will be built after data loads
+
         this.init();
     }
 
     async init() {
         await this.loadData();
+        this.buildWordIndex();
         this.setupVoice();
         this.setupEventListeners();
         this.restoreLastPage();
@@ -53,6 +57,50 @@ class VocabularyApp {
             console.error('Error loading data:', error);
             alert('Failed to load vocabulary data. Please make sure data.json exists in the output directory.');
         }
+    }
+
+    buildWordIndex() {
+        // Build an index of all words to their page numbers
+        this.wordIndex = {};
+
+        this.pageKeys.forEach((pageKey, index) => {
+            const pageNum = index + 1; // PDF page number (1-indexed)
+            const pageWords = this.data[pageKey].words;
+
+            pageWords.forEach(word => {
+                const wordLower = word.text.toLowerCase();
+                if (!this.wordIndex[wordLower]) {
+                    this.wordIndex[wordLower] = {
+                        text: word.text, // Keep original case
+                        pages: []
+                    };
+                }
+                if (!this.wordIndex[wordLower].pages.includes(pageNum)) {
+                    this.wordIndex[wordLower].pages.push(pageNum);
+                }
+            });
+        });
+
+        console.log(`Built search index with ${Object.keys(this.wordIndex).length} unique words`);
+    }
+
+    searchWords(prefix) {
+        if (!prefix || prefix.length < 1) return [];
+
+        const prefixLower = prefix.toLowerCase();
+        const matches = [];
+
+        for (const [wordLower, data] of Object.entries(this.wordIndex)) {
+            if (wordLower.startsWith(prefixLower)) {
+                matches.push({
+                    word: data.text,
+                    pages: data.pages
+                });
+            }
+        }
+
+        // Sort by word alphabetically, limit to 10 results
+        return matches.sort((a, b) => a.word.localeCompare(b.word)).slice(0, 10);
     }
 
     setupVoice() {
@@ -735,10 +783,73 @@ class VocabularyApp {
     }
 
     // ========================================================================
+    // SEARCH
+    // ========================================================================
+
+    displaySearchResults(results) {
+        const dropdown = document.getElementById('searchDropdown');
+
+        if (results.length === 0) {
+            dropdown.innerHTML = '<div class="search-item"><div class="search-item-word">No results found</div></div>';
+            dropdown.classList.remove('hidden');
+            return;
+        }
+
+        dropdown.innerHTML = results.map(result => `
+            <div class="search-item" data-word="${result.word}">
+                <div class="search-item-word">${result.word}</div>
+                <div class="search-item-pages">
+                    Found on ${result.pages.length} page${result.pages.length > 1 ? 's' : ''}:
+                    <div class="page-list">
+                        ${result.pages.map(pageNum =>
+                            `<span class="page-link" data-page="${pageNum}">Page ${pageNum}</span>`
+                        ).join('')}
+                    </div>
+                </div>
+            </div>
+        `).join('');
+
+        dropdown.classList.remove('hidden');
+
+        // Add click handlers for page links
+        dropdown.querySelectorAll('.page-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const pageNum = parseInt(e.target.dataset.page);
+                this.jumpToPage(pageNum);
+                dropdown.classList.add('hidden');
+                document.getElementById('searchInput').value = '';
+            });
+        });
+    }
+
+    // ========================================================================
     // EVENT LISTENERS
     // ========================================================================
 
     setupEventListeners() {
+        // Search
+        const searchInput = document.getElementById('searchInput');
+        const searchDropdown = document.getElementById('searchDropdown');
+
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.trim();
+            if (query.length === 0) {
+                searchDropdown.classList.add('hidden');
+                return;
+            }
+
+            const results = this.searchWords(query);
+            this.displaySearchResults(results);
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.search-container')) {
+                searchDropdown.classList.add('hidden');
+            }
+        });
+
         // Navigation
         document.getElementById('prevBtn').addEventListener('click', () => this.prevPage());
         document.getElementById('nextBtn').addEventListener('click', () => this.nextPage());

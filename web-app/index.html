@@ -12,6 +12,10 @@
         <header class="app-header">
             <h1>Interactive Vocabulary Trainer</h1>
             <div class="header-controls">
+                <div class="search-container">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search words..." />
+                    <div id="searchDropdown" class="search-dropdown hidden"></div>
+                </div>
                 <button id="pullBtn" class="btn btn-sync" title="Pull known words from GitHub Gist">⬇ Pull</button>
                 <button id="pushBtn" class="btn btn-sync" title="Push known words to GitHub Gist">⬆ Push</button>
                 <button id="settingsBtn" class="btn btn-secondary" title="Configure GitHub Gist sync">⚙️</button>
