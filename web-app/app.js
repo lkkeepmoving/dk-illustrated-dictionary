@@ -246,9 +246,49 @@ class VocabularyApp {
         rect.setAttribute('data-word-id', wordId);
         rect.setAttribute('data-word-text', word.text);
 
-        rect.addEventListener('click', () => this.handleWordReveal(wordId, word.text, x, y, width, height));
+        // Click to pronounce without revealing
+        rect.addEventListener('click', () => this.pronounce(word.text));
 
         svg.appendChild(rect);
+
+        // Add "Reveal" button to the right
+        const btnWidth = 30;
+        const btnHeight = 20;
+        const btnX = x + width + 5;
+        const btnY = y + (height - btnHeight) / 2;
+
+        // Button background
+        const btnRect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+        btnRect.setAttribute('x', btnX);
+        btnRect.setAttribute('y', btnY);
+        btnRect.setAttribute('width', btnWidth);
+        btnRect.setAttribute('height', btnHeight);
+        btnRect.setAttribute('rx', 4);
+        btnRect.setAttribute('fill', '#007AFF');
+        btnRect.style.cursor = 'pointer';
+
+        // Button text
+        const btnText = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        btnText.setAttribute('x', btnX + btnWidth / 2);
+        btnText.setAttribute('y', btnY + btnHeight / 2);
+        btnText.setAttribute('text-anchor', 'middle');
+        btnText.setAttribute('dominant-baseline', 'central');
+        btnText.setAttribute('font-size', 12);
+        btnText.setAttribute('fill', 'white');
+        btnText.setAttribute('font-weight', 'bold');
+        btnText.textContent = '👁';
+        btnText.style.pointerEvents = 'none';
+
+        // Button group
+        const btnGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        btnGroup.appendChild(btnRect);
+        btnGroup.appendChild(btnText);
+
+        btnGroup.addEventListener('click', () => {
+            this.handleWordReveal(wordId, word.text);
+        });
+
+        svg.appendChild(btnGroup);
     }
 
     renderRevealedWord(svg, word, wordId, imgWidth, imgHeight) {
@@ -441,9 +481,12 @@ class VocabularyApp {
     }
 
     randomPage() {
-        // Generate random page number (1 to totalPages)
-        const randomPageNum = Math.floor(Math.random() * this.totalPages) + 1;
-        this.jumpToPage(randomPageNum);
+        // Generate random view page (not individual page)
+        const totalViewPages = this.getTotalViewPages();
+        const randomViewPage = Math.floor(Math.random() * totalViewPages) + 1;
+        this.currentViewPage = randomViewPage;
+        this.renderPage();
+        this.scrollToTop();
     }
 
     scrollToTop() {
