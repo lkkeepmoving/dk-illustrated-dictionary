@@ -513,9 +513,17 @@ class VocabularyApp {
 
         // If this is a multi-word phrase, also reveal any overlapping single words
         if (wordText.includes(' ')) {
-            const pageKey = this.pageKeys[this.currentPageIndex];
+            // Extract pageKey from wordId (format: "page_0017_word64")
+            const pageKey = wordId.substring(0, wordId.lastIndexOf('_word'));
             const pageData = this.data[pageKey];
-            const clickedWord = pageData.words.find((_, idx) => `${pageKey}_${idx}` === wordId);
+
+            if (!pageData) {
+                console.error('Could not find page data for:', pageKey, 'from wordId:', wordId);
+                this.renderPage();
+                return;
+            }
+
+            const clickedWord = pageData.words.find((_, idx) => `${pageKey}_word${idx}` === wordId);
 
             if (clickedWord) {
                 console.log('Multi-word phrase clicked:', wordText, 'at position:', clickedWord);
@@ -523,7 +531,7 @@ class VocabularyApp {
                 // Find and reveal all overlapping words
                 let overlappingCount = 0;
                 pageData.words.forEach((word, idx) => {
-                    const otherWordId = `${pageKey}_${idx}`;
+                    const otherWordId = `${pageKey}_word${idx}`;
 
                     // Skip if it's the same word or already revealed/known
                     if (otherWordId === wordId) return;
