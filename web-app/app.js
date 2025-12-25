@@ -509,8 +509,51 @@ class VocabularyApp {
         // Mark as revealed temporarily (only in memory, not saved to localStorage)
         this.wordStates[wordId] = 'revealed';
 
+        // If this is a multi-word phrase, also reveal any overlapping single words
+        if (wordText.includes(' ')) {
+            const pageKey = this.pageKeys[this.currentPageIndex];
+            const pageData = this.data[pageKey];
+            const clickedWord = pageData.words.find((_, idx) => `${pageKey}_${idx}` === wordId);
+
+            if (clickedWord) {
+                // Find and reveal all overlapping words
+                pageData.words.forEach((word, idx) => {
+                    const otherWordId = `${pageKey}_${idx}`;
+
+                    // Skip if it's the same word or already revealed/known
+                    if (otherWordId === wordId) return;
+                    if (this.wordStates[otherWordId] === 'revealed' || this.wordStates[otherWordId] === 'known') return;
+
+                    // Check if this word overlaps with the clicked phrase
+                    // A word overlaps if its bounding box intersects with the phrase's bounding box
+                    const overlaps = this.checkBoundingBoxOverlap(clickedWord, word);
+
+                    if (overlaps) {
+                        this.wordStates[otherWordId] = 'revealed';
+                    }
+                });
+            }
+        }
+
         // Re-render current view
         this.renderPage();
+    }
+
+    checkBoundingBoxOverlap(box1, box2) {
+        // Check if two bounding boxes overlap
+        // Boxes are defined by x, y, width, height (normalized 0-1)
+        const left1 = box1.x;
+        const right1 = box1.x + box1.width;
+        const top1 = box1.y;
+        const bottom1 = box1.y + box1.height;
+
+        const left2 = box2.x;
+        const right2 = box2.x + box2.width;
+        const top2 = box2.y;
+        const bottom2 = box2.y + box2.height;
+
+        // Check if they overlap
+        return !(right1 < left2 || right2 < left1 || bottom1 < top2 || bottom2 < top1);
     }
 
     handleKnownWordClick(wordId) {
