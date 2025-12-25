@@ -503,6 +503,8 @@ class VocabularyApp {
     // ========================================================================
 
     handleWordReveal(wordId, wordText) {
+        console.log('Revealing word:', wordId, wordText);
+
         // Play pronunciation
         this.pronounce(wordText);
 
@@ -516,7 +518,10 @@ class VocabularyApp {
             const clickedWord = pageData.words.find((_, idx) => `${pageKey}_${idx}` === wordId);
 
             if (clickedWord) {
+                console.log('Multi-word phrase clicked:', wordText, 'at position:', clickedWord);
+
                 // Find and reveal all overlapping words
+                let overlappingCount = 0;
                 pageData.words.forEach((word, idx) => {
                     const otherWordId = `${pageKey}_${idx}`;
 
@@ -525,13 +530,15 @@ class VocabularyApp {
                     if (this.wordStates[otherWordId] === 'revealed' || this.wordStates[otherWordId] === 'known') return;
 
                     // Check if this word overlaps with the clicked phrase
-                    // A word overlaps if its bounding box intersects with the phrase's bounding box
                     const overlaps = this.checkBoundingBoxOverlap(clickedWord, word);
 
                     if (overlaps) {
+                        console.log('  Revealing overlapping word:', word.text, 'at position:', word);
                         this.wordStates[otherWordId] = 'revealed';
+                        overlappingCount++;
                     }
                 });
+                console.log('Total overlapping words revealed:', overlappingCount);
             }
         }
 
@@ -539,21 +546,42 @@ class VocabularyApp {
         this.renderPage();
     }
 
-    checkBoundingBoxOverlap(box1, box2) {
-        // Check if two bounding boxes overlap
-        // Boxes are defined by x, y, width, height (normalized 0-1)
-        const left1 = box1.x;
-        const right1 = box1.x + box1.width;
-        const top1 = box1.y;
-        const bottom1 = box1.y + box1.height;
+    checkBoundingBoxOverlap(phraseBox, wordBox) {
+        // Check if a word box is contained within or significantly overlaps with a phrase box
+        // This is used to reveal individual words when a multi-word phrase is clicked
 
-        const left2 = box2.x;
-        const right2 = box2.x + box2.width;
-        const top2 = box2.y;
-        const bottom2 = box2.y + box2.height;
+        // For a multi-word phrase, we want to reveal words that are:
+        // 1. On the same line (similar y-coordinate)
+        // 2. Within the horizontal bounds of the phrase
 
-        // Check if they overlap
-        return !(right1 < left2 || right2 < left1 || bottom1 < top2 || bottom2 < top1);
+        const VERTICAL_THRESHOLD = 0.02; // 2% of image height
+        const HORIZONTAL_OVERLAP_THRESHOLD = 0.5; // 50% overlap required
+
+        // Check if they're on the same line (vertically aligned)
+        const phraseCenterY = phraseBox.y + phraseBox.height / 2;
+        const wordCenterY = wordBox.y + wordBox.height / 2;
+        const verticalDistance = Math.abs(phraseCenterY - wordCenterY);
+
+        if (verticalDistance > VERTICAL_THRESHOLD) {
+            return false; // Not on the same line
+        }
+
+        // Check horizontal overlap
+        const phraseLeft = phraseBox.x;
+        const phraseRight = phraseBox.x + phraseBox.width;
+        const wordLeft = wordBox.x;
+        const wordRight = wordBox.x + wordBox.width;
+
+        // Calculate overlap
+        const overlapLeft = Math.max(phraseLeft, wordLeft);
+        const overlapRight = Math.min(phraseRight, wordRight);
+        const overlapWidth = Math.max(0, overlapRight - overlapLeft);
+
+        // Check if word has significant overlap with phrase
+        const wordWidth = wordBox.width;
+        const overlapRatio = overlapWidth / wordWidth;
+
+        return overlapRatio >= HORIZONTAL_OVERLAP_THRESHOLD;
     }
 
     handleKnownWordClick(wordId) {
