@@ -335,10 +335,13 @@ class VocabularyApp {
 
             // Check if this is a learning word
             if (word.is_learning_word) {
+                const state = this.getWordState(wordId);
+
                 // Check if this single word is covered by a revealed/known phrase
+                // Only hide the single word overlay if the phrase is revealed/known AND the word itself is also revealed/known
                 let isCoveredByPhrase = false;
-                if (!word.text.includes(' ')) {
-                    // Only check for single words
+                if (!word.text.includes(' ') && (state === 'revealed' || state === 'known')) {
+                    // Only check for single words that are already revealed/known
                     for (const phraseInfo of revealedPhrases) {
                         if (this.checkBoundingBoxOverlap(phraseInfo.word, word)) {
                             isCoveredByPhrase = true;
@@ -347,14 +350,12 @@ class VocabularyApp {
                     }
                 }
 
-                // Skip rendering if covered by a revealed phrase
+                // Skip rendering if this word is covered by a revealed/known phrase
                 if (isCoveredByPhrase) {
                     return;
                 }
 
                 // Learning words: show overlays and track progress
-                const state = this.getWordState(wordId);
-
                 if (state === 'known') {
                     this.renderKnownWord(svg, word, wordId, img.naturalWidth, img.naturalHeight);
                 } else if (state === 'revealed') {
@@ -538,8 +539,36 @@ class VocabularyApp {
         // Mark as revealed temporarily (only in memory, not saved to localStorage)
         this.wordStates[wordId] = 'revealed';
 
+        // If this is a multi-word phrase, also mark overlapping single words as revealed
+        if (wordText.includes(' ')) {
+            // Extract pageKey from wordId (format: "page_0017_word64")
+            const pageKey = wordId.substring(0, wordId.lastIndexOf('_word'));
+            const pageData = this.data[pageKey];
+
+            if (pageData) {
+                const clickedWord = pageData.words.find((_, idx) => `${pageKey}_word${idx}` === wordId);
+
+                if (clickedWord) {
+                    // Find and reveal all overlapping single words
+                    pageData.words.forEach((word, idx) => {
+                        const otherWordId = `${pageKey}_word${idx}`;
+
+                        // Skip if it's the phrase itself or not a single word
+                        if (otherWordId === wordId || word.text.includes(' ')) return;
+
+                        // Check if this word overlaps with the clicked phrase
+                        const overlaps = this.checkBoundingBoxOverlap(clickedWord, word);
+
+                        if (overlaps) {
+                            // Mark overlapping single words as revealed too
+                            this.wordStates[otherWordId] = 'revealed';
+                        }
+                    });
+                }
+            }
+        }
+
         // Re-render current view
-        // The rendering logic will automatically hide any single words that overlap with revealed phrases
         this.renderPage();
     }
 
