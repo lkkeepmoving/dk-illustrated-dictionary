@@ -374,7 +374,9 @@
     ],
     "total_words_extracted": 206,
     "english_words": 41,
-    "matched_words": 3
+    "matched_words": 3,
+    "single_word_matches": 3,
+    "multi_word_matches": 0
   },
   "page_0002": {
     "image": "images/page_0002.png",
@@ -629,7 +631,7 @@
         "width": 0.017798286090969017,
         "height": 0.014054054054054054,
         "confidence": 0.995,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "to",
@@ -665,7 +667,7 @@
         "width": 0.017798286090969017,
         "height": 0.014054054054054054,
         "confidence": 0.995,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "to",
@@ -836,7 +838,7 @@
         "width": 0.02109426499670402,
         "height": 0.012432432432432432,
         "confidence": 0.993,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "in",
@@ -918,11 +920,22 @@
         "height": 0.014594594594594595,
         "confidence": 0.995,
         "is_learning_word": false
+      },
+      {
+        "text": "pen pal",
+        "x": 0.6941331575477917,
+        "y": 0.25405405405405407,
+        "width": 0.06987475280158208,
+        "height": 0.013513513513513514,
+        "confidence": 1.0,
+        "is_learning_word": true
       }
     ],
     "total_words_extracted": 186,
     "english_words": 60,
-    "matched_words": 3
+    "matched_words": 7,
+    "single_word_matches": 6,
+    "multi_word_matches": 1
   },
   "page_0003": {
     "image": "images/page_0003.png",
@@ -1024,7 +1037,7 @@
         "width": 0.017857142857142856,
         "height": 0.013550135501355014,
         "confidence": 0.996,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "on",
@@ -1430,11 +1443,40 @@
         "height": 0.013008130081300813,
         "confidence": 0.994,
         "is_learning_word": false
+      },
+      {
+        "text": "eid al-fitr",
+        "x": 0.3802910052910053,
+        "y": 0.5192411924119241,
+        "width": 0.08267195767195767,
+        "height": 0.013550135501355014,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "bar mitzvah",
+        "x": 0.8220899470899471,
+        "y": 0.7696476964769647,
+        "width": 0.10714285714285714,
+        "height": 0.013008130081300813,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "bat mitzvah",
+        "x": 0.8326719576719577,
+        "y": 0.7853658536585366,
+        "width": 0.082010582010582,
+        "height": 0.011924119241192412,
+        "confidence": 1.0,
+        "is_learning_word": true
       }
     ],
     "total_words_extracted": 218,
     "english_words": 56,
-    "matched_words": 12
+    "matched_words": 16,
+    "single_word_matches": 13,
+    "multi_word_matches": 3
   },
   "page_0004": {
     "image": "images/page_0004.png",
@@ -1698,7 +1740,7 @@
         "width": 0.05800922874093606,
         "height": 0.014594594594594595,
         "confidence": 0.994,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "rope",
@@ -1716,7 +1758,7 @@
         "width": 0.04087013843111404,
         "height": 0.013513513513513514,
         "confidence": 0.995,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "game",
@@ -1869,7 +1911,7 @@
         "width": 0.03032300593276203,
         "height": 0.011891891891891892,
         "confidence": 0.995,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "set",
@@ -1878,12 +1920,95 @@
         "width": 0.02043506921555702,
         "height": 0.011351351351351352,
         "confidence": 0.996,
-        "is_learning_word": false
+        "is_learning_word": true
+      },
+      {
+        "text": "umbilical cord",
+        "x": 0.22346736980883322,
+        "y": 0.21837837837837837,
+        "width": 0.11535926170072512,
+        "height": 0.012972972972972972,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "plush toy",
+        "x": 0.3731048121292024,
+        "y": 0.7691891891891892,
+        "width": 0.11206328279499012,
+        "height": 0.014594594594594595,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "spinning top",
+        "x": 0.06921555702043507,
+        "y": 0.918918918918919,
+        "width": 0.11931443638760712,
+        "height": 0.015135135135135135,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "jump rope",
+        "x": 0.36980883322346736,
+        "y": 0.9027027027027027,
+        "width": 0.12129202373104812,
+        "height": 0.015135135135135135,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "newborn baby",
+        "x": 0.6730388925510876,
+        "y": 0.52,
+        "width": 0.11799604482531312,
+        "height": 0.013513513513513514,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "building blocks",
+        "x": 0.6631509558338826,
+        "y": 0.7686486486486487,
+        "width": 0.13381674357284112,
+        "height": 0.014594594594594595,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "building bricks",
+        "x": 0.6783124588002637,
+        "y": 0.7848648648648648,
+        "width": 0.1015161502966381,
+        "height": 0.013513513513513514,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "jigsaw puzzle",
+        "x": 0.6769940672379697,
+        "y": 0.9027027027027027,
+        "width": 0.1094264996704021,
+        "height": 0.015135135135135135,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "train set",
+        "x": 0.8450889914304548,
+        "y": 0.9043243243243243,
+        "width": 0.07317073170731707,
+        "height": 0.011891891891891892,
+        "confidence": 1.0,
+        "is_learning_word": true
       }
     ],
     "total_words_extracted": 194,
     "english_words": 49,
-    "matched_words": 10
+    "matched_words": 23,
+    "single_word_matches": 14,
+    "multi_word_matches": 9
   },
   "page_0005": {
     "image": "images/page_0005.png",
@@ -2093,7 +2218,7 @@
         "width": 0.03571428571428571,
         "height": 0.01406926406926407,
         "confidence": 0.993,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "toy",
@@ -2409,11 +2534,112 @@
         "height": 0.015151515151515152,
         "confidence": 0.994,
         "is_learning_word": false
+      },
+      {
+        "text": "baby carriage",
+        "x": 0.19246031746031747,
+        "y": 0.25162337662337664,
+        "width": 0.15343915343915343,
+        "height": 0.015151515151515152,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "stair gate",
+        "x": 0.08134920634920635,
+        "y": 0.3869047619047619,
+        "width": 0.08002645502645503,
+        "height": 0.012445887445887446,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "moses basket",
+        "x": 0.21693121693121692,
+        "y": 0.38636363636363635,
+        "width": 0.10978835978835978,
+        "height": 0.012445887445887446,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "hobby horse",
+        "x": 0.14484126984126985,
+        "y": 0.6731601731601732,
+        "width": 0.10449735449735449,
+        "height": 0.013528138528138528,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "hula hoop",
+        "x": 0.09126984126984126,
+        "y": 0.7916666666666666,
+        "width": 0.08994708994708994,
+        "height": 0.01461038961038961,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "pull-along toy",
+        "x": 0.06349206349206349,
+        "y": 0.8988095238095238,
+        "width": 0.11507936507936507,
+        "height": 0.01461038961038961,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "high chair",
+        "x": 0.37566137566137564,
+        "y": 0.25162337662337664,
+        "width": 0.08994708994708994,
+        "height": 0.016233766233766232,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "baby bath",
+        "x": 0.376984126984127,
+        "y": 0.38582251082251084,
+        "width": 0.08664021164021164,
+        "height": 0.015151515151515152,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "bead maze",
+        "x": 0.27976190476190477,
+        "y": 0.8998917748917749,
+        "width": 0.09391534391534391,
+        "height": 0.012987012987012988,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "rocking horse",
+        "x": 0.7923280423280423,
+        "y": 0.7851731601731602,
+        "width": 0.11375661375661375,
+        "height": 0.01406926406926407,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "bowling pins",
+        "x": 0.4669312169312169,
+        "y": 0.8993506493506493,
+        "width": 0.23214285714285715,
+        "height": 0.015151515151515152,
+        "confidence": 1.0,
+        "is_learning_word": true
       }
     ],
     "total_words_extracted": 230,
     "english_words": 58,
-    "matched_words": 10
+    "matched_words": 22,
+    "single_word_matches": 11,
+    "multi_word_matches": 11
   },
   "page_0006": {
     "image": "images/page_0006.png",
@@ -2587,7 +2813,7 @@
         "width": 0.03955174686882004,
         "height": 0.015675675675675675,
         "confidence": 0.995,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "your",
@@ -2623,7 +2849,7 @@
         "width": 0.01845748187211602,
         "height": 0.013513513513513514,
         "confidence": 0.996,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "to",
@@ -2659,7 +2885,7 @@
         "width": 0.017798286090969017,
         "height": 0.012972972972972972,
         "confidence": 0.994,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "to",
@@ -2802,7 +3028,7 @@
         "y": 0.2545945945945946,
         "width": 0.015161502966381015,
         "height": 0.015135135135135135,
-        "confidence": 0.945,
+        "confidence": 0.93,
         "is_learning_word": false
       },
       {
@@ -2874,7 +3100,7 @@
         "y": 0.3891891891891892,
         "width": 0.015161502966381015,
         "height": 0.012432432432432432,
-        "confidence": 0.986,
+        "confidence": 0.987,
         "is_learning_word": false
       },
       {
@@ -3064,7 +3290,7 @@
         "width": 0.03032300593276203,
         "height": 0.011891891891891892,
         "confidence": 0.993,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "to",
@@ -3118,7 +3344,7 @@
         "width": 0.037574159525379035,
         "height": 0.012432432432432432,
         "confidence": 0.995,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "your",
@@ -3497,11 +3723,31 @@
         "height": 0.011351351351351352,
         "confidence": 0.993,
         "is_learning_word": false
+      },
+      {
+        "text": "alarm goes off",
+        "x": 0.07185234014502308,
+        "y": 0.25405405405405407,
+        "width": 0.11601845748187212,
+        "height": 0.015135135135135135,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "iron a shirt",
+        "x": 0.5253790375741595,
+        "y": 0.3886486486486487,
+        "width": 0.1074489123269611,
+        "height": 0.012972972972972972,
+        "confidence": 1.0,
+        "is_learning_word": true
       }
     ],
     "total_words_extracted": 266,
     "english_words": 120,
-    "matched_words": 2
+    "matched_words": 9,
+    "single_word_matches": 7,
+    "multi_word_matches": 2
   },
   "page_0007": {
     "image": "images/page_0007.png",
@@ -3702,7 +3948,7 @@
         "width": 0.017173051519154558,
         "height": 0.013550135501355014,
         "confidence": 0.996,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "to",
@@ -3891,7 +4137,7 @@
         "width": 0.021136063408190225,
         "height": 0.011382113821138212,
         "confidence": 0.996,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "the",
@@ -4080,7 +4326,7 @@
         "width": 0.017173051519154558,
         "height": 0.015176151761517615,
         "confidence": 0.996,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "to",
@@ -4386,7 +4632,7 @@
         "width": 0.018494055482166448,
         "height": 0.013008130081300813,
         "confidence": 0.996,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "out",
@@ -4521,7 +4767,7 @@
         "width": 0.053500660501981503,
         "height": 0.014092140921409214,
         "confidence": 0.994,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "instrument",
@@ -4629,7 +4875,7 @@
         "width": 0.0178335535006605,
         "height": 0.013008130081300813,
         "confidence": 0.996,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "to",
@@ -4665,7 +4911,7 @@
         "width": 0.05416116248348745,
         "height": 0.011382113821138212,
         "confidence": 0.993,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "Z",
@@ -4819,11 +5065,40 @@
         "height": 0.015176151761517615,
         "confidence": 0.993,
         "is_learning_word": false
+      },
+      {
+        "text": "leave work",
+        "x": 0.06274768824306473,
+        "y": 0.38699186991869916,
+        "width": 0.11228533685601057,
+        "height": 0.015718157181571817,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "wash up",
+        "x": 0.07397622192866579,
+        "y": 0.6558265582655827,
+        "width": 0.09247027741083223,
+        "height": 0.013550135501355014,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "buy groceries",
+        "x": 0.5046235138705416,
+        "y": 0.38699186991869916,
+        "width": 0.12945838837516513,
+        "height": 0.014634146341463415,
+        "confidence": 1.0,
+        "is_learning_word": true
       }
     ],
     "total_words_extracted": 355,
     "english_words": 146,
-    "matched_words": 3
+    "matched_words": 13,
+    "single_word_matches": 10,
+    "multi_word_matches": 3
   },
   "page_0008": {
     "image": "images/page_0008.png",
@@ -5164,7 +5439,9 @@
     ],
     "total_words_extracted": 206,
     "english_words": 37,
-    "matched_words": 3
+    "matched_words": 3,
+    "single_word_matches": 3,
+    "multi_word_matches": 0
   },
   "page_0009": {
     "image": "images/page_0009.png",
@@ -5415,7 +5692,9 @@
     ],
     "total_words_extracted": 156,
     "english_words": 27,
-    "matched_words": 10
+    "matched_words": 10,
+    "single_word_matches": 10,
+    "multi_word_matches": 0
   },
   "page_0010": {
     "image": "images/page_0010.png",
@@ -5526,7 +5805,7 @@
         "width": 0.027833001988071572,
         "height": 0.012466124661246613,
         "confidence": 0.993,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "to",
@@ -5760,7 +6039,7 @@
         "width": 0.021206096752816435,
         "height": 0.013008130081300813,
         "confidence": 0.992,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "to",
@@ -5985,7 +6264,7 @@
         "width": 0.05765407554671968,
         "height": 0.012466124661246613,
         "confidence": 0.995,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "to",
@@ -6071,7 +6350,9 @@
     ],
     "total_words_extracted": 185,
     "english_words": 72,
-    "matched_words": 4
+    "matched_words": 7,
+    "single_word_matches": 7,
+    "multi_word_matches": 0
   },
   "page_0011": {
     "image": "images/page_0011.png",
@@ -6691,7 +6972,9 @@
     ],
     "total_words_extracted": 180,
     "english_words": 68,
-    "matched_words": 1
+    "matched_words": 1,
+    "single_word_matches": 1,
+    "multi_word_matches": 0
   },
   "page_0012": {
     "image": "images/page_0012.png",
@@ -7063,7 +7346,7 @@
         "width": 0.017264276228419653,
         "height": 0.015718157181571817,
         "confidence": 0.995,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "your",
@@ -7253,11 +7536,49 @@
         "height": 0.012466124661246613,
         "confidence": 0.994,
         "is_learning_word": true
+      },
+      {
+        "text": "grow your hair",
+        "x": 0.4435590969455511,
+        "y": 0.3897018970189702,
+        "width": 0.1341301460823373,
+        "height": 0.014092140921409214,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "side part",
+        "x": 0.6826029216467463,
+        "y": 0.5224932249322494,
+        "width": 0.11155378486055777,
+        "height": 0.015718157181571817,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "center part",
+        "x": 0.8253652058432935,
+        "y": 0.5224932249322494,
+        "width": 0.12151394422310757,
+        "height": 0.015718157181571817,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "shaved head",
+        "x": 0.5451527224435591,
+        "y": 0.7490514905149052,
+        "width": 0.10624169986719788,
+        "height": 0.014092140921409214,
+        "confidence": 1.0,
+        "is_learning_word": true
       }
     ],
     "total_words_extracted": 189,
     "english_words": 62,
-    "matched_words": 11
+    "matched_words": 16,
+    "single_word_matches": 12,
+    "multi_word_matches": 4
   },
   "page_0013": {
     "image": "images/page_0013.png",
@@ -7882,11 +8203,130 @@
         "height": 0.014634146341463415,
         "confidence": 0.993,
         "is_learning_word": false
+      },
+      {
+        "text": "crew cut",
+        "x": 0.08305866842452209,
+        "y": 0.25582655826558265,
+        "width": 0.07778510217534608,
+        "height": 0.012466124661246613,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "greasy hair",
+        "x": 0.2267633487145682,
+        "y": 0.6563685636856369,
+        "width": 0.0922874093605801,
+        "height": 0.013008130081300813,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "curling iron",
+        "x": 0.21621621621621623,
+        "y": 0.9056910569105691,
+        "width": 0.12590639419907712,
+        "height": 0.014634146341463415,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "straight hair",
+        "x": 0.3724456163480554,
+        "y": 0.25420054200542,
+        "width": 0.0995385629531971,
+        "height": 0.014092140921409214,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "dry hair",
+        "x": 0.38760711931443637,
+        "y": 0.6563685636856369,
+        "width": 0.07053394858272907,
+        "height": 0.013008130081300813,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "wavy hair",
+        "x": 0.5306526038233356,
+        "y": 0.25474254742547425,
+        "width": 0.08305866842452209,
+        "height": 0.013550135501355014,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "curly hair",
+        "x": 0.6822676334871457,
+        "y": 0.25474254742547425,
+        "width": 0.08042188529993408,
+        "height": 0.013008130081300813,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "hair gel",
+        "x": 0.6888595912986157,
+        "y": 0.6552845528455284,
+        "width": 0.06987475280158208,
+        "height": 0.015176151761517615,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "auburn hair",
+        "x": 0.6750164798945286,
+        "y": 0.7723577235772358,
+        "width": 0.0982201713909031,
+        "height": 0.013008130081300813,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "hair shears",
+        "x": 0.6644693473961767,
+        "y": 0.9062330623306233,
+        "width": 0.12063282794990111,
+        "height": 0.014092140921409214,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "frizzy hair",
+        "x": 0.8312458800263678,
+        "y": 0.25420054200542,
+        "width": 0.08371786420566908,
+        "height": 0.013008130081300813,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "gray hair",
+        "x": 0.8193803559657218,
+        "y": 0.7707317073170732,
+        "width": 0.10876730388925511,
+        "height": 0.016260162601626018,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "hair dryer",
+        "x": 0.8312458800263678,
+        "y": 0.9056910569105691,
+        "width": 0.08767303889255108,
+        "height": 0.016260162601626018,
+        "confidence": 1.0,
+        "is_learning_word": true
       }
     ],
     "total_words_extracted": 231,
     "english_words": 69,
-    "matched_words": 15
+    "matched_words": 28,
+    "single_word_matches": 15,
+    "multi_word_matches": 13
   },
   "page_0014": {
     "image": "images/page_0014.png",
@@ -7916,7 +8356,7 @@
         "width": 0.034868421052631576,
         "height": 0.01406926406926407,
         "confidence": 0.991,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "striped",
@@ -8187,11 +8627,49 @@
         "height": 0.013528138528138528,
         "confidence": 0.993,
         "is_learning_word": true
+      },
+      {
+        "text": "chef's hat",
+        "x": 0.09605263157894736,
+        "y": 0.6488095238095238,
+        "width": 0.0868421052631579,
+        "height": 0.016233766233766232,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "chef's uniform",
+        "x": 0.15723684210526315,
+        "y": 0.9058441558441559,
+        "width": 0.11578947368421053,
+        "height": 0.01406926406926407,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "polka dot",
+        "x": 0.5217105263157895,
+        "y": 0.38852813852813856,
+        "width": 0.11315789473684211,
+        "height": 0.01406926406926407,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "lab coat",
+        "x": 0.5434210526315789,
+        "y": 0.9053030303030303,
+        "width": 0.07236842105263158,
+        "height": 0.01406926406926407,
+        "confidence": 1.0,
+        "is_learning_word": true
       }
     ],
     "total_words_extracted": 170,
     "english_words": 33,
-    "matched_words": 16
+    "matched_words": 21,
+    "single_word_matches": 17,
+    "multi_word_matches": 4
   },
   "page_0015": {
     "image": "images/page_0015.png",
@@ -8257,7 +8735,7 @@
         "width": 0.03223684210526316,
         "height": 0.01406926406926407,
         "confidence": 0.991,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "popper",
@@ -8473,7 +8951,7 @@
         "width": 0.017105263157894738,
         "height": 0.010822510822510822,
         "confidence": 0.991,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "school",
@@ -8492,11 +8970,49 @@
         "height": 0.015151515151515152,
         "confidence": 0.994,
         "is_learning_word": false
+      },
+      {
+        "text": "military uniform",
+        "x": 0.060526315789473685,
+        "y": 0.9031385281385281,
+        "width": 0.13026315789473683,
+        "height": 0.015692640692640692,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "cargo pants",
+        "x": 0.36578947368421055,
+        "y": 0.9042207792207793,
+        "width": 0.12894736842105264,
+        "height": 0.01461038961038961,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "play suit",
+        "x": 0.6861842105263158,
+        "y": 0.38636363636363635,
+        "width": 0.0756578947368421,
+        "height": 0.015692640692640692,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "romper suit",
+        "x": 0.8243421052631579,
+        "y": 0.3874458874458874,
+        "width": 0.09868421052631579,
+        "height": 0.013528138528138528,
+        "confidence": 1.0,
+        "is_learning_word": true
       }
     ],
     "total_words_extracted": 157,
     "english_words": 33,
-    "matched_words": 13
+    "matched_words": 19,
+    "single_word_matches": 15,
+    "multi_word_matches": 4
   },
   "page_0016": {
     "image": "images/page_0016.png",
@@ -8896,11 +9412,58 @@
         "height": 0.012445887445887446,
         "confidence": 0.992,
         "is_learning_word": false
+      },
+      {
+        "text": "casual outfit",
+        "x": 0.1149047931713723,
+        "y": 0.17694805194805194,
+        "width": 0.1845042678923178,
+        "height": 0.015151515151515152,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "polo shirt",
+        "x": 0.3854235062376888,
+        "y": 0.9053030303030303,
+        "width": 0.08535784635587657,
+        "height": 0.013528138528138528,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "sun hat",
+        "x": 0.5449770190413658,
+        "y": 0.9058441558441559,
+        "width": 0.066973079448457,
+        "height": 0.011904761904761904,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "tank top",
+        "x": 0.6900853578463558,
+        "y": 0.788961038961039,
+        "width": 0.07550886408404466,
+        "height": 0.013528138528138528,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "round neck",
+        "x": 0.8305975049244911,
+        "y": 0.9053030303030303,
+        "width": 0.09455022980958634,
+        "height": 0.012987012987012988,
+        "confidence": 1.0,
+        "is_learning_word": true
       }
     ],
     "total_words_extracted": 140,
     "english_words": 44,
-    "matched_words": 7
+    "matched_words": 12,
+    "single_word_matches": 7,
+    "multi_word_matches": 5
   },
   "page_0017": {
     "image": "images/page_0017.png",
@@ -9110,7 +9673,7 @@
         "width": 0.023637557452396585,
         "height": 0.013513513513513514,
         "confidence": 0.995,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "mask",
@@ -9290,7 +9853,7 @@
         "width": 0.026263952724885097,
         "height": 0.012432432432432432,
         "confidence": 0.982,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "nightie",
@@ -9344,7 +9907,7 @@
         "width": 0.04005252790544977,
         "height": 0.012432432432432432,
         "confidence": 0.995,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "to",
@@ -9362,7 +9925,7 @@
         "width": 0.028890347997373604,
         "height": 0.015135135135135135,
         "confidence": 0.989,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "up",
@@ -9443,7 +10006,7 @@
         "width": 0.058437294812869335,
         "height": 0.012432432432432432,
         "confidence": 0.995,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "to",
@@ -9480,11 +10043,67 @@
         "height": 0.015135135135135135,
         "confidence": 0.961,
         "is_learning_word": false
+      },
+      {
+        "text": "jockey shorts",
+        "x": 0.22193040052527904,
+        "y": 0.4491891891891892,
+        "width": 0.10899540380827315,
+        "height": 0.014594594594594595,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "boxer shorts",
+        "x": 0.37623112278397897,
+        "y": 0.4502702702702703,
+        "width": 0.10111621799080761,
+        "height": 0.012432432432432432,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "hang up",
+        "x": 0.37820091923834537,
+        "y": 0.898918918918919,
+        "width": 0.0958634274458306,
+        "height": 0.016216216216216217,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "take off",
+        "x": 0.5305318450426789,
+        "y": 0.7827027027027027,
+        "width": 0.08864084044648719,
+        "height": 0.014054054054054054,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "turn up",
+        "x": 0.680236375574524,
+        "y": 0.9,
+        "width": 0.08732764281024294,
+        "height": 0.015675675675675675,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "slip dress",
+        "x": 0.835193696651346,
+        "y": 0.4508108108108108,
+        "width": 0.08010505581089954,
+        "height": 0.013513513513513514,
+        "confidence": 1.0,
+        "is_learning_word": true
       }
     ],
     "total_words_extracted": 224,
     "english_words": 64,
-    "matched_words": 15
+    "matched_words": 26,
+    "single_word_matches": 20,
+    "multi_word_matches": 6
   },
   "page_0018": {
     "image": "images/page_0018.png",
@@ -9640,7 +10259,7 @@
         "width": 0.01772816808929744,
         "height": 0.012972972972972972,
         "confidence": 0.993,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "jacket",
@@ -9775,7 +10394,7 @@
         "width": 0.030203545633617858,
         "height": 0.012972972972972972,
         "confidence": 0.995,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "wedding",
@@ -9848,11 +10467,85 @@
         "height": 0.012432432432432432,
         "confidence": 0.993,
         "is_learning_word": false
+      },
+      {
+        "text": "off the shoulder",
+        "x": 0.15430072225869992,
+        "y": 0.21891891891891893,
+        "width": 0.12606697307944845,
+        "height": 0.014594594594594595,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "cap sleeve",
+        "x": 0.17334208798424164,
+        "y": 0.24756756756756756,
+        "width": 0.09192383453709783,
+        "height": 0.015135135135135135,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "slit skirt",
+        "x": 0.175311884438608,
+        "y": 0.41945945945945945,
+        "width": 0.07353906762967827,
+        "height": 0.016756756756756756,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "floor length",
+        "x": 0.13854235062376888,
+        "y": 0.5275675675675676,
+        "width": 0.10045961917268549,
+        "height": 0.015675675675675675,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "evening dress",
+        "x": 0.29087327642810246,
+        "y": 0.5691891891891891,
+        "width": 0.1103086014445174,
+        "height": 0.012972972972972972,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "bridesmaid's dress",
+        "x": 0.21930400525279053,
+        "y": 0.6145945945945946,
+        "width": 0.13000656598818122,
+        "height": 0.015675675675675675,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "shoulder pad",
+        "x": 0.6920551543007223,
+        "y": 0.15837837837837837,
+        "width": 0.10833880499015101,
+        "height": 0.014054054054054054,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "halter neck",
+        "x": 0.8299409061063691,
+        "y": 0.7843243243243243,
+        "width": 0.09323703217334209,
+        "height": 0.013513513513513514,
+        "confidence": 1.0,
+        "is_learning_word": true
       }
     ],
     "total_words_extracted": 155,
     "english_words": 40,
-    "matched_words": 8
+    "matched_words": 18,
+    "single_word_matches": 10,
+    "multi_word_matches": 8
   },
   "page_0019": {
     "image": "images/page_0019.png",
@@ -10035,7 +10728,7 @@
         "width": 0.04473684210526316,
         "height": 0.015135135135135135,
         "confidence": 0.716,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "coat",
@@ -10278,7 +10971,7 @@
         "width": 0.04802631578947368,
         "height": 0.012432432432432432,
         "confidence": 0.994,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "lederhosen",
@@ -10305,7 +10998,7 @@
         "width": 0.025,
         "height": 0.012432432432432432,
         "confidence": 0.993,
-        "is_learning_word": false
+        "is_learning_word": true
       },
       {
         "text": "blouse",
@@ -10315,10 +11008,84 @@
         "height": 0.012432432432432432,
         "confidence": 0.995,
         "is_learning_word": true
+      },
+      {
+        "text": "denim jacket",
+        "x": 0.07171052631578947,
+        "y": 0.41945945945945945,
+        "width": 0.10526315789473684,
+        "height": 0.014054054054054054,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "quilted jacket",
+        "x": 0.21776315789473685,
+        "y": 0.41945945945945945,
+        "width": 0.11315789473684211,
+        "height": 0.014594594594594595,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "duffle coat",
+        "x": 0.3756578947368421,
+        "y": 0.2691891891891892,
+        "width": 0.09276315789473684,
+        "height": 0.015135135135135135,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "bomber jacket",
+        "x": 0.36578947368421055,
+        "y": 0.4189189189189189,
+        "width": 0.11842105263157894,
+        "height": 0.015135135135135135,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "trench coat",
+        "x": 0.6986842105263158,
+        "y": 0.4518918918918919,
+        "width": 0.0868421052631579,
+        "height": 0.015675675675675675,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "football jersey",
+        "x": 0.05460526315789474,
+        "y": 0.8848648648648648,
+        "width": 0.14473684210526316,
+        "height": 0.014594594594594595,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "swim trunks",
+        "x": 0.3592105263157895,
+        "y": 0.8854054054054054,
+        "width": 0.13026315789473683,
+        "height": 0.014594594594594595,
+        "confidence": 1.0,
+        "is_learning_word": true
+      },
+      {
+        "text": "folk blouse",
+        "x": 0.8276315789473684,
+        "y": 0.8864864864864865,
+        "width": 0.09210526315789473,
+        "height": 0.012972972972972972,
+        "confidence": 1.0,
+        "is_learning_word": true
       }
     ],
     "total_words_extracted": 228,
     "english_words": 51,
-    "matched_words": 22
+    "matched_words": 33,
+    "single_word_matches": 25,
+    "multi_word_matches": 8
   }
 }
