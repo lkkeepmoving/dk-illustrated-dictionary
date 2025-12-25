@@ -87,9 +87,10 @@ print("\n" + "="*60)
 print("STEP 2: Running OCR on all pages")
 print("="*60)
 
-# Get all images
-image_files = sorted(IMAGES_DIR.glob("page_*.png"))
-print(f"Found {len(image_files)} pages to process")
+# Get all images, but skip pages 1-10 (cover pages, table of contents, etc.)
+all_images = sorted(IMAGES_DIR.glob("page_*.png"))
+image_files = [img for img in all_images if int(img.stem.split('_')[1]) >= 11]
+print(f"Found {len(all_images)} total pages, processing {len(image_files)} pages (skipping pages 1-10)")
 
 all_pages_data = {}
 

@@ -264,10 +264,11 @@ class VocabularyApp {
         // Calculate which PDF pages to show
         const startPage = (this.currentViewPage - 1) * this.pagesPerView + 1;
         const endPage = Math.min(this.currentViewPage * this.pagesPerView, this.totalPages);
+        console.log(`renderPage: currentViewPage=${this.currentViewPage}, rendering dictionary pages ${startPage}-${endPage}`);
 
         // Update page jump input max
         const pageJumpInput = document.getElementById('pageJumpInput');
-        pageJumpInput.max = this.totalPages;
+        pageJumpInput.max = totalViewPages;
 
         // Clear container
         const container = document.getElementById('viewerContainer');
@@ -671,23 +672,20 @@ class VocabularyApp {
         }
     }
 
-    jumpToPage(pageNum) {
-        if (pageNum < 1 || pageNum > this.totalPages) {
-            alert(`Please enter a page number between 1 and ${this.totalPages}`);
+    jumpToPage(viewPageNum) {
+        const totalViewPages = this.getTotalViewPages();
+        console.log(`jumpToPage called with viewPageNum=${viewPageNum}, totalViewPages=${totalViewPages}`);
+
+        if (viewPageNum < 1 || viewPageNum > totalViewPages) {
+            alert(`Please enter a page number between 1 and ${totalViewPages}`);
             return;
         }
 
-        // Calculate which view page contains this page number
-        this.currentViewPage = Math.ceil(pageNum / this.pagesPerView);
+        // Go to the specified view page
+        this.currentViewPage = viewPageNum;
+        console.log(`Set currentViewPage to ${this.currentViewPage}`);
         this.renderPage();
-
-        // Scroll to specific page
-        setTimeout(() => {
-            const pageElement = document.getElementById(`page-${pageNum}`);
-            if (pageElement) {
-                pageElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        }, 100);
+        this.scrollToTop();
     }
 
     randomPage() {
@@ -1102,8 +1100,10 @@ class VocabularyApp {
         dropdown.querySelectorAll('.page-link').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.stopPropagation();
-                const pageNum = parseInt(e.target.dataset.page);
-                this.jumpToPage(pageNum);
+                const dictPageNum = parseInt(e.target.dataset.page);
+                // Convert dictionary page number to view page number
+                const viewPageNum = Math.ceil(dictPageNum / this.pagesPerView);
+                this.jumpToPage(viewPageNum);
                 dropdown.classList.add('hidden');
                 document.getElementById('searchInput').value = '';
             });
