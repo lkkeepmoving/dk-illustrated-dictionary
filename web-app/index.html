@@ -12,6 +12,11 @@
         <header class="app-header">
             <h1>Interactive Vocabulary Trainer</h1>
             <div class="header-controls">
+                <div class="user-selector-container">
+                    <label for="userSelector" class="user-label">User:</label>
+                    <select id="userSelector" class="user-selector"></select>
+                    <button id="manageUsersBtn" class="btn btn-secondary btn-small" title="Manage users">👥</button>
+                </div>
                 <div class="search-container">
                     <input type="text" id="searchInput" class="search-input" placeholder="Search words..." />
                     <div id="searchDropdown" class="search-dropdown hidden"></div>
@@ -115,6 +120,28 @@
                     </div>
 
                     <button id="saveSettingsBtn" class="btn btn-primary btn-full-width">Save Settings</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- User Management Modal -->
+    <div id="userManagementModal" class="modal hidden">
+        <div class="modal-overlay" id="userManagementOverlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Manage Users</h2>
+                <button class="modal-close" id="closeUserManagementBtn">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="user-list" id="userList"></div>
+
+                <div class="form-group" style="margin-top: 20px;">
+                    <label for="newUserInput">Add New User:</label>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="text" id="newUserInput" class="form-input" placeholder="Enter name..." />
+                        <button id="addUserBtn" class="btn btn-primary">Add</button>
+                    </div>
                 </div>
             </div>
         </div>

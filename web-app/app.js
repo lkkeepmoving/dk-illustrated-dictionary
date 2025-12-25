@@ -20,6 +20,10 @@ class VocabularyApp {
         this.totalPages = 0; // Total number of dictionary pages
         this.pagesPerView = 5; // Number of pages to show at once
         this.pageKeys = [];
+
+        // Multi-user support
+        this.users = this.loadUsers();
+        this.currentUser = this.loadCurrentUser();
         this.wordStates = this.loadWordStates();
         this.settings = this.loadSettings();
 
@@ -37,6 +41,7 @@ class VocabularyApp {
         await this.loadData();
         this.buildWordIndex();
         this.setupVoice();
+        this.populateUserSelector();
         this.setupEventListeners();
         this.restoreLastPage();
         this.renderPage();
@@ -121,13 +126,65 @@ class VocabularyApp {
     // LOCALSTORAGE PERSISTENCE
     // ========================================================================
 
+    loadUsers() {
+        const stored = localStorage.getItem('vocabularyApp_users');
+        if (stored) {
+            return JSON.parse(stored);
+        }
+        // Default users: Kai and Ziyu
+        return ['Kai', 'Ziyu'];
+    }
+
+    saveUsers() {
+        localStorage.setItem('vocabularyApp_users', JSON.stringify(this.users));
+    }
+
+    loadCurrentUser() {
+        const stored = localStorage.getItem('vocabularyApp_currentUser');
+        if (stored && this.users.includes(stored)) {
+            return stored;
+        }
+        // Default to first user
+        return this.users[0];
+    }
+
+    saveCurrentUser() {
+        localStorage.setItem('vocabularyApp_currentUser', this.currentUser);
+    }
+
+    switchUser(username) {
+        if (!this.users.includes(username)) {
+            console.error('User not found:', username);
+            return;
+        }
+
+        // Save current user's word states before switching
+        this.saveWordStates();
+
+        // Switch to new user
+        this.currentUser = username;
+        this.saveCurrentUser();
+
+        // Load new user's word states
+        this.wordStates = this.loadWordStates();
+
+        // Re-render
+        this.renderPage();
+
+        console.log(`Switched to user: ${username}`);
+    }
+
     loadWordStates() {
-        const stored = localStorage.getItem('vocabularyApp_wordStates');
+        // Load word states for current user
+        const key = `vocabularyApp_wordStates_${this.currentUser}`;
+        const stored = localStorage.getItem(key);
         return stored ? JSON.parse(stored) : {};
     }
 
     saveWordStates() {
-        localStorage.setItem('vocabularyApp_wordStates', JSON.stringify(this.wordStates));
+        // Save word states for current user
+        const key = `vocabularyApp_wordStates_${this.currentUser}`;
+        localStorage.setItem(key, JSON.stringify(this.wordStates));
     }
 
     loadSettings() {
@@ -624,6 +681,34 @@ class VocabularyApp {
         try {
             const knownWords = this.getKnownWordsList();
 
+            // First, try to get existing Gist data to preserve other users' data
+            let existingData = { users: {} };
+            try {
+                const getResponse = await fetch(`https://api.github.com/gists/${gistId}`, {
+                    headers: { 'Authorization': `token ${githubToken}` }
+                });
+                if (getResponse.ok) {
+                    const gist = await getResponse.json();
+                    const fileContent = gist.files['known-words.json']?.content;
+                    if (fileContent) {
+                        const parsed = JSON.parse(fileContent);
+                        // Handle both old format (single user) and new format (multi-user)
+                        if (parsed.users) {
+                            existingData = parsed;
+                        }
+                    }
+                }
+            } catch (e) {
+                console.log('Could not fetch existing Gist data, will create new');
+            }
+
+            // Update current user's data
+            existingData.users[this.currentUser] = {
+                knownWords: knownWords,
+                lastUpdated: new Date().toISOString(),
+                totalCount: knownWords.length
+            };
+
             const response = await fetch(`https://api.github.com/gists/${gistId}`, {
                 method: 'PATCH',
                 headers: {
@@ -633,11 +718,7 @@ class VocabularyApp {
                 body: JSON.stringify({
                     files: {
                         'known-words.json': {
-                            content: JSON.stringify({
-                                knownWords: knownWords,
-                                lastUpdated: new Date().toISOString(),
-                                totalCount: knownWords.length
-                            }, null, 2)
+                            content: JSON.stringify(existingData, null, 2)
                         }
                     }
                 })
@@ -686,7 +767,16 @@ class VocabularyApp {
             }
 
             const data = JSON.parse(fileContent);
-            const knownWords = data.knownWords || [];
+
+            // Handle both old format (single user) and new format (multi-user)
+            let knownWords = [];
+            if (data.users && data.users[this.currentUser]) {
+                // New multi-user format
+                knownWords = data.users[this.currentUser].knownWords || [];
+            } else if (data.knownWords) {
+                // Old single-user format
+                knownWords = data.knownWords || [];
+            }
 
             // Convert array of words back to wordStates object (only for learning words)
             const newWordStates = {};
@@ -714,7 +804,7 @@ class VocabularyApp {
             // Re-render current page to show updated states
             this.renderPage();
 
-            alert(`Successfully pulled ${knownWords.length} known words from Gist!`);
+            alert(`Successfully pulled ${knownWords.length} known words for ${this.currentUser} from Gist!`);
         } catch (error) {
             console.error('Pull from Gist failed:', error);
             alert(`Failed to pull from Gist: ${error.message}\n\nPlease check your Gist ID and GitHub Token.`);
@@ -783,6 +873,95 @@ class VocabularyApp {
     }
 
     // ========================================================================
+    // USER MANAGEMENT
+    // ========================================================================
+
+    populateUserSelector() {
+        const selector = document.getElementById('userSelector');
+        selector.innerHTML = this.users.map(user =>
+            `<option value="${user}" ${user === this.currentUser ? 'selected' : ''}>${user}</option>`
+        ).join('');
+    }
+
+    showUserManagement() {
+        this.renderUserList();
+        document.getElementById('userManagementModal').classList.remove('hidden');
+    }
+
+    closeUserManagement() {
+        document.getElementById('userManagementModal').classList.add('hidden');
+    }
+
+    renderUserList() {
+        const userList = document.getElementById('userList');
+        userList.innerHTML = this.users.map(user => `
+            <div class="user-item">
+                <span class="user-item-name">${user}${user === this.currentUser ? ' (current)' : ''}</span>
+                ${this.users.length > 1 ? `<button class="user-item-delete" data-user="${user}">Delete</button>` : ''}
+            </div>
+        `).join('');
+
+        // Add delete event listeners
+        userList.querySelectorAll('.user-item-delete').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const username = btn.dataset.user;
+                this.deleteUser(username);
+            });
+        });
+    }
+
+    addUser() {
+        const input = document.getElementById('newUserInput');
+        const username = input.value.trim();
+
+        if (!username) {
+            alert('Please enter a name');
+            return;
+        }
+
+        if (this.users.includes(username)) {
+            alert('This user already exists');
+            return;
+        }
+
+        this.users.push(username);
+        this.saveUsers();
+        this.populateUserSelector();
+        this.renderUserList();
+        input.value = '';
+
+        alert(`User "${username}" added successfully!`);
+    }
+
+    deleteUser(username) {
+        if (this.users.length === 1) {
+            alert('Cannot delete the last user');
+            return;
+        }
+
+        if (!confirm(`Are you sure you want to delete user "${username}"? Their progress will be lost.`)) {
+            return;
+        }
+
+        // Remove user from list
+        this.users = this.users.filter(u => u !== username);
+        this.saveUsers();
+
+        // If deleting current user, switch to first user
+        if (this.currentUser === username) {
+            this.switchUser(this.users[0]);
+            this.populateUserSelector();
+        }
+
+        // Delete user's word states
+        const key = `vocabularyApp_wordStates_${username}`;
+        localStorage.removeItem(key);
+
+        this.renderUserList();
+        alert(`User "${username}" deleted`);
+    }
+
+    // ========================================================================
     // SEARCH
     // ========================================================================
 
@@ -828,6 +1007,20 @@ class VocabularyApp {
     // ========================================================================
 
     setupEventListeners() {
+        // User selector
+        document.getElementById('userSelector').addEventListener('change', (e) => {
+            this.switchUser(e.target.value);
+        });
+
+        // User management
+        document.getElementById('manageUsersBtn').addEventListener('click', () => this.showUserManagement());
+        document.getElementById('closeUserManagementBtn').addEventListener('click', () => this.closeUserManagement());
+        document.getElementById('userManagementOverlay').addEventListener('click', () => this.closeUserManagement());
+        document.getElementById('addUserBtn').addEventListener('click', () => this.addUser());
+        document.getElementById('newUserInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') this.addUser();
+        });
+
         // Search
         const searchInput = document.getElementById('searchInput');
         const searchDropdown = document.getElementById('searchDropdown');
