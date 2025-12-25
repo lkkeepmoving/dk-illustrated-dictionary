@@ -319,12 +319,39 @@ class VocabularyApp {
         // Set SVG dimensions to match image
         svg.setAttribute('viewBox', `0 0 ${img.naturalWidth} ${img.naturalHeight}`);
 
+        // Find all revealed multi-word phrases to check for overlaps
+        const revealedPhrases = [];
+        words.forEach((word, index) => {
+            const wordId = this.getWordId(pageKey, index);
+            const state = this.getWordState(wordId);
+            if (word.is_learning_word && word.text.includes(' ') && (state === 'revealed' || state === 'known')) {
+                revealedPhrases.push({ word, index, state });
+            }
+        });
+
         // Render each word
         words.forEach((word, index) => {
             const wordId = this.getWordId(pageKey, index);
 
             // Check if this is a learning word
             if (word.is_learning_word) {
+                // Check if this single word is covered by a revealed/known phrase
+                let isCoveredByPhrase = false;
+                if (!word.text.includes(' ')) {
+                    // Only check for single words
+                    for (const phraseInfo of revealedPhrases) {
+                        if (this.checkBoundingBoxOverlap(phraseInfo.word, word)) {
+                            isCoveredByPhrase = true;
+                            break;
+                        }
+                    }
+                }
+
+                // Skip rendering if covered by a revealed phrase
+                if (isCoveredByPhrase) {
+                    return;
+                }
+
                 // Learning words: show overlays and track progress
                 const state = this.getWordState(wordId);
 
@@ -511,46 +538,8 @@ class VocabularyApp {
         // Mark as revealed temporarily (only in memory, not saved to localStorage)
         this.wordStates[wordId] = 'revealed';
 
-        // If this is a multi-word phrase, also reveal any overlapping single words
-        if (wordText.includes(' ')) {
-            // Extract pageKey from wordId (format: "page_0017_word64")
-            const pageKey = wordId.substring(0, wordId.lastIndexOf('_word'));
-            const pageData = this.data[pageKey];
-
-            if (!pageData) {
-                console.error('Could not find page data for:', pageKey, 'from wordId:', wordId);
-                this.renderPage();
-                return;
-            }
-
-            const clickedWord = pageData.words.find((_, idx) => `${pageKey}_word${idx}` === wordId);
-
-            if (clickedWord) {
-                console.log('Multi-word phrase clicked:', wordText, 'at position:', clickedWord);
-
-                // Find and reveal all overlapping words
-                let overlappingCount = 0;
-                pageData.words.forEach((word, idx) => {
-                    const otherWordId = `${pageKey}_word${idx}`;
-
-                    // Skip if it's the same word or already revealed/known
-                    if (otherWordId === wordId) return;
-                    if (this.wordStates[otherWordId] === 'revealed' || this.wordStates[otherWordId] === 'known') return;
-
-                    // Check if this word overlaps with the clicked phrase
-                    const overlaps = this.checkBoundingBoxOverlap(clickedWord, word);
-
-                    if (overlaps) {
-                        console.log('  Revealing overlapping word:', word.text, 'at position:', word);
-                        this.wordStates[otherWordId] = 'revealed';
-                        overlappingCount++;
-                    }
-                });
-                console.log('Total overlapping words revealed:', overlappingCount);
-            }
-        }
-
         // Re-render current view
+        // The rendering logic will automatically hide any single words that overlap with revealed phrases
         this.renderPage();
     }
 
