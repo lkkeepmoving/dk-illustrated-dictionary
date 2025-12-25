@@ -220,6 +220,17 @@ class VocabularyApp {
         return `${pageKey}_word${wordIndex}`;
     }
 
+    isLearningWordForUser(word) {
+        // For user "Kai", only learn words marked as is_learning_word (curated vocabulary list)
+        // For all other users, learn ALL words (all OCR-extracted English words)
+        if (this.currentUser === 'Kai') {
+            return word.is_learning_word === true;
+        } else {
+            // New users learn all words
+            return true;
+        }
+    }
+
     getWordState(wordId) {
         return this.wordStates[wordId] || 'new';
     }
@@ -324,7 +335,7 @@ class VocabularyApp {
         words.forEach((word, index) => {
             const wordId = this.getWordId(pageKey, index);
             const state = this.getWordState(wordId);
-            if (word.is_learning_word && word.text.includes(' ') && (state === 'revealed' || state === 'known')) {
+            if (this.isLearningWordForUser(word) && word.text.includes(' ') && (state === 'revealed' || state === 'known')) {
                 revealedPhrases.push({ word, index, state });
             }
         });
@@ -334,7 +345,7 @@ class VocabularyApp {
             const wordId = this.getWordId(pageKey, index);
 
             // Check if this is a learning word
-            if (word.is_learning_word) {
+            if (this.isLearningWordForUser(word)) {
                 const state = this.getWordState(wordId);
 
                 // Check if this single word is covered by a revealed/known phrase
@@ -707,7 +718,7 @@ class VocabularyApp {
 
             pageWords.forEach((word, index) => {
                 // Only count learning words
-                if (word.is_learning_word) {
+                if (this.isLearningWordForUser(word)) {
                     totalWords++;
                     const wordId = this.getWordId(pageKey, index);
                     const state = this.getWordState(wordId);
@@ -881,7 +892,7 @@ class VocabularyApp {
                 const pageWords = this.data[pageKey].words;
                 pageWords.forEach((word, index) => {
                     // Only process learning words
-                    if (word.is_learning_word) {
+                    if (this.isLearningWordForUser(word)) {
                         const wordId = this.getWordId(pageKey, index);
                         if (knownWords.includes(word.text)) {
                             newWordStates[wordId] = 'known';
@@ -914,7 +925,7 @@ class VocabularyApp {
             const pageWords = this.data[pageKey].words;
             pageWords.forEach((word, index) => {
                 // Only process learning words
-                if (word.is_learning_word) {
+                if (this.isLearningWordForUser(word)) {
                     const wordId = this.getWordId(pageKey, index);
                     const state = this.getWordState(wordId);
                     if (state === 'known') {
