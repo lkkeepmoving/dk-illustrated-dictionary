@@ -915,7 +915,8 @@ class VocabularyApp {
         }
 
         if (!gistId) {
-            alert('No Gist ID found. Please push your words first to create a Gist, then you can pull.');
+            alert('No Gist ID found.\n\nIf you\'re the admin: Push first to create a Gist, then share the Gist ID with family.\n\nIf you\'re a family member: Ask the admin for the Gist ID and enter it in Settings.');
+            this.showSettings();
             return;
         }
 
@@ -961,11 +962,15 @@ class VocabularyApp {
             // Handle both old format (single user) and new format (multi-user)
             let knownWords = [];
             if (data.users && data.users[this.currentUser]) {
-                // New multi-user format
+                // New multi-user format - user exists in Gist
                 knownWords = data.users[this.currentUser].knownWords || [];
             } else if (data.knownWords) {
                 // Old single-user format
                 knownWords = data.knownWords || [];
+            } else {
+                // User doesn't exist in Gist yet - first time pull
+                // Return empty list (user starts fresh)
+                knownWords = [];
             }
 
             // Convert array of words back to wordStates object (only for learning words)

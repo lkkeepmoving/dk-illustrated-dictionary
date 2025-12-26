@@ -1,0 +1,2037 @@
+Using Azure endpoint: https://stock-chart-ocr.cognitiveservices.azure.com/
+Source PDF: /Users/kailu/Desktop/Projects/dk-illustrated-dictionary/source-materials/DK中英双语10000词.pdf
+Output images: /Users/kailu/Desktop/Projects/dk-illustrated-dictionary/web-app/images
+Loaded 4348 vocabulary words (2521 single-word, 1827 multi-word)
+
+============================================================
+STEP 1: Converting PDF to images
+============================================================
+Found 402 existing images
+All pages already converted, skipping PDF conversion
+
+============================================================
+STEP 2: Running OCR on all pages
+============================================================
+Found 402 pages to process
+
+Processing page_0001 (1/402)...
+  Extracted 206 words and 82 lines
+  Filtered to 41 English words
+  Matched 3 single-word + 0 multi-word = 3 total learning items
+
+Processing page_0002 (2/402)...
+  Extracted 186 words and 65 lines
+  Filtered to 60 English words
+  Matched 6 single-word + 1 multi-word = 7 total learning items
+
+Processing page_0003 (3/402)...
+  Extracted 218 words and 72 lines
+  Filtered to 56 English words
+  Matched 13 single-word + 3 multi-word = 16 total learning items
+
+Processing page_0004 (4/402)...
+  Extracted 194 words and 70 lines
+  Filtered to 49 English words
+  Matched 14 single-word + 9 multi-word = 23 total learning items
+
+Processing page_0005 (5/402)...
+  Extracted 230 words and 76 lines
+  Filtered to 58 English words
+  Matched 11 single-word + 11 multi-word = 22 total learning items
+
+Processing page_0006 (6/402)...
+  Extracted 266 words and 92 lines
+  Filtered to 120 English words
+  Matched 7 single-word + 2 multi-word = 9 total learning items
+
+Processing page_0007 (7/402)...
+  Extracted 355 words and 104 lines
+  Filtered to 146 English words
+  Matched 10 single-word + 3 multi-word = 13 total learning items
+
+Processing page_0008 (8/402)...
+  Extracted 206 words and 87 lines
+  Filtered to 37 English words
+  Matched 3 single-word + 0 multi-word = 3 total learning items
+
+Processing page_0009 (9/402)...
+  Extracted 156 words and 54 lines
+  Filtered to 27 English words
+  Matched 10 single-word + 0 multi-word = 10 total learning items
+
+Processing page_0010 (10/402)...
+  Extracted 185 words and 78 lines
+  Filtered to 72 English words
+  Matched 7 single-word + 0 multi-word = 7 total learning items
+
+Processing page_0011 (11/402)...
+  Extracted 180 words and 71 lines
+  Filtered to 68 English words
+  Matched 1 single-word + 0 multi-word = 1 total learning items
+
+Processing page_0012 (12/402)...
+  Extracted 189 words and 78 lines
+  Filtered to 62 English words
+  Matched 12 single-word + 4 multi-word = 16 total learning items
+
+Processing page_0013 (13/402)...
+  Extracted 231 words and 84 lines
+  Filtered to 69 English words
+  Matched 15 single-word + 13 multi-word = 28 total learning items
+
+Processing page_0014 (14/402)...
+  Extracted 170 words and 63 lines
+  Filtered to 33 English words
+  Matched 17 single-word + 4 multi-word = 21 total learning items
+
+Processing page_0015 (15/402)...
+  Extracted 157 words and 55 lines
+  Filtered to 33 English words
+  Matched 15 single-word + 4 multi-word = 19 total learning items
+
+Processing page_0016 (16/402)...
+  Extracted 140 words and 52 lines
+  Filtered to 44 English words
+  Matched 7 single-word + 5 multi-word = 12 total learning items
+
+Processing page_0017 (17/402)...
+  Extracted 224 words and 79 lines
+  Filtered to 64 English words
+  Matched 20 single-word + 6 multi-word = 26 total learning items
+
+Processing page_0018 (18/402)...
+  Extracted 155 words and 65 lines
+  Filtered to 40 English words
+  Matched 10 single-word + 8 multi-word = 18 total learning items
+
+Processing page_0019 (19/402)...
+  Extracted 228 words and 81 lines
+  Filtered to 51 English words
+  Matched 25 single-word + 8 multi-word = 33 total learning items
+
+Processing page_0020 (20/402)...
+  Extracted 139 words and 56 lines
+  Filtered to 31 English words
+  Matched 13 single-word + 5 multi-word = 18 total learning items
+
+Processing page_0021 (21/402)...
+  Extracted 162 words and 81 lines
+  Filtered to 29 English words
+  Matched 1 single-word + 0 multi-word = 1 total learning items
+
+Processing page_0022 (22/402)...
+  Extracted 175 words and 75 lines
+  Filtered to 34 English words
+  Matched 4 single-word + 2 multi-word = 6 total learning items
+
+Processing page_0023 (23/402)...
+  Extracted 159 words and 62 lines
+  Filtered to 34 English words
+  Matched 3 single-word + 0 multi-word = 3 total learning items
+
+Processing page_0024 (24/402)...
+  Extracted 206 words and 82 lines
+  Filtered to 41 English words
+  Matched 3 single-word + 0 multi-word = 3 total learning items
+
+Processing page_0025 (25/402)...
+  Extracted 186 words and 65 lines
+  Filtered to 60 English words
+  Matched 6 single-word + 1 multi-word = 7 total learning items
+
+Processing page_0026 (26/402)...
+  Extracted 218 words and 72 lines
+  Filtered to 56 English words
+  Matched 13 single-word + 3 multi-word = 16 total learning items
+
+Processing page_0027 (27/402)...
+  Extracted 194 words and 70 lines
+  Filtered to 49 English words
+  Matched 14 single-word + 9 multi-word = 23 total learning items
+
+Processing page_0028 (28/402)...
+  Extracted 230 words and 76 lines
+  Filtered to 58 English words
+  Matched 11 single-word + 11 multi-word = 22 total learning items
+
+Processing page_0029 (29/402)...
+  Extracted 266 words and 92 lines
+  Filtered to 120 English words
+  Matched 7 single-word + 2 multi-word = 9 total learning items
+
+Processing page_0030 (30/402)...
+  Extracted 355 words and 104 lines
+  Filtered to 146 English words
+  Matched 10 single-word + 3 multi-word = 13 total learning items
+
+Processing page_0031 (31/402)...
+  Extracted 206 words and 87 lines
+  Filtered to 37 English words
+  Matched 3 single-word + 0 multi-word = 3 total learning items
+
+Processing page_0032 (32/402)...
+  Extracted 156 words and 54 lines
+  Filtered to 27 English words
+  Matched 10 single-word + 0 multi-word = 10 total learning items
+
+Processing page_0033 (33/402)...
+  Extracted 185 words and 78 lines
+  Filtered to 72 English words
+  Matched 7 single-word + 0 multi-word = 7 total learning items
+
+Processing page_0034 (34/402)...
+  Extracted 180 words and 71 lines
+  Filtered to 68 English words
+  Matched 1 single-word + 0 multi-word = 1 total learning items
+
+Processing page_0035 (35/402)...
+  Extracted 189 words and 78 lines
+  Filtered to 62 English words
+  Matched 12 single-word + 4 multi-word = 16 total learning items
+
+Processing page_0036 (36/402)...
+  Extracted 231 words and 84 lines
+  Filtered to 69 English words
+  Matched 15 single-word + 13 multi-word = 28 total learning items
+
+Processing page_0037 (37/402)...
+  Extracted 170 words and 63 lines
+  Filtered to 33 English words
+  Matched 17 single-word + 4 multi-word = 21 total learning items
+
+Processing page_0038 (38/402)...
+  Extracted 157 words and 55 lines
+  Filtered to 33 English words
+  Matched 15 single-word + 4 multi-word = 19 total learning items
+
+Processing page_0039 (39/402)...
+  Extracted 140 words and 52 lines
+  Filtered to 44 English words
+  Matched 7 single-word + 5 multi-word = 12 total learning items
+
+Processing page_0040 (40/402)...
+  Extracted 224 words and 79 lines
+  Filtered to 64 English words
+  Matched 20 single-word + 6 multi-word = 26 total learning items
+
+Processing page_0041 (41/402)...
+  Extracted 155 words and 65 lines
+  Filtered to 40 English words
+  Matched 10 single-word + 8 multi-word = 18 total learning items
+
+Processing page_0042 (42/402)...
+  Extracted 228 words and 81 lines
+  Filtered to 51 English words
+  Matched 25 single-word + 8 multi-word = 33 total learning items
+
+Processing page_0043 (43/402)...
+  Extracted 180 words and 76 lines
+  Filtered to 45 English words
+  Matched 26 single-word + 5 multi-word = 31 total learning items
+
+Processing page_0044 (44/402)...
+  Extracted 191 words and 68 lines
+  Filtered to 44 English words
+  Matched 17 single-word + 8 multi-word = 25 total learning items
+
+Processing page_0045 (45/402)...
+  Extracted 220 words and 80 lines
+  Filtered to 55 English words
+  Matched 11 single-word + 13 multi-word = 24 total learning items
+
+Processing page_0046 (46/402)...
+  Extracted 203 words and 72 lines
+  Filtered to 51 English words
+  Matched 8 single-word + 10 multi-word = 18 total learning items
+
+Processing page_0047 (47/402)...
+  Extracted 109 words and 47 lines
+  Filtered to 28 English words
+  Matched 12 single-word + 6 multi-word = 18 total learning items
+
+Processing page_0048 (48/402)...
+  Extracted 211 words and 67 lines
+  Filtered to 53 English words
+  Matched 9 single-word + 13 multi-word = 22 total learning items
+
+Processing page_0049 (49/402)...
+  Extracted 181 words and 82 lines
+  Filtered to 46 English words
+  Matched 15 single-word + 2 multi-word = 17 total learning items
+
+Processing page_0050 (50/402)...
+  Extracted 168 words and 64 lines
+  Filtered to 40 English words
+  Matched 16 single-word + 3 multi-word = 19 total learning items
+
+Processing page_0051 (51/402)...
+  Extracted 167 words and 71 lines
+  Filtered to 47 English words
+  Matched 13 single-word + 2 multi-word = 15 total learning items
+
+Processing page_0052 (52/402)...
+  Extracted 211 words and 68 lines
+  Filtered to 60 English words
+  Matched 14 single-word + 4 multi-word = 18 total learning items
+
+Processing page_0053 (53/402)...
+  Extracted 153 words and 64 lines
+  Filtered to 37 English words
+  Matched 9 single-word + 2 multi-word = 11 total learning items
+
+Processing page_0054 (54/402)...
+  Extracted 256 words and 94 lines
+  Filtered to 56 English words
+  Matched 22 single-word + 4 multi-word = 26 total learning items
+
+Processing page_0055 (55/402)...
+  Extracted 159 words and 60 lines
+  Filtered to 45 English words
+  Matched 13 single-word + 4 multi-word = 17 total learning items
+
+Processing page_0056 (56/402)...
+  Extracted 216 words and 75 lines
+  Filtered to 54 English words
+  Matched 16 single-word + 7 multi-word = 23 total learning items
+
+Processing page_0057 (57/402)...
+  Extracted 177 words and 66 lines
+  Filtered to 56 English words
+  Matched 7 single-word + 1 multi-word = 8 total learning items
+
+Processing page_0058 (58/402)...
+  Extracted 268 words and 84 lines
+  Filtered to 60 English words
+  Matched 10 single-word + 2 multi-word = 12 total learning items
+
+Processing page_0059 (59/402)...
+  Extracted 168 words and 60 lines
+  Filtered to 57 English words
+  Matched 7 single-word + 4 multi-word = 11 total learning items
+
+Processing page_0060 (60/402)...
+  Extracted 235 words and 73 lines
+  Filtered to 45 English words
+  Matched 14 single-word + 0 multi-word = 14 total learning items
+
+Processing page_0061 (61/402)...
+  Extracted 206 words and 81 lines
+  Filtered to 57 English words
+  Matched 19 single-word + 6 multi-word = 25 total learning items
+
+Processing page_0062 (62/402)...
+  Extracted 192 words and 71 lines
+  Filtered to 51 English words
+  Matched 10 single-word + 8 multi-word = 18 total learning items
+
+Processing page_0063 (63/402)...
+  Extracted 167 words and 74 lines
+  Filtered to 50 English words
+  Matched 13 single-word + 5 multi-word = 18 total learning items
+
+Processing page_0064 (64/402)...
+  Extracted 167 words and 66 lines
+  Filtered to 39 English words
+  Matched 8 single-word + 2 multi-word = 10 total learning items
+
+Processing page_0065 (65/402)...
+  Extracted 197 words and 73 lines
+  Filtered to 50 English words
+  Matched 14 single-word + 6 multi-word = 20 total learning items
+
+Processing page_0066 (66/402)...
+  Extracted 235 words and 83 lines
+  Filtered to 57 English words
+  Matched 15 single-word + 10 multi-word = 25 total learning items
+
+Processing page_0067 (67/402)...
+  Extracted 207 words and 77 lines
+  Filtered to 60 English words
+  Matched 24 single-word + 12 multi-word = 36 total learning items
+
+Processing page_0068 (68/402)...
+  Extracted 212 words and 66 lines
+  Filtered to 53 English words
+  Matched 12 single-word + 11 multi-word = 23 total learning items
+
+Processing page_0069 (69/402)...
+  Extracted 163 words and 66 lines
+  Filtered to 64 English words
+  Matched 15 single-word + 3 multi-word = 18 total learning items
+
+Processing page_0070 (70/402)...
+  Extracted 215 words and 64 lines
+  Filtered to 68 English words
+  Matched 24 single-word + 12 multi-word = 36 total learning items
+
+Processing page_0071 (71/402)...
+  Extracted 157 words and 60 lines
+  Filtered to 43 English words
+  Matched 11 single-word + 7 multi-word = 18 total learning items
+
+Processing page_0072 (72/402)...
+  Extracted 172 words and 60 lines
+  Filtered to 43 English words
+  Matched 11 single-word + 3 multi-word = 14 total learning items
+
+Processing page_0073 (73/402)...
+  Extracted 151 words and 59 lines
+  Filtered to 48 English words
+  Matched 9 single-word + 10 multi-word = 19 total learning items
+
+Processing page_0074 (74/402)...
+  Extracted 196 words and 65 lines
+  Filtered to 55 English words
+  Matched 11 single-word + 8 multi-word = 19 total learning items
+
+Processing page_0075 (75/402)...
+  Extracted 188 words and 71 lines
+  Filtered to 53 English words
+  Matched 16 single-word + 5 multi-word = 21 total learning items
+
+Processing page_0076 (76/402)...
+  Extracted 230 words and 86 lines
+  Filtered to 64 English words
+  Matched 3 single-word + 1 multi-word = 4 total learning items
+
+Processing page_0077 (77/402)...
+  Extracted 245 words and 100 lines
+  Filtered to 72 English words
+  Matched 17 single-word + 7 multi-word = 24 total learning items
+
+Processing page_0078 (78/402)...
+  Extracted 245 words and 84 lines
+  Filtered to 66 English words
+  Matched 7 single-word + 5 multi-word = 12 total learning items
+
+Processing page_0079 (79/402)...
+  Extracted 265 words and 91 lines
+  Filtered to 125 English words
+  Matched 5 single-word + 4 multi-word = 9 total learning items
+
+Processing page_0080 (80/402)...
+  Extracted 274 words and 94 lines
+  Filtered to 70 English words
+  Matched 14 single-word + 11 multi-word = 25 total learning items
+
+Processing page_0081 (81/402)...
+  Extracted 180 words and 62 lines
+  Filtered to 52 English words
+  Matched 18 single-word + 11 multi-word = 29 total learning items
+
+Processing page_0082 (82/402)...
+  Extracted 221 words and 75 lines
+  Filtered to 68 English words
+  Matched 12 single-word + 2 multi-word = 14 total learning items
+
+Processing page_0083 (83/402)...
+  Extracted 111 words and 36 lines
+  Filtered to 27 English words
+  Matched 6 single-word + 11 multi-word = 17 total learning items
+
+Processing page_0084 (84/402)...
+  Extracted 220 words and 79 lines
+  Filtered to 56 English words
+  Matched 22 single-word + 13 multi-word = 35 total learning items
+
+Processing page_0085 (85/402)...
+  Extracted 187 words and 73 lines
+  Filtered to 53 English words
+  Matched 18 single-word + 8 multi-word = 26 total learning items
+
+Processing page_0086 (86/402)...
+  Extracted 149 words and 50 lines
+  Filtered to 42 English words
+  Matched 9 single-word + 3 multi-word = 12 total learning items
+
+Processing page_0087 (87/402)...
+  Extracted 194 words and 78 lines
+  Filtered to 43 English words
+  Matched 30 single-word + 1 multi-word = 31 total learning items
+
+Processing page_0088 (88/402)...
+  Extracted 196 words and 69 lines
+  Filtered to 47 English words
+  Matched 14 single-word + 12 multi-word = 26 total learning items
+
+Processing page_0089 (89/402)...
+  Extracted 176 words and 64 lines
+  Filtered to 65 English words
+  Matched 15 single-word + 3 multi-word = 18 total learning items
+
+Processing page_0090 (90/402)...
+  Extracted 181 words and 65 lines
+  Filtered to 44 English words
+  Matched 17 single-word + 7 multi-word = 24 total learning items
+
+Processing page_0091 (91/402)...
+  Extracted 181 words and 71 lines
+  Filtered to 44 English words
+  Matched 20 single-word + 9 multi-word = 29 total learning items
+
+Processing page_0092 (92/402)...
+  Extracted 152 words and 50 lines
+  Filtered to 35 English words
+  Matched 11 single-word + 8 multi-word = 19 total learning items
+
+Processing page_0093 (93/402)...
+  Extracted 175 words and 67 lines
+  Filtered to 37 English words
+  Matched 19 single-word + 3 multi-word = 22 total learning items
+
+Processing page_0094 (94/402)...
+  Extracted 191 words and 60 lines
+  Filtered to 43 English words
+  Matched 14 single-word + 8 multi-word = 22 total learning items
+
+Processing page_0095 (95/402)...
+  Extracted 154 words and 62 lines
+  Filtered to 42 English words
+  Matched 4 single-word + 4 multi-word = 8 total learning items
+
+Processing page_0096 (96/402)...
+  Extracted 143 words and 47 lines
+  Filtered to 32 English words
+  Matched 2 single-word + 2 multi-word = 4 total learning items
+
+Processing page_0097 (97/402)...
+  Extracted 146 words and 58 lines
+  Filtered to 41 English words
+  Matched 10 single-word + 6 multi-word = 16 total learning items
+
+Processing page_0098 (98/402)...
+  Extracted 165 words and 56 lines
+  Filtered to 35 English words
+  Matched 5 single-word + 3 multi-word = 8 total learning items
+
+Processing page_0099 (99/402)...
+  Extracted 216 words and 92 lines
+  Filtered to 55 English words
+  Matched 17 single-word + 7 multi-word = 24 total learning items
+
+Processing page_0100 (100/402)...
+  Extracted 209 words and 50 lines
+  Filtered to 50 English words
+  Matched 2 single-word + 10 multi-word = 12 total learning items
+
+Processing page_0101 (101/402)...
+  Extracted 227 words and 107 lines
+  Filtered to 71 English words
+  Matched 3 single-word + 5 multi-word = 8 total learning items
+
+Processing page_0102 (102/402)...
+  Extracted 252 words and 94 lines
+  Filtered to 68 English words
+  Matched 7 single-word + 4 multi-word = 11 total learning items
+
+Processing page_0103 (103/402)...
+  Extracted 231 words and 77 lines
+  Filtered to 75 English words
+  Matched 8 single-word + 6 multi-word = 14 total learning items
+
+Processing page_0104 (104/402)...
+  Extracted 205 words and 69 lines
+  Filtered to 70 English words
+  Matched 7 single-word + 3 multi-word = 10 total learning items
+
+Processing page_0105 (105/402)...
+  Extracted 173 words and 63 lines
+  Filtered to 54 English words
+  Matched 5 single-word + 2 multi-word = 7 total learning items
+
+Processing page_0106 (106/402)...
+  Extracted 209 words and 84 lines
+  Filtered to 47 English words
+  Matched 17 single-word + 1 multi-word = 18 total learning items
+
+Processing page_0107 (107/402)...
+  Extracted 171 words and 66 lines
+  Filtered to 43 English words
+  Matched 2 single-word + 3 multi-word = 5 total learning items
+
+Processing page_0108 (108/402)...
+  Extracted 229 words and 75 lines
+  Filtered to 46 English words
+  Matched 6 single-word + 4 multi-word = 10 total learning items
+
+Processing page_0109 (109/402)...
+  Extracted 200 words and 96 lines
+  Filtered to 48 English words
+  Matched 14 single-word + 2 multi-word = 16 total learning items
+
+Processing page_0110 (110/402)...
+  Extracted 217 words and 82 lines
+  Filtered to 53 English words
+  Matched 17 single-word + 9 multi-word = 26 total learning items
+
+Processing page_0111 (111/402)...
+  Extracted 214 words and 78 lines
+  Filtered to 54 English words
+  Matched 12 single-word + 9 multi-word = 21 total learning items
+
+Processing page_0112 (112/402)...
+  Extracted 214 words and 83 lines
+  Filtered to 52 English words
+  Matched 7 single-word + 4 multi-word = 11 total learning items
+
+Processing page_0113 (113/402)...
+  Extracted 182 words and 69 lines
+  Filtered to 47 English words
+  Matched 16 single-word + 12 multi-word = 28 total learning items
+
+Processing page_0114 (114/402)...
+  Extracted 203 words and 68 lines
+  Filtered to 49 English words
+  Matched 10 single-word + 9 multi-word = 19 total learning items
+
+Processing page_0115 (115/402)...
+  Extracted 173 words and 73 lines
+  Filtered to 46 English words
+  Matched 11 single-word + 3 multi-word = 14 total learning items
+
+Processing page_0116 (116/402)...
+  Extracted 186 words and 67 lines
+  Filtered to 44 English words
+  Matched 11 single-word + 0 multi-word = 11 total learning items
+
+Processing page_0117 (117/402)...
+  Extracted 122 words and 49 lines
+  Filtered to 32 English words
+  Matched 7 single-word + 4 multi-word = 11 total learning items
+
+Processing page_0118 (118/402)...
+  Extracted 195 words and 76 lines
+  Filtered to 42 English words
+  Matched 14 single-word + 3 multi-word = 17 total learning items
+
+Processing page_0119 (119/402)...
+  Extracted 141 words and 56 lines
+  Filtered to 39 English words
+  Matched 26 single-word + 9 multi-word = 35 total learning items
+
+Processing page_0120 (120/402)...
+  Extracted 196 words and 76 lines
+  Filtered to 40 English words
+  Matched 17 single-word + 3 multi-word = 20 total learning items
+
+Processing page_0121 (121/402)...
+  Extracted 188 words and 75 lines
+  Filtered to 52 English words
+  Matched 13 single-word + 12 multi-word = 25 total learning items
+
+Processing page_0122 (122/402)...
+  Extracted 175 words and 55 lines
+  Filtered to 42 English words
+  Matched 13 single-word + 5 multi-word = 18 total learning items
+
+Processing page_0123 (123/402)...
+  Extracted 217 words and 89 lines
+  Filtered to 55 English words
+  Matched 21 single-word + 6 multi-word = 27 total learning items
+
+Processing page_0124 (124/402)...
+  Extracted 134 words and 52 lines
+  Filtered to 27 English words
+  Matched 6 single-word + 1 multi-word = 7 total learning items
+
+Processing page_0125 (125/402)...
+  Extracted 168 words and 69 lines
+  Filtered to 43 English words
+  Matched 14 single-word + 1 multi-word = 15 total learning items
+
+Processing page_0126 (126/402)...
+  Extracted 162 words and 58 lines
+  Filtered to 34 English words
+  Matched 14 single-word + 4 multi-word = 18 total learning items
+
+Processing page_0127 (127/402)...
+  Extracted 147 words and 63 lines
+  Filtered to 35 English words
+  Matched 16 single-word + 3 multi-word = 19 total learning items
+
+Processing page_0128 (128/402)...
+  Extracted 168 words and 55 lines
+  Filtered to 34 English words
+  Matched 16 single-word + 6 multi-word = 22 total learning items
+
+Processing page_0129 (129/402)...
+  Extracted 168 words and 69 lines
+  Filtered to 40 English words
+  Matched 25 single-word + 6 multi-word = 31 total learning items
+
+Processing page_0130 (130/402)...
+  Extracted 197 words and 61 lines
+  Filtered to 47 English words
+  Matched 13 single-word + 8 multi-word = 21 total learning items
+
+Processing page_0131 (131/402)...
+  Extracted 224 words and 76 lines
+  Filtered to 66 English words
+  Matched 10 single-word + 10 multi-word = 20 total learning items
+
+Processing page_0132 (132/402)...
+  Extracted 240 words and 87 lines
+  Filtered to 51 English words
+  Matched 9 single-word + 4 multi-word = 13 total learning items
+
+Processing page_0133 (133/402)...
+  Extracted 213 words and 75 lines
+  Filtered to 54 English words
+  Matched 11 single-word + 4 multi-word = 15 total learning items
+
+Processing page_0134 (134/402)...
+  Extracted 216 words and 71 lines
+  Filtered to 55 English words
+  Matched 23 single-word + 7 multi-word = 30 total learning items
+
+Processing page_0135 (135/402)...
+  Extracted 206 words and 69 lines
+  Filtered to 47 English words
+  Matched 6 single-word + 2 multi-word = 8 total learning items
+
+Processing page_0136 (136/402)...
+  Extracted 184 words and 58 lines
+  Filtered to 50 English words
+  Matched 13 single-word + 3 multi-word = 16 total learning items
+
+Processing page_0137 (137/402)...
+  Extracted 219 words and 71 lines
+  Filtered to 50 English words
+  Matched 12 single-word + 8 multi-word = 20 total learning items
+
+Processing page_0138 (138/402)...
+  Extracted 163 words and 51 lines
+  Filtered to 42 English words
+  Matched 5 single-word + 1 multi-word = 6 total learning items
+
+Processing page_0139 (139/402)...
+  Extracted 196 words and 72 lines
+  Filtered to 44 English words
+  Matched 11 single-word + 4 multi-word = 15 total learning items
+
+Processing page_0140 (140/402)...
+  Extracted 228 words and 69 lines
+  Filtered to 43 English words
+  Matched 10 single-word + 3 multi-word = 13 total learning items
+
+Processing page_0141 (141/402)...
+  Extracted 208 words and 81 lines
+  Filtered to 55 English words
+  Matched 15 single-word + 0 multi-word = 15 total learning items
+
+Processing page_0142 (142/402)...
+  Extracted 151 words and 52 lines
+  Filtered to 35 English words
+  Matched 7 single-word + 3 multi-word = 10 total learning items
+
+Processing page_0143 (143/402)...
+  Extracted 103 words and 33 lines
+  Filtered to 27 English words
+  Matched 2 single-word + 3 multi-word = 5 total learning items
+
+Processing page_0144 (144/402)...
+  Extracted 164 words and 54 lines
+  Filtered to 42 English words
+  Matched 5 single-word + 5 multi-word = 10 total learning items
+
+Processing page_0145 (145/402)...
+  Extracted 201 words and 72 lines
+  Filtered to 46 English words
+  Matched 14 single-word + 10 multi-word = 24 total learning items
+
+Processing page_0146 (146/402)...
+  Extracted 206 words and 72 lines
+  Filtered to 48 English words
+  Matched 15 single-word + 3 multi-word = 18 total learning items
+
+Processing page_0147 (147/402)...
+  Extracted 177 words and 67 lines
+  Filtered to 52 English words
+  Matched 5 single-word + 3 multi-word = 8 total learning items
+
+Processing page_0148 (148/402)...
+  Extracted 203 words and 74 lines
+  Filtered to 54 English words
+  Matched 8 single-word + 5 multi-word = 13 total learning items
+
+Processing page_0149 (149/402)...
+  Extracted 181 words and 71 lines
+  Filtered to 55 English words
+  Matched 6 single-word + 4 multi-word = 10 total learning items
+
+Processing page_0150 (150/402)...
+  Extracted 197 words and 67 lines
+  Filtered to 44 English words
+  Matched 7 single-word + 4 multi-word = 11 total learning items
+
+Processing page_0151 (151/402)...
+  Extracted 131 words and 55 lines
+  Filtered to 30 English words
+  Matched 9 single-word + 0 multi-word = 9 total learning items
+
+Processing page_0152 (152/402)...
+  Extracted 232 words and 83 lines
+  Filtered to 62 English words
+  Matched 7 single-word + 3 multi-word = 10 total learning items
+
+Processing page_0153 (153/402)...
+  Extracted 182 words and 71 lines
+  Filtered to 41 English words
+  Matched 11 single-word + 3 multi-word = 14 total learning items
+
+Processing page_0154 (154/402)...
+  Extracted 188 words and 68 lines
+  Filtered to 35 English words
+  Matched 13 single-word + 1 multi-word = 14 total learning items
+
+Processing page_0155 (155/402)...
+  Extracted 193 words and 96 lines
+  Filtered to 50 English words
+  Matched 5 single-word + 1 multi-word = 6 total learning items
+
+Processing page_0156 (156/402)...
+  Extracted 254 words and 94 lines
+  Filtered to 73 English words
+  Matched 11 single-word + 4 multi-word = 15 total learning items
+
+Processing page_0157 (157/402)...
+  Extracted 162 words and 75 lines
+  Filtered to 34 English words
+  Matched 20 single-word + 1 multi-word = 21 total learning items
+
+Processing page_0158 (158/402)...
+  Extracted 179 words and 83 lines
+  Filtered to 48 English words
+  Matched 11 single-word + 2 multi-word = 13 total learning items
+
+Processing page_0159 (159/402)...
+  Extracted 164 words and 81 lines
+  Filtered to 44 English words
+  Matched 9 single-word + 5 multi-word = 14 total learning items
+
+Processing page_0160 (160/402)...
+  Extracted 142 words and 58 lines
+  Filtered to 36 English words
+  Matched 18 single-word + 6 multi-word = 24 total learning items
+
+Processing page_0161 (161/402)...
+  Extracted 144 words and 65 lines
+  Filtered to 39 English words
+  Matched 17 single-word + 4 multi-word = 21 total learning items
+
+Processing page_0162 (162/402)...
+  Extracted 179 words and 75 lines
+  Filtered to 40 English words
+  Matched 21 single-word + 2 multi-word = 23 total learning items
+
+Processing page_0163 (163/402)...
+  Extracted 201 words and 75 lines
+  Filtered to 46 English words
+  Matched 24 single-word + 5 multi-word = 29 total learning items
+
+Processing page_0164 (164/402)...
+  Extracted 181 words and 51 lines
+  Filtered to 34 English words
+  Matched 15 single-word + 1 multi-word = 16 total learning items
+
+Processing page_0165 (165/402)...
+  Extracted 257 words and 207 lines
+  Filtered to 118 English words
+  Matched 10 single-word + 0 multi-word = 10 total learning items
+
+Processing page_0166 (166/402)...
+  Extracted 299 words and 257 lines
+  Filtered to 148 English words
+  Matched 14 single-word + 1 multi-word = 15 total learning items
+
+Processing page_0167 (167/402)...
+  Extracted 167 words and 67 lines
+  Filtered to 44 English words
+  Matched 14 single-word + 3 multi-word = 17 total learning items
+
+Processing page_0168 (168/402)...
+  Extracted 196 words and 83 lines
+  Filtered to 48 English words
+  Matched 19 single-word + 4 multi-word = 23 total learning items
+
+Processing page_0169 (169/402)...
+  Extracted 188 words and 73 lines
+  Filtered to 42 English words
+  Matched 14 single-word + 2 multi-word = 16 total learning items
+
+Processing page_0170 (170/402)...
+  Extracted 186 words and 61 lines
+  Filtered to 48 English words
+  Matched 5 single-word + 1 multi-word = 6 total learning items
+
+Processing page_0171 (171/402)...
+  Extracted 228 words and 82 lines
+  Filtered to 66 English words
+  Matched 6 single-word + 2 multi-word = 8 total learning items
+
+Processing page_0172 (172/402)...
+  Extracted 202 words and 78 lines
+  Filtered to 45 English words
+  Matched 3 single-word + 2 multi-word = 5 total learning items
+
+Processing page_0173 (173/402)...
+  Extracted 137 words and 57 lines
+  Filtered to 36 English words
+  Matched 6 single-word + 5 multi-word = 11 total learning items
+
+Processing page_0174 (174/402)...
+  Extracted 245 words and 92 lines
+  Filtered to 57 English words
+  Matched 15 single-word + 8 multi-word = 23 total learning items
+
+Processing page_0175 (175/402)...
+  Extracted 221 words and 87 lines
+  Filtered to 60 English words
+  Matched 8 single-word + 4 multi-word = 12 total learning items
+
+Processing page_0176 (176/402)...
+  Extracted 218 words and 78 lines
+  Filtered to 70 English words
+  Matched 5 single-word + 0 multi-word = 5 total learning items
+
+Processing page_0177 (177/402)...
+  Extracted 153 words and 54 lines
+  Filtered to 36 English words
+  Matched 7 single-word + 7 multi-word = 14 total learning items
+
+Processing page_0178 (178/402)...
+  Extracted 207 words and 70 lines
+  Filtered to 48 English words
+  Matched 7 single-word + 1 multi-word = 8 total learning items
+
+Processing page_0179 (179/402)...
+  Extracted 189 words and 76 lines
+  Filtered to 48 English words
+  Matched 15 single-word + 6 multi-word = 21 total learning items
+
+Processing page_0180 (180/402)...
+  Extracted 183 words and 76 lines
+  Filtered to 45 English words
+  Matched 16 single-word + 2 multi-word = 18 total learning items
+
+Processing page_0181 (181/402)...
+  Extracted 129 words and 54 lines
+  Filtered to 34 English words
+  Matched 16 single-word + 1 multi-word = 17 total learning items
+
+Processing page_0182 (182/402)...
+  Extracted 182 words and 69 lines
+  Filtered to 42 English words
+  Matched 13 single-word + 9 multi-word = 22 total learning items
+
+Processing page_0183 (183/402)...
+  Extracted 169 words and 68 lines
+  Filtered to 47 English words
+  Matched 11 single-word + 5 multi-word = 16 total learning items
+
+Processing page_0184 (184/402)...
+  Extracted 216 words and 68 lines
+  Filtered to 51 English words
+  Matched 21 single-word + 6 multi-word = 27 total learning items
+
+Processing page_0185 (185/402)...
+  Extracted 171 words and 73 lines
+  Filtered to 40 English words
+  Matched 8 single-word + 3 multi-word = 11 total learning items
+
+Processing page_0186 (186/402)...
+  Extracted 173 words and 60 lines
+  Filtered to 35 English words
+  Matched 10 single-word + 8 multi-word = 18 total learning items
+
+Processing page_0187 (187/402)...
+  Extracted 188 words and 78 lines
+  Filtered to 45 English words
+  Matched 13 single-word + 2 multi-word = 15 total learning items
+
+Processing page_0188 (188/402)...
+  Extracted 239 words and 79 lines
+  Filtered to 58 English words
+  Matched 18 single-word + 1 multi-word = 19 total learning items
+
+Processing page_0189 (189/402)...
+  Extracted 200 words and 71 lines
+  Filtered to 58 English words
+  Matched 7 single-word + 4 multi-word = 11 total learning items
+
+Processing page_0190 (190/402)...
+  Extracted 157 words and 47 lines
+  Filtered to 34 English words
+  Matched 8 single-word + 2 multi-word = 10 total learning items
+
+Processing page_0191 (191/402)...
+  Extracted 192 words and 72 lines
+  Filtered to 45 English words
+  Matched 9 single-word + 0 multi-word = 9 total learning items
+
+Processing page_0192 (192/402)...
+  Extracted 192 words and 67 lines
+  Filtered to 50 English words
+  Matched 7 single-word + 1 multi-word = 8 total learning items
+
+Processing page_0193 (193/402)...
+  Extracted 116 words and 37 lines
+  Filtered to 46 English words
+  Matched 2 single-word + 1 multi-word = 3 total learning items
+
+Processing page_0194 (194/402)...
+  Extracted 155 words and 47 lines
+  Filtered to 50 English words
+  Matched 2 single-word + 1 multi-word = 3 total learning items
+
+Processing page_0195 (195/402)...
+  Extracted 177 words and 80 lines
+  Filtered to 41 English words
+  Matched 4 single-word + 0 multi-word = 4 total learning items
+
+Processing page_0196 (196/402)...
+  Extracted 250 words and 91 lines
+  Filtered to 65 English words
+  Matched 1 single-word + 1 multi-word = 2 total learning items
+
+Processing page_0197 (197/402)...
+  Extracted 167 words and 67 lines
+  Filtered to 47 English words
+  Matched 2 single-word + 1 multi-word = 3 total learning items
+
+Processing page_0198 (198/402)...
+  Extracted 188 words and 72 lines
+  Filtered to 66 English words
+  Matched 8 single-word + 3 multi-word = 11 total learning items
+
+Processing page_0199 (199/402)...
+  Extracted 172 words and 56 lines
+  Filtered to 62 English words
+  Matched 4 single-word + 4 multi-word = 8 total learning items
+
+Processing page_0200 (200/402)...
+  Extracted 192 words and 72 lines
+  Filtered to 50 English words
+  Matched 6 single-word + 3 multi-word = 9 total learning items
+
+Processing page_0201 (201/402)...
+  Extracted 235 words and 80 lines
+  Filtered to 64 English words
+  Matched 11 single-word + 7 multi-word = 18 total learning items
+
+Processing page_0202 (202/402)...
+  Extracted 271 words and 75 lines
+  Filtered to 81 English words
+  Matched 9 single-word + 4 multi-word = 13 total learning items
+
+Processing page_0203 (203/402)...
+  Extracted 152 words and 55 lines
+  Filtered to 42 English words
+  Matched 13 single-word + 5 multi-word = 18 total learning items
+
+Processing page_0204 (204/402)...
+  Extracted 257 words and 78 lines
+  Filtered to 63 English words
+  Matched 22 single-word + 9 multi-word = 31 total learning items
+
+Processing page_0205 (205/402)...
+  Extracted 154 words and 55 lines
+  Filtered to 39 English words
+  Matched 12 single-word + 7 multi-word = 19 total learning items
+
+Processing page_0206 (206/402)...
+  Extracted 252 words and 77 lines
+  Filtered to 87 English words
+  Matched 15 single-word + 10 multi-word = 25 total learning items
+
+Processing page_0207 (207/402)...
+  Extracted 191 words and 67 lines
+  Filtered to 48 English words
+  Matched 15 single-word + 7 multi-word = 22 total learning items
+
+Processing page_0208 (208/402)...
+  Extracted 204 words and 65 lines
+  Filtered to 47 English words
+  Matched 6 single-word + 12 multi-word = 18 total learning items
+
+Processing page_0209 (209/402)...
+  Extracted 144 words and 55 lines
+  Filtered to 37 English words
+  Matched 18 single-word + 6 multi-word = 24 total learning items
+
+Processing page_0210 (210/402)...
+  Extracted 208 words and 74 lines
+  Filtered to 51 English words
+  Matched 11 single-word + 13 multi-word = 24 total learning items
+
+Processing page_0211 (211/402)...
+  Extracted 154 words and 67 lines
+  Filtered to 43 English words
+  Matched 15 single-word + 9 multi-word = 24 total learning items
+
+Processing page_0212 (212/402)...
+  Extracted 201 words and 73 lines
+  Filtered to 64 English words
+  Matched 20 single-word + 11 multi-word = 31 total learning items
+
+Processing page_0213 (213/402)...
+  Extracted 165 words and 62 lines
+  Filtered to 49 English words
+  Matched 6 single-word + 5 multi-word = 11 total learning items
+
+Processing page_0214 (214/402)...
+  Extracted 226 words and 81 lines
+  Filtered to 58 English words
+  Matched 30 single-word + 11 multi-word = 41 total learning items
+
+Processing page_0215 (215/402)...
+  Extracted 164 words and 58 lines
+  Filtered to 41 English words
+  Matched 13 single-word + 8 multi-word = 21 total learning items
+
+Processing page_0216 (216/402)...
+  Extracted 159 words and 62 lines
+  Filtered to 34 English words
+  Matched 16 single-word + 5 multi-word = 21 total learning items
+
+Processing page_0217 (217/402)...
+  Extracted 207 words and 79 lines
+  Filtered to 57 English words
+  Matched 5 single-word + 4 multi-word = 9 total learning items
+
+Processing page_0218 (218/402)...
+  Extracted 203 words and 72 lines
+  Filtered to 55 English words
+  Matched 10 single-word + 7 multi-word = 17 total learning items
+
+Processing page_0219 (219/402)...
+  Extracted 153 words and 65 lines
+  Filtered to 35 English words
+  Matched 21 single-word + 3 multi-word = 24 total learning items
+
+Processing page_0220 (220/402)...
+  Extracted 145 words and 56 lines
+  Filtered to 33 English words
+  Matched 13 single-word + 6 multi-word = 19 total learning items
+
+Processing page_0221 (221/402)...
+  Extracted 126 words and 52 lines
+  Filtered to 31 English words
+  Matched 12 single-word + 5 multi-word = 17 total learning items
+
+Processing page_0222 (222/402)...
+  Extracted 141 words and 53 lines
+  Filtered to 40 English words
+  Matched 17 single-word + 8 multi-word = 25 total learning items
+
+Processing page_0223 (223/402)...
+  Extracted 280 words and 126 lines
+  Filtered to 77 English words
+  Matched 10 single-word + 0 multi-word = 10 total learning items
+
+Processing page_0224 (224/402)...
+  Extracted 233 words and 94 lines
+  Filtered to 70 English words
+  Matched 10 single-word + 6 multi-word = 16 total learning items
+
+Processing page_0225 (225/402)...
+  Extracted 230 words and 82 lines
+  Filtered to 60 English words
+  Matched 4 single-word + 2 multi-word = 6 total learning items
+
+Processing page_0226 (226/402)...
+  Extracted 149 words and 46 lines
+  Filtered to 26 English words
+  Matched 5 single-word + 0 multi-word = 5 total learning items
+
+Processing page_0227 (227/402)...
+  Extracted 168 words and 66 lines
+  Filtered to 51 English words
+  Matched 8 single-word + 6 multi-word = 14 total learning items
+
+Processing page_0228 (228/402)...
+  Extracted 162 words and 55 lines
+  Filtered to 37 English words
+  Matched 8 single-word + 5 multi-word = 13 total learning items
+
+Processing page_0229 (229/402)...
+  Extracted 174 words and 69 lines
+  Filtered to 54 English words
+  Matched 3 single-word + 1 multi-word = 4 total learning items
+
+Processing page_0230 (230/402)...
+  Extracted 195 words and 67 lines
+  Filtered to 48 English words
+  Matched 10 single-word + 6 multi-word = 16 total learning items
+
+Processing page_0231 (231/402)...
+  Extracted 129 words and 49 lines
+  Filtered to 25 English words
+  Matched 1 single-word + 0 multi-word = 1 total learning items
+
+Processing page_0232 (232/402)...
+  Extracted 181 words and 68 lines
+  Filtered to 51 English words
+  Matched 7 single-word + 0 multi-word = 7 total learning items
+
+Processing page_0233 (233/402)...
+  Extracted 181 words and 68 lines
+  Filtered to 46 English words
+  Matched 14 single-word + 10 multi-word = 24 total learning items
+
+Processing page_0234 (234/402)...
+  Extracted 169 words and 61 lines
+  Filtered to 41 English words
+  Matched 2 single-word + 1 multi-word = 3 total learning items
+
+Processing page_0235 (235/402)...
+  Extracted 168 words and 72 lines
+  Filtered to 49 English words
+  Matched 8 single-word + 0 multi-word = 8 total learning items
+
+Processing page_0236 (236/402)...
+  Extracted 138 words and 50 lines
+  Filtered to 28 English words
+  Matched 5 single-word + 0 multi-word = 5 total learning items
+
+Processing page_0237 (237/402)...
+  Extracted 138 words and 62 lines
+  Filtered to 34 English words
+  Matched 7 single-word + 0 multi-word = 7 total learning items
+
+Processing page_0238 (238/402)...
+  Extracted 164 words and 64 lines
+  Filtered to 28 English words
+  Matched 8 single-word + 0 multi-word = 8 total learning items
+
+Processing page_0239 (239/402)...
+  Extracted 165 words and 65 lines
+  Filtered to 36 English words
+  Matched 4 single-word + 0 multi-word = 4 total learning items
+
+Processing page_0240 (240/402)...
+  Extracted 183 words and 65 lines
+  Filtered to 43 English words
+  Matched 6 single-word + 0 multi-word = 6 total learning items
+
+Processing page_0241 (241/402)...
+  Extracted 111 words and 42 lines
+  Filtered to 22 English words
+  Matched 6 single-word + 5 multi-word = 11 total learning items
+
+Processing page_0242 (242/402)...
+  Extracted 158 words and 48 lines
+  Filtered to 27 English words
+  Matched 11 single-word + 9 multi-word = 20 total learning items
+
+Processing page_0243 (243/402)...
+  Extracted 160 words and 70 lines
+  Filtered to 47 English words
+  Matched 20 single-word + 8 multi-word = 28 total learning items
+
+Processing page_0244 (244/402)...
+  Extracted 136 words and 52 lines
+  Filtered to 35 English words
+  Matched 4 single-word + 5 multi-word = 9 total learning items
+
+Processing page_0245 (245/402)...
+  Extracted 180 words and 75 lines
+  Filtered to 52 English words
+  Matched 20 single-word + 11 multi-word = 31 total learning items
+
+Processing page_0246 (246/402)...
+  Extracted 186 words and 62 lines
+  Filtered to 39 English words
+  Matched 14 single-word + 9 multi-word = 23 total learning items
+
+Processing page_0247 (247/402)...
+  Extracted 170 words and 75 lines
+  Filtered to 46 English words
+  Matched 17 single-word + 3 multi-word = 20 total learning items
+
+Processing page_0248 (248/402)...
+  Extracted 194 words and 74 lines
+  Filtered to 44 English words
+  Matched 23 single-word + 6 multi-word = 29 total learning items
+
+Processing page_0249 (249/402)...
+  Extracted 136 words and 65 lines
+  Filtered to 33 English words
+  Matched 18 single-word + 2 multi-word = 20 total learning items
+
+Processing page_0250 (250/402)...
+  Extracted 168 words and 57 lines
+  Filtered to 38 English words
+  Matched 14 single-word + 2 multi-word = 16 total learning items
+
+Processing page_0251 (251/402)...
+  Extracted 153 words and 61 lines
+  Filtered to 46 English words
+  Matched 18 single-word + 7 multi-word = 25 total learning items
+
+Processing page_0252 (252/402)...
+  Extracted 172 words and 57 lines
+  Filtered to 45 English words
+  Matched 8 single-word + 5 multi-word = 13 total learning items
+
+Processing page_0253 (253/402)...
+  Extracted 167 words and 60 lines
+  Filtered to 41 English words
+  Matched 10 single-word + 11 multi-word = 21 total learning items
+
+Processing page_0254 (254/402)...
+  Extracted 186 words and 63 lines
+  Filtered to 38 English words
+  Matched 13 single-word + 6 multi-word = 19 total learning items
+
+Processing page_0255 (255/402)...
+  Extracted 143 words and 50 lines
+  Filtered to 39 English words
+  Matched 12 single-word + 13 multi-word = 25 total learning items
+
+Processing page_0256 (256/402)...
+  Extracted 141 words and 47 lines
+  Filtered to 29 English words
+  Matched 9 single-word + 9 multi-word = 18 total learning items
+
+Processing page_0257 (257/402)...
+  Extracted 218 words and 74 lines
+  Filtered to 70 English words
+  Matched 16 single-word + 10 multi-word = 26 total learning items
+
+Processing page_0258 (258/402)...
+  Extracted 200 words and 65 lines
+  Filtered to 55 English words
+  Matched 11 single-word + 13 multi-word = 24 total learning items
+
+Processing page_0259 (259/402)...
+  Extracted 161 words and 68 lines
+  Filtered to 40 English words
+  Matched 17 single-word + 8 multi-word = 25 total learning items
+
+Processing page_0260 (260/402)...
+  Extracted 198 words and 67 lines
+  Filtered to 37 English words
+  Matched 21 single-word + 4 multi-word = 25 total learning items
+
+Processing page_0261 (261/402)...
+  Extracted 152 words and 69 lines
+  Filtered to 37 English words
+  Matched 11 single-word + 2 multi-word = 13 total learning items
+
+Processing page_0262 (262/402)...
+  Extracted 198 words and 79 lines
+  Filtered to 45 English words
+  Matched 19 single-word + 5 multi-word = 24 total learning items
+
+Processing page_0263 (263/402)...
+  Extracted 157 words and 61 lines
+  Filtered to 41 English words
+  Matched 9 single-word + 6 multi-word = 15 total learning items
+
+Processing page_0264 (264/402)...
+  Extracted 134 words and 52 lines
+  Filtered to 27 English words
+  Matched 12 single-word + 3 multi-word = 15 total learning items
+
+Processing page_0265 (265/402)...
+  Extracted 185 words and 70 lines
+  Filtered to 46 English words
+  Matched 14 single-word + 4 multi-word = 18 total learning items
+
+Processing page_0266 (266/402)...
+  Extracted 175 words and 70 lines
+  Filtered to 40 English words
+  Matched 13 single-word + 0 multi-word = 13 total learning items
+
+Processing page_0267 (267/402)...
+  Extracted 215 words and 87 lines
+  Filtered to 45 English words
+  Matched 11 single-word + 7 multi-word = 18 total learning items
+
+Processing page_0268 (268/402)...
+  Extracted 226 words and 96 lines
+  Filtered to 49 English words
+  Matched 15 single-word + 4 multi-word = 19 total learning items
+
+Processing page_0269 (269/402)...
+  Extracted 149 words and 58 lines
+  Filtered to 36 English words
+  Matched 10 single-word + 4 multi-word = 14 total learning items
+
+Processing page_0270 (270/402)...
+  Extracted 134 words and 44 lines
+  Filtered to 29 English words
+  Matched 8 single-word + 5 multi-word = 13 total learning items
+
+Processing page_0271 (271/402)...
+  Extracted 217 words and 76 lines
+  Filtered to 76 English words
+  Matched 13 single-word + 2 multi-word = 15 total learning items
+
+Processing page_0272 (272/402)...
+  Extracted 168 words and 63 lines
+  Filtered to 40 English words
+  Matched 8 single-word + 3 multi-word = 11 total learning items
+
+Processing page_0273 (273/402)...
+  Extracted 116 words and 41 lines
+  Filtered to 33 English words
+  Matched 6 single-word + 7 multi-word = 13 total learning items
+
+Processing page_0274 (274/402)...
+  Extracted 179 words and 58 lines
+  Filtered to 53 English words
+  Matched 7 single-word + 6 multi-word = 13 total learning items
+
+Processing page_0275 (275/402)...
+  Extracted 133 words and 54 lines
+  Filtered to 31 English words
+  Matched 12 single-word + 5 multi-word = 17 total learning items
+
+Processing page_0276 (276/402)...
+  Extracted 154 words and 45 lines
+  Filtered to 35 English words
+  Matched 4 single-word + 10 multi-word = 14 total learning items
+
+Processing page_0277 (277/402)...
+  Extracted 126 words and 49 lines
+  Filtered to 33 English words
+  Matched 11 single-word + 7 multi-word = 18 total learning items
+
+Processing page_0278 (278/402)...
+  Extracted 227 words and 76 lines
+  Filtered to 57 English words
+  Matched 18 single-word + 9 multi-word = 27 total learning items
+
+Processing page_0279 (279/402)...
+  Extracted 276 words and 106 lines
+  Filtered to 85 English words
+  Matched 16 single-word + 16 multi-word = 32 total learning items
+
+Processing page_0280 (280/402)...
+  Extracted 143 words and 51 lines
+  Filtered to 36 English words
+  Matched 15 single-word + 6 multi-word = 21 total learning items
+
+Processing page_0281 (281/402)...
+  Extracted 217 words and 80 lines
+  Filtered to 50 English words
+  Matched 16 single-word + 7 multi-word = 23 total learning items
+
+Processing page_0282 (282/402)...
+  Extracted 178 words and 60 lines
+  Filtered to 42 English words
+  Matched 19 single-word + 6 multi-word = 25 total learning items
+
+Processing page_0283 (283/402)...
+  Extracted 224 words and 89 lines
+  Filtered to 60 English words
+  Matched 10 single-word + 6 multi-word = 16 total learning items
+
+Processing page_0284 (284/402)...
+  Extracted 233 words and 74 lines
+  Filtered to 56 English words
+  Matched 9 single-word + 9 multi-word = 18 total learning items
+
+Processing page_0285 (285/402)...
+  Extracted 178 words and 77 lines
+  Filtered to 41 English words
+  Matched 12 single-word + 4 multi-word = 16 total learning items
+
+Processing page_0286 (286/402)...
+  Extracted 214 words and 89 lines
+  Filtered to 69 English words
+  Matched 7 single-word + 5 multi-word = 12 total learning items
+
+Processing page_0287 (287/402)...
+  Extracted 142 words and 55 lines
+  Filtered to 40 English words
+  Matched 13 single-word + 7 multi-word = 20 total learning items
+
+Processing page_0288 (288/402)...
+  Extracted 194 words and 77 lines
+  Filtered to 40 English words
+  Matched 22 single-word + 1 multi-word = 23 total learning items
+
+Processing page_0289 (289/402)...
+  Extracted 130 words and 64 lines
+  Filtered to 35 English words
+  Matched 14 single-word + 1 multi-word = 15 total learning items
+
+Processing page_0290 (290/402)...
+  Extracted 179 words and 67 lines
+  Filtered to 52 English words
+  Matched 13 single-word + 2 multi-word = 15 total learning items
+
+Processing page_0291 (291/402)...
+  Extracted 158 words and 66 lines
+  Filtered to 38 English words
+  Matched 10 single-word + 6 multi-word = 16 total learning items
+
+Processing page_0292 (292/402)...
+  Extracted 171 words and 66 lines
+  Filtered to 40 English words
+  Matched 16 single-word + 5 multi-word = 21 total learning items
+
+Processing page_0293 (293/402)...
+  Extracted 224 words and 86 lines
+  Filtered to 67 English words
+  Matched 25 single-word + 9 multi-word = 34 total learning items
+
+Processing page_0294 (294/402)...
+  Extracted 182 words and 77 lines
+  Filtered to 47 English words
+  Matched 27 single-word + 3 multi-word = 30 total learning items
+
+Processing page_0295 (295/402)...
+  Extracted 153 words and 60 lines
+  Filtered to 36 English words
+  Matched 12 single-word + 5 multi-word = 17 total learning items
+
+Processing page_0296 (296/402)...
+  Extracted 178 words and 59 lines
+  Filtered to 39 English words
+  Matched 8 single-word + 11 multi-word = 19 total learning items
+
+Processing page_0297 (297/402)...
+  Extracted 177 words and 68 lines
+  Filtered to 48 English words
+  Matched 15 single-word + 9 multi-word = 24 total learning items
+
+Processing page_0298 (298/402)...
+  Extracted 172 words and 57 lines
+  Filtered to 38 English words
+  Matched 18 single-word + 9 multi-word = 27 total learning items
+
+Processing page_0299 (299/402)...
+  Extracted 142 words and 62 lines
+  Filtered to 37 English words
+  Matched 11 single-word + 5 multi-word = 16 total learning items
+
+Processing page_0300 (300/402)...
+  Extracted 182 words and 57 lines
+  Filtered to 47 English words
+  Matched 11 single-word + 11 multi-word = 22 total learning items
+
+Processing page_0301 (301/402)...
+  Extracted 143 words and 64 lines
+  Filtered to 34 English words
+  Matched 20 single-word + 3 multi-word = 23 total learning items
+
+Processing page_0302 (302/402)...
+  Extracted 116 words and 41 lines
+  Filtered to 25 English words
+  Matched 15 single-word + 1 multi-word = 16 total learning items
+
+Processing page_0303 (303/402)...
+  Extracted 93 words and 43 lines
+  Filtered to 25 English words
+  Matched 6 single-word + 5 multi-word = 11 total learning items
+
+Processing page_0304 (304/402)...
+  Extracted 111 words and 47 lines
+  Filtered to 21 English words
+  Matched 14 single-word + 0 multi-word = 14 total learning items
+
+Processing page_0305 (305/402)...
+  Extracted 204 words and 91 lines
+  Filtered to 55 English words
+  Matched 6 single-word + 5 multi-word = 11 total learning items
+
+Processing page_0306 (306/402)...
+  Extracted 300 words and 94 lines
+  Filtered to 95 English words
+  Matched 13 single-word + 7 multi-word = 20 total learning items
+
+Processing page_0307 (307/402)...
+  Extracted 226 words and 81 lines
+  Filtered to 47 English words
+  Matched 10 single-word + 1 multi-word = 11 total learning items
+
+Processing page_0308 (308/402)...
+  Extracted 190 words and 67 lines
+  Filtered to 34 English words
+  Matched 11 single-word + 1 multi-word = 12 total learning items
+
+Processing page_0309 (309/402)...
+  Extracted 236 words and 77 lines
+  Filtered to 49 English words
+  Matched 3 single-word + 1 multi-word = 4 total learning items
+
+Processing page_0310 (310/402)...
+  Extracted 218 words and 77 lines
+  Filtered to 42 English words
+  Matched 11 single-word + 3 multi-word = 14 total learning items
+
+Processing page_0311 (311/402)...
+  Extracted 191 words and 74 lines
+  Filtered to 39 English words
+  Matched 17 single-word + 1 multi-word = 18 total learning items
+
+Processing page_0312 (312/402)...
+  Extracted 220 words and 78 lines
+  Filtered to 42 English words
+  Matched 13 single-word + 2 multi-word = 15 total learning items
+
+Processing page_0313 (313/402)...
+  Extracted 278 words and 198 lines
+  Filtered to 203 English words
+  Matched 18 single-word + 1 multi-word = 19 total learning items
+
+Processing page_0314 (314/402)...
+  Extracted 250 words and 156 lines
+  Filtered to 172 English words
+  Matched 7 single-word + 1 multi-word = 8 total learning items
+
+Processing page_0315 (315/402)...
+  Extracted 270 words and 193 lines
+  Filtered to 209 English words
+  Matched 15 single-word + 4 multi-word = 19 total learning items
+
+Processing page_0316 (316/402)...
+  Extracted 272 words and 198 lines
+  Filtered to 198 English words
+  Matched 27 single-word + 0 multi-word = 27 total learning items
+
+Processing page_0317 (317/402)...
+  Extracted 142 words and 67 lines
+  Filtered to 34 English words
+  Matched 19 single-word + 2 multi-word = 21 total learning items
+
+Processing page_0318 (318/402)...
+  Extracted 238 words and 72 lines
+  Filtered to 48 English words
+  Matched 15 single-word + 0 multi-word = 15 total learning items
+
+Processing page_0319 (319/402)...
+  Extracted 160 words and 64 lines
+  Filtered to 40 English words
+  Matched 10 single-word + 6 multi-word = 16 total learning items
+
+Processing page_0320 (320/402)...
+  Extracted 191 words and 69 lines
+  Filtered to 54 English words
+  Matched 6 single-word + 7 multi-word = 13 total learning items
+
+Processing page_0321 (321/402)...
+  Extracted 154 words and 67 lines
+  Filtered to 32 English words
+  Matched 16 single-word + 0 multi-word = 16 total learning items
+
+Processing page_0322 (322/402)...
+  Extracted 152 words and 68 lines
+  Filtered to 32 English words
+  Matched 16 single-word + 0 multi-word = 16 total learning items
+
+Processing page_0323 (323/402)...
+  Extracted 123 words and 47 lines
+  Filtered to 26 English words
+  Matched 6 single-word + 2 multi-word = 8 total learning items
+
+Processing page_0324 (324/402)...
+  Extracted 189 words and 60 lines
+  Filtered to 32 English words
+  Matched 4 single-word + 1 multi-word = 5 total learning items
+
+Processing page_0325 (325/402)...
+  Extracted 142 words and 62 lines
+  Filtered to 32 English words
+  Matched 17 single-word + 2 multi-word = 19 total learning items
+
+Processing page_0326 (326/402)...
+  Extracted 155 words and 61 lines
+  Filtered to 36 English words
+  Matched 16 single-word + 5 multi-word = 21 total learning items
+
+Processing page_0327 (327/402)...
+  Extracted 188 words and 79 lines
+  Filtered to 49 English words
+  Matched 20 single-word + 8 multi-word = 28 total learning items
+
+Processing page_0328 (328/402)...
+  Extracted 170 words and 71 lines
+  Filtered to 45 English words
+  Matched 19 single-word + 2 multi-word = 21 total learning items
+
+Processing page_0329 (329/402)...
+  Extracted 178 words and 74 lines
+  Filtered to 46 English words
+  Matched 18 single-word + 1 multi-word = 19 total learning items
+
+Processing page_0330 (330/402)...
+  Extracted 168 words and 66 lines
+  Filtered to 41 English words
+  Matched 17 single-word + 3 multi-word = 20 total learning items
+
+Processing page_0331 (331/402)...
+  Extracted 165 words and 58 lines
+  Filtered to 45 English words
+  Matched 8 single-word + 4 multi-word = 12 total learning items
+
+Processing page_0332 (332/402)...
+  Extracted 174 words and 69 lines
+  Filtered to 52 English words
+  Matched 15 single-word + 0 multi-word = 15 total learning items
+
+Processing page_0333 (333/402)...
+  Extracted 138 words and 53 lines
+  Filtered to 36 English words
+  Matched 18 single-word + 0 multi-word = 18 total learning items
+
+Processing page_0334 (334/402)...
+  Extracted 206 words and 79 lines
+  Filtered to 49 English words
+  Matched 18 single-word + 3 multi-word = 21 total learning items
+
+Processing page_0335 (335/402)...
+  Extracted 220 words and 76 lines
+  Filtered to 55 English words
+  Matched 4 single-word + 5 multi-word = 9 total learning items
+
+Processing page_0336 (336/402)...
+  Extracted 183 words and 58 lines
+  Filtered to 44 English words
+  Matched 4 single-word + 3 multi-word = 7 total learning items
+
+Processing page_0337 (337/402)...
+  Extracted 207 words and 79 lines
+  Filtered to 50 English words
+  Matched 17 single-word + 4 multi-word = 21 total learning items
+
+Processing page_0338 (338/402)...
+  Extracted 244 words and 82 lines
+  Filtered to 51 English words
+  Matched 12 single-word + 3 multi-word = 15 total learning items
+
+Processing page_0339 (339/402)...
+  Extracted 100 words and 48 lines
+  Filtered to 32 English words
+  Matched 12 single-word + 2 multi-word = 14 total learning items
+
+Processing page_0340 (340/402)...
+  Extracted 140 words and 54 lines
+  Filtered to 35 English words
+  Matched 20 single-word + 0 multi-word = 20 total learning items
+
+Processing page_0341 (341/402)...
+  Extracted 200 words and 80 lines
+  Filtered to 55 English words
+  Matched 17 single-word + 9 multi-word = 26 total learning items
+
+Processing page_0342 (342/402)...
+  Extracted 198 words and 74 lines
+  Filtered to 51 English words
+  Matched 13 single-word + 9 multi-word = 22 total learning items
+
+Processing page_0343 (343/402)...
+  Extracted 157 words and 60 lines
+  Filtered to 38 English words
+  Matched 14 single-word + 5 multi-word = 19 total learning items
+
+Processing page_0344 (344/402)...
+  Extracted 149 words and 46 lines
+  Filtered to 33 English words
+  Matched 3 single-word + 3 multi-word = 6 total learning items
+
+Processing page_0345 (345/402)...
+  Extracted 167 words and 58 lines
+  Filtered to 41 English words
+  Matched 7 single-word + 7 multi-word = 14 total learning items
+
+Processing page_0346 (346/402)...
+  Extracted 178 words and 61 lines
+  Filtered to 35 English words
+  Matched 11 single-word + 0 multi-word = 11 total learning items
+
+Processing page_0347 (347/402)...
+  Extracted 120 words and 51 lines
+  Filtered to 33 English words
+  Matched 7 single-word + 2 multi-word = 9 total learning items
+
+Processing page_0348 (348/402)...
+  Extracted 171 words and 63 lines
+  Filtered to 40 English words
+  Matched 7 single-word + 2 multi-word = 9 total learning items
+
+Processing page_0349 (349/402)...
+  Extracted 154 words and 63 lines
+  Filtered to 50 English words
+  Matched 10 single-word + 1 multi-word = 11 total learning items
+
+Processing page_0350 (350/402)...
+  Extracted 136 words and 46 lines
+  Filtered to 28 English words
+  Matched 3 single-word + 0 multi-word = 3 total learning items
+
+Processing page_0351 (351/402)...
+  Extracted 390 words and 260 lines
+  Filtered to 58 English words
+  Matched 2 single-word + 0 multi-word = 2 total learning items
+
+Processing page_0352 (352/402)...
+  Extracted 270 words and 176 lines
+  Filtered to 51 English words
+  Matched 3 single-word + 2 multi-word = 5 total learning items
+
+Processing page_0353 (353/402)...
+  Extracted 157 words and 88 lines
+  Filtered to 50 English words
+  Matched 3 single-word + 0 multi-word = 3 total learning items
+
+Processing page_0354 (354/402)...
+  Extracted 180 words and 93 lines
+  Filtered to 74 English words
+  Matched 3 single-word + 4 multi-word = 7 total learning items
+
+Processing page_0355 (355/402)...
+  Extracted 167 words and 104 lines
+  Filtered to 41 English words
+  Matched 0 single-word + 0 multi-word = 0 total learning items
+
+Processing page_0356 (356/402)...
+  Extracted 190 words and 80 lines
+  Filtered to 78 English words
+  Matched 0 single-word + 1 multi-word = 1 total learning items
+
+Processing page_0357 (357/402)...
+  Extracted 153 words and 76 lines
+  Filtered to 35 English words
+  Matched 6 single-word + 3 multi-word = 9 total learning items
+
+Processing page_0358 (358/402)...
+  Extracted 218 words and 103 lines
+  Filtered to 41 English words
+  Matched 10 single-word + 4 multi-word = 14 total learning items
+
+Processing page_0359 (359/402)...
+  Extracted 150 words and 65 lines
+  Filtered to 42 English words
+  Matched 9 single-word + 3 multi-word = 12 total learning items
+
+Processing page_0360 (360/402)...
+  Extracted 232 words and 102 lines
+  Filtered to 54 English words
+  Matched 14 single-word + 0 multi-word = 14 total learning items
+
+Processing page_0361 (361/402)...
+  Extracted 123 words and 58 lines
+  Filtered to 27 English words
+  Matched 9 single-word + 0 multi-word = 9 total learning items
+
+Processing page_0362 (362/402)...
+  Extracted 186 words and 81 lines
+  Filtered to 41 English words
+  Matched 3 single-word + 0 multi-word = 3 total learning items
+
+Processing page_0363 (363/402)...
+  Extracted 144 words and 58 lines
+  Filtered to 27 English words
+  Matched 3 single-word + 0 multi-word = 3 total learning items
+
+Processing page_0364 (364/402)...
+  Extracted 244 words and 87 lines
+  Filtered to 38 English words
+  Matched 7 single-word + 0 multi-word = 7 total learning items
+
+Processing page_0365 (365/402)...
+  Extracted 237 words and 76 lines
+  Filtered to 99 English words
+  Matched 4 single-word + 14 multi-word = 18 total learning items
+
+Processing page_0366 (366/402)...
+  Extracted 243 words and 78 lines
+  Filtered to 106 English words
+  Matched 7 single-word + 15 multi-word = 22 total learning items
+
+Processing page_0367 (367/402)...
+  Extracted 116 words and 49 lines
+  Filtered to 34 English words
+  Matched 1 single-word + 0 multi-word = 1 total learning items
+
+Processing page_0368 (368/402)...
+  Extracted 121 words and 44 lines
+  Filtered to 51 English words
+  Matched 0 single-word + 0 multi-word = 0 total learning items
+
+Processing page_0369 (369/402)...
+  Extracted 100 words and 34 lines
+  Filtered to 57 English words
+  Matched 2 single-word + 1 multi-word = 3 total learning items
+
+Processing page_0370 (370/402)...
+  Extracted 91 words and 30 lines
+  Filtered to 19 English words
+  Matched 0 single-word + 1 multi-word = 1 total learning items
+
+Processing page_0371 (371/402)...
+  Extracted 2037 words and 338 lines
+  Filtered to 699 English words
+  Matched 96 single-word + 48 multi-word = 144 total learning items
+
+Processing page_0372 (372/402)...
+  Extracted 2282 words and 358 lines
+  Filtered to 778 English words
+  Matched 112 single-word + 51 multi-word = 163 total learning items
+
+Processing page_0373 (373/402)...
+  Extracted 2231 words and 361 lines
+  Filtered to 790 English words
+  Matched 102 single-word + 50 multi-word = 152 total learning items
+
+Processing page_0374 (374/402)...
+  Extracted 2223 words and 358 lines
+  Filtered to 757 English words
+  Matched 133 single-word + 51 multi-word = 184 total learning items
+
+Processing page_0375 (375/402)...
+  Extracted 2179 words and 361 lines
+  Filtered to 779 English words
+  Matched 127 single-word + 50 multi-word = 177 total learning items
+
+Processing page_0376 (376/402)...
+  Extracted 2132 words and 361 lines
+  Filtered to 752 English words
+  Matched 131 single-word + 54 multi-word = 185 total learning items
+
+Processing page_0377 (377/402)...
+  Extracted 2244 words and 358 lines
+  Filtered to 773 English words
+  Matched 126 single-word + 69 multi-word = 195 total learning items
+
+Processing page_0378 (378/402)...
+  Extracted 2141 words and 360 lines
+  Filtered to 765 English words
+  Matched 102 single-word + 47 multi-word = 149 total learning items
+
+Processing page_0379 (379/402)...
+  Extracted 2172 words and 358 lines
+  Filtered to 767 English words
+  Matched 100 single-word + 60 multi-word = 160 total learning items
+
+Processing page_0380 (380/402)...
+  Extracted 2230 words and 358 lines
+  Filtered to 810 English words
+  Matched 121 single-word + 64 multi-word = 185 total learning items
+
+Processing page_0381 (381/402)...
+  Extracted 2242 words and 358 lines
+  Filtered to 786 English words
+  Matched 96 single-word + 67 multi-word = 163 total learning items
+
+Processing page_0382 (382/402)...
+  Extracted 2195 words and 361 lines
+  Filtered to 829 English words
+  Matched 116 single-word + 59 multi-word = 175 total learning items
+
+Processing page_0383 (383/402)...
+  Extracted 2200 words and 358 lines
+  Filtered to 790 English words
+  Matched 101 single-word + 65 multi-word = 166 total learning items
+
+Processing page_0384 (384/402)...
+  Extracted 2097 words and 356 lines
+  Filtered to 770 English words
+  Matched 107 single-word + 62 multi-word = 169 total learning items
+
+Processing page_0385 (385/402)...
+  Extracted 2158 words and 352 lines
+  Filtered to 719 English words
+  Matched 106 single-word + 53 multi-word = 159 total learning items
+
+Processing page_0386 (386/402)...
+  Extracted 2167 words and 358 lines
+  Filtered to 790 English words
+  Matched 118 single-word + 69 multi-word = 187 total learning items
+
+Processing page_0387 (387/402)...
+  Extracted 2184 words and 361 lines
+  Filtered to 741 English words
+  Matched 104 single-word + 44 multi-word = 148 total learning items
+
+Processing page_0388 (388/402)...
+  Extracted 2134 words and 358 lines
+  Filtered to 742 English words
+  Matched 116 single-word + 59 multi-word = 175 total learning items
+
+Processing page_0389 (389/402)...
+  Extracted 2057 words and 354 lines
+  Filtered to 723 English words
+  Matched 83 single-word + 44 multi-word = 127 total learning items
+
+Processing page_0390 (390/402)...
+  Extracted 2213 words and 361 lines
+  Filtered to 758 English words
+  Matched 122 single-word + 46 multi-word = 168 total learning items
+
+Processing page_0391 (391/402)...
+  Extracted 2204 words and 361 lines
+  Filtered to 783 English words
+  Matched 120 single-word + 84 multi-word = 204 total learning items
+
+Processing page_0392 (392/402)...
+  Extracted 2188 words and 354 lines
+  Filtered to 784 English words
+  Matched 120 single-word + 69 multi-word = 189 total learning items
+
+Processing page_0393 (393/402)...
+  Extracted 2189 words and 354 lines
+  Filtered to 772 English words
+  Matched 113 single-word + 60 multi-word = 173 total learning items
+
+Processing page_0394 (394/402)...
+  Extracted 2189 words and 357 lines
+  Filtered to 737 English words
+  Matched 107 single-word + 56 multi-word = 163 total learning items
+
+Processing page_0395 (395/402)...
+  Extracted 2264 words and 362 lines
+  Filtered to 762 English words
+  Matched 124 single-word + 72 multi-word = 196 total learning items
+
+Processing page_0396 (396/402)...
+  Extracted 2294 words and 361 lines
+  Filtered to 812 English words
+  Matched 119 single-word + 78 multi-word = 197 total learning items
+
+Processing page_0397 (397/402)...
+  Extracted 2202 words and 358 lines
+  Filtered to 737 English words
+  Matched 125 single-word + 50 multi-word = 175 total learning items
+
+Processing page_0398 (398/402)...
+  Extracted 2248 words and 361 lines
+  Filtered to 796 English words
+  Matched 89 single-word + 62 multi-word = 151 total learning items
+
+Processing page_0399 (399/402)...
+  Extracted 2192 words and 353 lines
+  Filtered to 748 English words
+  Matched 112 single-word + 49 multi-word = 161 total learning items
+
+Processing page_0400 (400/402)...
+  Extracted 2138 words and 351 lines
+  Filtered to 731 English words
+  Matched 133 single-word + 58 multi-word = 191 total learning items
+
+Processing page_0401 (401/402)...
+  Extracted 1454 words and 242 lines
+  Filtered to 510 English words
+  Matched 59 single-word + 24 multi-word = 83 total learning items
+
+Processing page_0402 (402/402)...
+  Extracted 835 words and 183 lines
+  Filtered to 152 English words
+  Matched 1 single-word + 0 multi-word = 1 total learning items
+
+============================================================
+STEP 3: Saving data.json
+============================================================
+
+============================================================
+PROCESSING COMPLETE
+============================================================
+Data file: /Users/kailu/Desktop/Projects/dk-illustrated-dictionary/web-app/data.json
+Total pages processed: 402
+Total learning words: 11103
+File size: 10.93 MB
