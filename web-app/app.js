@@ -167,7 +167,8 @@ class VocabularyApp {
     }
 
     switchUser(username) {
-        if (!this.users.includes(username)) {
+        // Check if user exists (users is now an object, not array)
+        if (!this.users[username]) {
             console.error('User not found:', username);
             return;
         }
@@ -182,7 +183,7 @@ class VocabularyApp {
         // Load new user's word states
         this.wordStates = this.loadWordStates();
 
-        // Re-render
+        // Re-render the current page to show the new user's overlays
         this.renderPage();
 
         console.log(`Switched to user: ${username}`);
