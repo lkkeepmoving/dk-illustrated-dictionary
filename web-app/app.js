@@ -719,26 +719,40 @@ class VocabularyApp {
     // ========================================================================
 
     getStatistics() {
-        let totalWords = 0;
-        let knownWords = 0;
-        let newWords = 0;
+        // Count unique words, not instances
+        const uniqueWords = new Map(); // word text -> state
 
-        // Count only learning words across all pages
+        // Collect all learning words and their states
         this.pageKeys.forEach(pageKey => {
             const pageWords = this.data[pageKey].words;
 
             pageWords.forEach((word, index) => {
                 // Only count learning words
                 if (this.isLearningWordForUser(word)) {
-                    totalWords++;
+                    const wordText = word.text.toLowerCase();
                     const wordId = this.getWordId(pageKey, index);
                     const state = this.getWordState(wordId);
 
-                    if (state === 'known') knownWords++;
-                    else newWords++; // state === 'new' or 'revealed'
+                    // If we've seen this word before, prioritize 'known' state
+                    if (!uniqueWords.has(wordText) || state === 'known') {
+                        uniqueWords.set(wordText, state);
+                    }
                 }
             });
         });
+
+        // Count by state
+        let totalWords = uniqueWords.size;
+        let knownWords = 0;
+        let newWords = 0;
+
+        for (const state of uniqueWords.values()) {
+            if (state === 'known') {
+                knownWords++;
+            } else {
+                newWords++; // state === 'new' or 'revealed'
+            }
+        }
 
         const percentage = totalWords > 0 ? Math.round((knownWords / totalWords) * 100) : 0;
 
