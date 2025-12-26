@@ -95,16 +95,18 @@
                     <div class="settings-info">
                         <p><strong>Setup Instructions:</strong></p>
                         <ol>
-                            <li>Create a new <a href="https://gist.github.com/" target="_blank">GitHub Gist</a> with a file named <code>known-words.json</code></li>
-                            <li>Copy the Gist ID from the URL (e.g., <code>abc123def456</code>)</li>
-                            <li>Create a <a href="https://github.com/settings/tokens/new" target="_blank">Personal Access Token</a> with <code>gist</code> scope</li>
-                            <li>Enter both values below</li>
+                            <li>Create a <a href="https://github.com/settings/tokens/new?description=DK%20Dictionary%20Sync&scopes=gist" target="_blank">GitHub Personal Access Token</a>:
+                                <ul style="margin-top: 5px; font-size: 0.9em;">
+                                    <li>Check the <code>gist</code> scope checkbox</li>
+                                    <li>Click "Generate token" at the bottom</li>
+                                    <li>Copy the token (starts with <code>ghp_</code>)</li>
+                                </ul>
+                            </li>
+                            <li>Paste the token below and set a push password</li>
+                            <li>Click Save - the app will automatically create a private Gist for your words</li>
+                            <li>Leave Gist ID empty on first setup (it will be filled automatically)</li>
                         </ol>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="gistIdInput">Gist ID:</label>
-                        <input type="text" id="gistIdInput" class="form-input" placeholder="e.g., abc123def456" />
+                        <p style="margin-top: 10px;"><strong>Note:</strong> Each user should set up their own GitHub token to sync their personal word list across devices.</p>
                     </div>
 
                     <div class="form-group">
@@ -117,6 +119,12 @@
                         <label for="pushPasswordInput">Push Password:</label>
                         <input type="password" id="pushPasswordInput" class="form-input" placeholder="Set a password for push protection" />
                         <small class="form-hint">Required each time you push to prevent unauthorized uploads</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gistIdInput">Gist ID (auto-filled after first push):</label>
+                        <input type="text" id="gistIdInput" class="form-input" placeholder="Leave empty - will be auto-generated" readonly />
+                        <small class="form-hint">This will be filled automatically when you push for the first time</small>
                     </div>
 
                     <button id="saveSettingsBtn" class="btn btn-primary btn-full-width">Save Settings</button>
