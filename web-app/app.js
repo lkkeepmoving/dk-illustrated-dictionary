@@ -816,11 +816,12 @@ class VocabularyApp {
         try {
             const knownWords = this.getKnownWordsList();
 
-            // Prepare user data
+            // Prepare user data (include current page for syncing)
             const userData = {
                 knownWords: knownWords,
                 lastUpdated: new Date().toISOString(),
-                totalCount: knownWords.length
+                totalCount: knownWords.length,
+                lastViewPage: this.currentViewPage // Save current page number
             };
 
             let response;
@@ -976,9 +977,13 @@ class VocabularyApp {
 
             // Handle both old format (single user) and new format (multi-user)
             let knownWords = [];
+            let lastViewPage = null;
+
             if (data.users && data.users[this.currentUser]) {
                 // New multi-user format - user exists in Gist
-                knownWords = data.users[this.currentUser].knownWords || [];
+                const userData = data.users[this.currentUser];
+                knownWords = userData.knownWords || [];
+                lastViewPage = userData.lastViewPage || null;
             } else if (data.knownWords) {
                 // Old single-user format
                 knownWords = data.knownWords || [];
@@ -1011,10 +1016,20 @@ class VocabularyApp {
             this.saveSettings();
             this.updateSyncStatus();
 
-            // Re-render current page to show updated states
-            this.renderPage();
+            // Jump to saved page if available
+            if (lastViewPage) {
+                const totalViewPages = this.getTotalViewPages();
+                if (lastViewPage >= 1 && lastViewPage <= totalViewPages) {
+                    this.currentViewPage = lastViewPage;
+                }
+            }
 
-            alert(`Successfully pulled ${knownWords.length} known words for ${this.currentUser} from Gist!`);
+            // Re-render page (either saved page or current page)
+            this.renderPage();
+            this.scrollToTop();
+
+            const pageMessage = lastViewPage ? `\n\nJumped to page ${lastViewPage} (where you left off).` : '';
+            alert(`Successfully pulled ${knownWords.length} known words for ${this.currentUser} from Gist!${pageMessage}`);
         } catch (error) {
             console.error('Pull from Gist failed:', error);
             alert(`Failed to pull from Gist: ${error.message}\n\nPlease check your Gist ID and GitHub Token.`);
