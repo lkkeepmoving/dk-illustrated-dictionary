@@ -773,8 +773,8 @@ class VocabularyApp {
     async pushToGist() {
         const { gistId, githubToken } = this.settings;
 
-        if (!gistId || !githubToken) {
-            alert('Please configure your Gist ID and GitHub Token in settings first.');
+        if (!githubToken) {
+            alert('Please configure your GitHub Token in settings first.');
             this.showSettings();
             return;
         }
@@ -801,70 +801,121 @@ class VocabularyApp {
         try {
             const knownWords = this.getKnownWordsList();
 
-            // First, try to get existing Gist data to preserve other users' data
-            let existingData = { users: {} };
-            try {
-                const getResponse = await fetch(`https://api.github.com/gists/${gistId}`, {
-                    headers: { 'Authorization': `token ${githubToken}` }
-                });
-                if (getResponse.ok) {
-                    const gist = await getResponse.json();
-                    const fileContent = gist.files['known-words.json']?.content;
-                    if (fileContent) {
-                        const parsed = JSON.parse(fileContent);
-                        // Handle both old format (single user) and new format (multi-user)
-                        if (parsed.users) {
-                            existingData = parsed;
-                        }
-                    }
-                }
-            } catch (e) {
-                console.log('Could not fetch existing Gist data, will create new');
-            }
-
-            // Update current user's data
-            existingData.users[this.currentUser] = {
+            // Prepare user data
+            const userData = {
                 knownWords: knownWords,
                 lastUpdated: new Date().toISOString(),
                 totalCount: knownWords.length
             };
 
-            const response = await fetch(`https://api.github.com/gists/${gistId}`, {
-                method: 'PATCH',
-                headers: {
-                    'Authorization': `token ${githubToken}`,
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    files: {
-                        'known-words.json': {
-                            content: JSON.stringify(existingData, null, 2)
+            let response;
+            let newGistId = gistId;
+
+            if (!gistId) {
+                // First-time push: Create new Gist
+                console.log('Creating new Gist...');
+                const existingData = { users: {} };
+                existingData.users[this.currentUser] = userData;
+
+                response = await fetch('https://api.github.com/gists', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `token ${githubToken}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        description: 'DK Illustrated Dictionary - Known Words Sync',
+                        public: false,
+                        files: {
+                            'known-words.json': {
+                                content: JSON.stringify(existingData, null, 2)
+                            }
+                        }
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`GitHub API error: ${response.status} ${response.statusText}`);
+                }
+
+                const gist = await response.json();
+                newGistId = gist.id;
+
+                // Save the new Gist ID
+                this.settings.gistId = newGistId;
+                this.saveSettings();
+
+                console.log(`Created new Gist with ID: ${newGistId}`);
+            } else {
+                // Update existing Gist
+                let existingData = { users: {} };
+                try {
+                    const getResponse = await fetch(`https://api.github.com/gists/${gistId}`, {
+                        headers: { 'Authorization': `token ${githubToken}` }
+                    });
+                    if (getResponse.ok) {
+                        const gist = await getResponse.json();
+                        const fileContent = gist.files['known-words.json']?.content;
+                        if (fileContent) {
+                            const parsed = JSON.parse(fileContent);
+                            if (parsed.users) {
+                                existingData = parsed;
+                            }
                         }
                     }
-                })
-            });
+                } catch (e) {
+                    console.log('Could not fetch existing Gist data');
+                }
 
-            if (!response.ok) {
-                throw new Error(`GitHub API error: ${response.status} ${response.statusText}`);
+                // Update current user's data
+                existingData.users[this.currentUser] = userData;
+
+                response = await fetch(`https://api.github.com/gists/${gistId}`, {
+                    method: 'PATCH',
+                    headers: {
+                        'Authorization': `token ${githubToken}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        files: {
+                            'known-words.json': {
+                                content: JSON.stringify(existingData, null, 2)
+                            }
+                        }
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`GitHub API error: ${response.status} ${response.statusText}`);
+                }
             }
 
             this.settings.lastSyncTime = new Date().toISOString();
             this.saveSettings();
             this.updateSyncStatus();
 
-            alert(`Successfully pushed ${knownWords.length} known words to Gist!`);
+            const message = !gistId
+                ? `Successfully created Gist and pushed ${knownWords.length} known words!\n\nGist ID: ${newGistId}\n\nShare this ID and the token with family members.`
+                : `Successfully pushed ${knownWords.length} known words to Gist!`;
+
+            alert(message);
         } catch (error) {
             console.error('Push to Gist failed:', error);
-            alert(`Failed to push to Gist: ${error.message}\n\nPlease check your Gist ID and GitHub Token.`);
+            alert(`Failed to push to Gist: ${error.message}\n\nPlease check your GitHub Token.`);
         }
     }
 
     async pullFromGist() {
         const { gistId, githubToken } = this.settings;
 
-        if (!gistId || !githubToken) {
-            alert('Please configure your Gist ID and GitHub Token in settings first.');
+        if (!githubToken) {
+            alert('Please configure your GitHub Token in settings first.');
             this.showSettings();
+            return;
+        }
+
+        if (!gistId) {
+            alert('No Gist ID found. Please push your words first to create a Gist, then you can pull.');
             return;
         }
 
