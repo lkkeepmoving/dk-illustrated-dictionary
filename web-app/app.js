@@ -129,10 +129,23 @@ class VocabularyApp {
     loadUsers() {
         const stored = localStorage.getItem('vocabularyApp_users');
         if (stored) {
-            return JSON.parse(stored);
+            const parsed = JSON.parse(stored);
+            // Migrate from array format to object format
+            if (Array.isArray(parsed)) {
+                const usersObj = {};
+                parsed.forEach(username => {
+                    usersObj[username] = { password: '' };
+                });
+                this.saveUsers(usersObj);
+                return usersObj;
+            }
+            return parsed;
         }
-        // Default users: Kai and Ziyu
-        return ['Kai', 'Ziyu'];
+        // Default users: Kai and Ziyu with no passwords set
+        return {
+            'Kai': { password: '' },
+            'Ziyu': { password: '' }
+        };
     }
 
     saveUsers() {
@@ -141,11 +154,12 @@ class VocabularyApp {
 
     loadCurrentUser() {
         const stored = localStorage.getItem('vocabularyApp_currentUser');
-        if (stored && this.users.includes(stored)) {
+        const usernames = Object.keys(this.users);
+        if (stored && usernames.includes(stored)) {
             return stored;
         }
         // Default to first user
-        return this.users[0];
+        return usernames[0];
     }
 
     saveCurrentUser() {
@@ -194,7 +208,6 @@ class VocabularyApp {
             audioEnabled: true,
             gistId: '',
             githubToken: '',
-            pushPassword: '',
             lastSyncTime: null
         };
     }
@@ -758,7 +771,7 @@ class VocabularyApp {
     // ========================================================================
 
     async pushToGist() {
-        const { gistId, githubToken, pushPassword } = this.settings;
+        const { gistId, githubToken } = this.settings;
 
         if (!gistId || !githubToken) {
             alert('Please configure your Gist ID and GitHub Token in settings first.');
@@ -766,20 +779,21 @@ class VocabularyApp {
             return;
         }
 
-        // Check password protection
-        if (!pushPassword) {
-            alert('Please set a push password in settings first for security.');
-            this.showSettings();
+        // Get current user's password
+        const userPassword = this.users[this.currentUser]?.password;
+        if (!userPassword) {
+            alert(`Please set a password for user "${this.currentUser}" in User Management first.`);
+            this.showUserManagement();
             return;
         }
 
         // Prompt for password
-        const enteredPassword = prompt('Enter push password to continue:');
+        const enteredPassword = prompt(`Enter password for ${this.currentUser} to push:`);
         if (!enteredPassword) {
             return; // User cancelled
         }
 
-        if (enteredPassword !== pushPassword) {
+        if (enteredPassword !== userPassword) {
             alert('Incorrect password. Push cancelled.');
             return;
         }
@@ -851,6 +865,25 @@ class VocabularyApp {
         if (!gistId || !githubToken) {
             alert('Please configure your Gist ID and GitHub Token in settings first.');
             this.showSettings();
+            return;
+        }
+
+        // Get current user's password
+        const userPassword = this.users[this.currentUser]?.password;
+        if (!userPassword) {
+            alert(`Please set a password for user "${this.currentUser}" in User Management first.`);
+            this.showUserManagement();
+            return;
+        }
+
+        // Prompt for password
+        const enteredPassword = prompt(`Enter password for ${this.currentUser} to pull:`);
+        if (!enteredPassword) {
+            return; // User cancelled
+        }
+
+        if (enteredPassword !== userPassword) {
+            alert('Incorrect password. Pull cancelled.');
             return;
         }
 
@@ -961,7 +994,6 @@ class VocabularyApp {
     showSettings() {
         document.getElementById('gistIdInput').value = this.settings.gistId || '';
         document.getElementById('githubTokenInput').value = this.settings.githubToken || '';
-        document.getElementById('pushPasswordInput').value = this.settings.pushPassword || '';
         document.getElementById('settingsModal').classList.remove('hidden');
     }
 
@@ -972,10 +1004,9 @@ class VocabularyApp {
     saveSettingsFromModal() {
         this.settings.gistId = document.getElementById('gistIdInput').value.trim();
         this.settings.githubToken = document.getElementById('githubTokenInput').value.trim();
-        this.settings.pushPassword = document.getElementById('pushPasswordInput').value.trim();
         this.saveSettings();
         this.closeSettings();
-        alert('Settings saved! You can now sync your known words.');
+        alert('Settings saved! Remember to set passwords for each user in User Management.');
     }
 
     // ========================================================================
@@ -984,8 +1015,9 @@ class VocabularyApp {
 
     populateUserSelector() {
         const selector = document.getElementById('userSelector');
-        selector.innerHTML = this.users.map(user =>
-            `<option value="${user}" ${user === this.currentUser ? 'selected' : ''}>${user}</option>`
+        const usernames = Object.keys(this.users);
+        selector.innerHTML = usernames.map(username =>
+            `<option value="${username}" ${username === this.currentUser ? 'selected' : ''}>${username}</option>`
         ).join('');
     }
 
@@ -1000,18 +1032,51 @@ class VocabularyApp {
 
     renderUserList() {
         const userList = document.getElementById('userList');
-        userList.innerHTML = this.users.map(user => `
+        const usernames = Object.keys(this.users);
+        userList.innerHTML = usernames.map(username => {
+            const hasPassword = this.users[username].password !== '';
+            return `
             <div class="user-item">
-                <span class="user-item-name">${user}${user === this.currentUser ? ' (current)' : ''}</span>
-                ${this.users.length > 1 ? `<button class="user-item-delete" data-user="${user}">Delete</button>` : ''}
+                <div class="user-item-header">
+                    <span class="user-item-name">${username}${username === this.currentUser ? ' (current)' : ''}</span>
+                    ${usernames.length > 1 ? `<button class="user-item-delete" data-user="${username}">Delete</button>` : ''}
+                </div>
+                <div class="user-item-password">
+                    <input type="password"
+                           class="user-password-input"
+                           data-user="${username}"
+                           placeholder="${hasPassword ? '••••••• (password set)' : 'Set password for sync'}"
+                           value="" />
+                    <button class="user-password-save" data-user="${username}">Save Password</button>
+                </div>
             </div>
-        `).join('');
+        `}).join('');
 
         // Add delete event listeners
         userList.querySelectorAll('.user-item-delete').forEach(btn => {
             btn.addEventListener('click', () => {
                 const username = btn.dataset.user;
                 this.deleteUser(username);
+            });
+        });
+
+        // Add password save event listeners
+        userList.querySelectorAll('.user-password-save').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const username = btn.dataset.user;
+                const input = userList.querySelector(`.user-password-input[data-user="${username}"]`);
+                const password = input.value.trim();
+
+                if (!password) {
+                    alert('Please enter a password');
+                    return;
+                }
+
+                this.users[username].password = password;
+                this.saveUsers();
+                input.value = '';
+                this.renderUserList();
+                alert(`Password set for ${username}`);
             });
         });
     }
@@ -1025,22 +1090,23 @@ class VocabularyApp {
             return;
         }
 
-        if (this.users.includes(username)) {
+        if (this.users[username]) {
             alert('This user already exists');
             return;
         }
 
-        this.users.push(username);
+        this.users[username] = { password: '' };
         this.saveUsers();
         this.populateUserSelector();
         this.renderUserList();
         input.value = '';
 
-        alert(`User "${username}" added successfully!`);
+        alert(`User "${username}" added successfully! Don't forget to set a password for sync.`);
     }
 
     deleteUser(username) {
-        if (this.users.length === 1) {
+        const usernames = Object.keys(this.users);
+        if (usernames.length === 1) {
             alert('Cannot delete the last user');
             return;
         }
@@ -1049,13 +1115,14 @@ class VocabularyApp {
             return;
         }
 
-        // Remove user from list
-        this.users = this.users.filter(u => u !== username);
+        // Remove user from object
+        delete this.users[username];
         this.saveUsers();
 
-        // If deleting current user, switch to first user
+        // If deleting current user, switch to first remaining user
         if (this.currentUser === username) {
-            this.switchUser(this.users[0]);
+            const remainingUsers = Object.keys(this.users);
+            this.switchUser(remainingUsers[0]);
             this.populateUserSelector();
         }
 

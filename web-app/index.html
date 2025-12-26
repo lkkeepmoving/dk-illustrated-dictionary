@@ -112,13 +112,7 @@
                     <div class="form-group">
                         <label for="githubTokenInput">GitHub Personal Access Token:</label>
                         <input type="password" id="githubTokenInput" class="form-input" placeholder="ghp_..." />
-                        <small class="form-hint">Token is stored locally in your browser only</small>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="pushPasswordInput">Push Password:</label>
-                        <input type="password" id="pushPasswordInput" class="form-input" placeholder="Set a password for push protection" />
-                        <small class="form-hint">Required each time you push to prevent unauthorized uploads</small>
+                        <small class="form-hint">Token is stored locally in your browser only. Share this with family members.</small>
                     </div>
 
                     <div class="form-group">
@@ -128,6 +122,10 @@
                     </div>
 
                     <button id="saveSettingsBtn" class="btn btn-primary btn-full-width">Save Settings</button>
+
+                    <div style="margin-top: 15px; padding: 10px; background: #f0f8ff; border-radius: 4px; font-size: 0.9em;">
+                        <strong>⚠️ Important:</strong> Set passwords for each user in User Management (👥 button) to enable sync protection.
+                    </div>
                 </div>
             </div>
         </div>

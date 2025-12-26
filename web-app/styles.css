@@ -118,11 +118,17 @@ body {
 
 .user-item {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 10px;
     padding: 12px;
     background: #f5f5f7;
     border-radius: 8px;
+}
+
+.user-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .user-item-name {
@@ -142,6 +148,35 @@ body {
 
 .user-item-delete:hover {
     background: #D32F2F;
+}
+
+.user-item-password {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.user-password-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #d1d1d6;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.user-password-save {
+    background: #007AFF;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.user-password-save:hover {
+    background: #0051D5;
 }
 
 /* Search */
